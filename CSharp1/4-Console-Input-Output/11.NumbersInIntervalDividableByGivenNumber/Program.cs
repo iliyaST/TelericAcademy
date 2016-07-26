@@ -8,6 +8,18 @@ class Program
 {
     static void Main()
     {
+        int firstPositiveInteger = int.Parse(Console.ReadLine());
+        int secondPositiveInteger = int.Parse(Console.ReadLine());
+        int count = 0;
+
+        for (int i = firstPositiveInteger + 1; i < secondPositiveInteger; i++)
+        {
+            if (i % 5 == 0)
+            {
+                count++;
+            }
+        }
+        Console.WriteLine(count);
 
     }
 }
