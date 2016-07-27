@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.NumbersInIntervalDividab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FallingRocks", "FallingRocks\FallingRocks.csproj", "{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustCars", "JustCars\JustCars.csproj", "{0690314E-3428-4223-B636-166B6C521F16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0690314E-3428-4223-B636-166B6C521F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0690314E-3428-4223-B636-166B6C521F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0690314E-3428-4223-B636-166B6C521F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0690314E-3428-4223-B636-166B6C521F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

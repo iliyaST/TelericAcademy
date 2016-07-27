@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-class Program
+class FallingRocks
 {
     struct Object
     {
@@ -10,150 +10,226 @@ class Program
         public int y;
         public string c;
         public ConsoleColor color;
-
     }
-    static void printOnPosition(int x, int y, string c, ConsoleColor color = ConsoleColor.Gray)
+    static void drawOnPosition(int x, int y, String c, ConsoleColor color = ConsoleColor.Magenta)
     {
         Console.SetCursorPosition(x, y);
         Console.ForegroundColor = color;
-        Console.Write(c);
+        Console.WriteLine(c);
     }
 
     static void Main()
-    {
-        double speed = 100.0;
-        double acc = 0.5;
-        int position = 5;
-        int livesCount = 5;
-        Object userCar = new Object();
-        userCar.x = 2;
-        userCar.y = 29;
-        userCar.c = "@";
-        userCar.color = ConsoleColor.Yellow;
+    {       
+        Object userSpaceShit = new Object();
+        userSpaceShit.x = 7;
+        userSpaceShit.y = 20;
+        userSpaceShit.c = "0";
+        userSpaceShit.color = ConsoleColor.White;
+        Console.BufferHeight = Console.WindowHeight = 30;
+        Console.BufferWidth = Console.WindowWidth = 33;
         Random rand = new Random();
-        List<Object> objects = new List<Object>();
+        List<Object> rocks = new List<Object>();
+        int lifesCount = 5;
+        double acc = 0;
+        int i = 0;
         while (true)
         {
-            bool hitted = false;
+            bool life = false;
+            bool word = false;
+            bool colision = false;
             int chance = rand.Next(0, 100);
-            if (chance < 10)
+            if (chance < 2)
             {
-                Object newObject = new Object();
-                newObject.color = ConsoleColor.White;
-                newObject.c = "+";
-                newObject.x = rand.Next(1, position + 1);
-                newObject.y = 0;
-                objects.Add(newObject);
+                Object rock = new Object();
+                rock.color = ConsoleColor.White;
+                rock.c = "B";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
             }
-            if (chance <= 20)
+            if (chance < 4)
             {
-                Object newObject = new Object();
-                newObject.color = ConsoleColor.Cyan;
-                newObject.c = "!";
-                newObject.x = rand.Next(1, position + 1);
-                newObject.y = 0;
-                objects.Add(newObject);
+                Object rock = new Object();
+                rock.color = ConsoleColor.White;
+                rock.c = "+";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
             }
-            else
+
+            if (chance < 19)
             {
-                speed += acc;
-                if (speed > 500)
-                {
-                    speed = 500;
-                }
-                {
-                    Object newCar = new Object();
-                    newCar.color = ConsoleColor.Green;
-                    newCar.x = rand.Next(0, position + 1);
-                    newCar.y = 0;
-                    newCar.c = "#";
-                    objects.Add(newCar);
-                    Console.BufferHeight = Console.WindowHeight = 30;
-                    Console.BufferWidth = Console.WindowWidth = 30;
-                }
+                Object rock = new Object();
+                rock.color = ConsoleColor.DarkYellow;
+                rock.c = "!";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
+            }
+            if (chance < 24)
+            {
+                Object rock = new Object();
+                rock.color = ConsoleColor.Red;
+                rock.c = "#";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
+            }
+            if (chance < 26)
+            {
+                Object rock = new Object();
+                rock.color = ConsoleColor.Blue;
+                rock.c = "@";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
+            }
+            if (chance < 28)
+            {
+                Object rock = new Object();
+                rock.color = ConsoleColor.DarkYellow;
+                rock.c = "$";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
             }
             while (Console.KeyAvailable)
             {
-                ConsoleKeyInfo pressedkey = Console.ReadKey(true);
+                ConsoleKeyInfo pressedKey = Console.ReadKey(true);
                 {
-                    //while (Console.KeyAvailable)
-                    //  {
-                    //     Console.ReadKey(true);
-                    // }
-                    if (pressedkey.Key == ConsoleKey.LeftArrow)
+                    if (pressedKey.Key == ConsoleKey.LeftArrow)
                     {
-                        if (userCar.x - 1 >= 0)
+                        if (userSpaceShit.x - 1 >= 0)
                         {
-                            userCar.x = userCar.x - 1;
+                            userSpaceShit.x = userSpaceShit.x - 1;
                         }
                     }
-                    else if (pressedkey.Key == ConsoleKey.RightArrow)
+                    if (pressedKey.Key == ConsoleKey.RightArrow)
                     {
-                        if (userCar.x < position)
+                        if (userSpaceShit.x + 1 <= 13)
                         {
-                            userCar.x = userCar.x + 1;
+                            userSpaceShit.x = userSpaceShit.x + 1;
                         }
                     }
                 }
             }
             List<Object> newList = new List<Object>();
-            for (int i = 0; i < objects.Count; i++)
+            for (int j = 0; j < rocks.Count; j++)
             {
-                Object oldCar = objects[i];
-                Object newObject = new Object();
-                newObject.x = oldCar.x;
-                newObject.y = oldCar.y + 1;
-                newObject.c = oldCar.c;
-                newObject.color = oldCar.color;
-                if (newObject.c == "+" && newObject.x == userCar.x && newObject.y == userCar.y)
+                Object oldRock = rocks[j];
+                Object newRock = new Object();
+                newRock.x = oldRock.x;
+                newRock.y = oldRock.y + 1;
+                newRock.c = oldRock.c;
+                newRock.color = oldRock.color;
+                if (newRock.c == "@" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
                 {
-                    livesCount++;
+                    colision = true;
+                    lifesCount--;
                 }
-                if (newObject.c == "!" && newObject.x == userCar.x && newObject.y == userCar.y)
+                if (newRock.c == "*" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
                 {
-                    speed -= 20;
+                    colision = true;
+                    lifesCount--;
                 }
-                if (newObject.c == "#" && newObject.x == userCar.x && newObject.y == userCar.y)
+                if (newRock.c == "$" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
                 {
-                    hitted = true;
-                    livesCount--;
-                    speed += 50;
-                    if (speed > 500)
-                    {
-                        speed = 500;
-                    }
-                    if (livesCount <= 0)
-                    {
-                        printOnPosition(8, 7, "GAME OVER!", ConsoleColor.Red);
-                        printOnPosition(8, 12, "Press [enter] to Exit:", ConsoleColor.Red);
-                        Environment.Exit(0);
-                    }
+                    colision = true;
+                    lifesCount--;
                 }
-                if (newObject.y < 30)
+                if (newRock.c == "#" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
                 {
-                    newList.Add(newObject);
+                    colision = true;
+                    lifesCount--;
+                }
+                if (newRock.c == "!" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
+                {
+                    colision = true;
+                    lifesCount--;
+                }
+                if (newRock.c == "+" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
+                {
+                    life = true;
+                    lifesCount++;
+                }
+                if (newRock.c == "B" && newRock.x == userSpaceShit.x && newRock.y == userSpaceShit.y)
+                {
+                    word = true;
+                    i++;
+                }
+                if (newRock.y < 30)
+                {
+                    newList.Add(newRock);
                 }
             }
-            objects = newList;
+            rocks = newList;
             Console.Clear();
-            foreach (var car in objects)
+            foreach (var item in rocks)
             {
-                printOnPosition(car.x, car.y, car.c, car.color);
+                drawOnPosition(item.x, item.y, item.c, item.color);
             }
-            if (hitted == true)
+            if (colision == true)
             {
-                objects.Clear();
-                printOnPosition(userCar.x, userCar.y, "X", ConsoleColor.Red);
+                drawOnPosition(userSpaceShit.x, userSpaceShit.y, "X", ConsoleColor.Red);
+                newList.Clear();
+                acc += 20;
             }
             else
             {
-                printOnPosition(userCar.x, userCar.y, userCar.c, userCar.color);
+                if (life == true)
+                {
+                    drawOnPosition(userSpaceShit.x, userSpaceShit.y, "1", ConsoleColor.Yellow);
+                }
+                else
+                {
+                    if (word == true)
+                    {
+                        drawOnPosition(userSpaceShit.x, userSpaceShit.y, "W", ConsoleColor.White);
+                    }
+                    else
+                    {
+                        drawOnPosition(userSpaceShit.x, userSpaceShit.y, userSpaceShit.c, ConsoleColor.White);
+                    }
+                }
+            }           
+            if (lifesCount == 0)
+            {
+                drawOnPosition(15, 16, "YOU LOOSE!", ConsoleColor.Red);               
+                Environment.Exit(0);
             }
-            printOnPosition(8, 4, "Lives: " + livesCount, ConsoleColor.White);
-            printOnPosition(8, 5, "Speed: " + speed, ConsoleColor.White);
-            printOnPosition(8, 6, "Acceleration: " + acc, ConsoleColor.White);
-            Thread.Sleep((int)(600 - speed));
+            drawOnPosition(15, 3, "Collect letter 'B'", ConsoleColor.Green);
+            drawOnPosition(15, 5, "Make the Word" , ConsoleColor.Yellow);
+            drawOnPosition(15, 6, "'WIN' to win !" , ConsoleColor.Yellow);
+            drawOnPosition(15, 10, "Lives:" + lifesCount, ConsoleColor.White);         
+            drawOnPosition(15, 11, "Acceleration:" + (int)acc, ConsoleColor.White);
+            if (i == 0)
+            {
+                drawOnPosition(15, 15, "_ _ _", ConsoleColor.White);
+            }
+            if (i == 1)
+            {
+                drawOnPosition(15, 15, "W _ _", ConsoleColor.White);
+            }
+            if (i == 2)
+            {
+                drawOnPosition(15, 15, "W I _", ConsoleColor.White);
+            }
+            if (i == 3)
+            {
+                drawOnPosition(15, 15, "W I N", ConsoleColor.White);
+            }
+            if (i == 3)
+            {
+                drawOnPosition(15, 16, "YOU WIN!", ConsoleColor.Magenta);              
+                Environment.Exit(0);
+            }
+            acc += 0.1;
+            if (acc > 100)
+            {
+                acc = 100;
+            }
+            Thread.Sleep((int)(200 - acc));
         }
+
     }
 }
-
