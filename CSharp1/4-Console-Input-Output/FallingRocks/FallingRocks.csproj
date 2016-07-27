@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5095ACA7-EF27-4A96-9110-1C6CFA14085D}</ProjectGuid>
+    <ProjectGuid>{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_11.NumbersInIntervalDividableByGivenNumber</RootNamespace>
-    <AssemblyName>11.NumbersInIntervalDividableByGivenNumber</AssemblyName>
+    <RootNamespace>FallingRocks</RootNamespace>
+    <AssemblyName>FallingRocks</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

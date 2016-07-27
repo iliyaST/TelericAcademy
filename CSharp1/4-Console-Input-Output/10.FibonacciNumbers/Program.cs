@@ -10,14 +10,15 @@ class Fibonacci
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        int firstNumber = 0;
-        int secondNumber = 1;
+        long temp;
+        long firstNumber = 0;
+        long secondNumber = 1;
 
         Console.Write(firstNumber);
         for (int i = 0; i < n - 1; i++)
         {
             Console.Write(", {0}", secondNumber);
-            int temp = firstNumber;
+            temp = firstNumber;
             firstNumber = secondNumber;
             secondNumber += temp;
         }

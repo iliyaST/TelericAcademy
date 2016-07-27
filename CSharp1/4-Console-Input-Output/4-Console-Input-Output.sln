@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.SumOfNNumbers", "09.SumO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.FibonacciNumbers", "10.FibonacciNumbers\10.FibonacciNumbers.csproj", "{3140EDAF-3D02-4C3D-9A21-9A94A4BD7FED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.NumbersInIntervalDividableByGivenNumber", "11.NumbersInIntervalDividableByGivenNumber\11.NumbersInIntervalDividableByGivenNumber.csproj", "{5095ACA7-EF27-4A96-9110-1C6CFA14085D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FallingRocks", "FallingRocks\FallingRocks.csproj", "{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{3140EDAF-3D02-4C3D-9A21-9A94A4BD7FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3140EDAF-3D02-4C3D-9A21-9A94A4BD7FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3140EDAF-3D02-4C3D-9A21-9A94A4BD7FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5095ACA7-EF27-4A96-9110-1C6CFA14085D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5095ACA7-EF27-4A96-9110-1C6CFA14085D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5095ACA7-EF27-4A96-9110-1C6CFA14085D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5095ACA7-EF27-4A96-9110-1C6CFA14085D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB7BF6D-960E-4581-8D04-F1CD1E672CE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
