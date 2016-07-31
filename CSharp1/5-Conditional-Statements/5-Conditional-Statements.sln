@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.IntDoubleAndString", "09
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.BeerTime", "10.BeerTime\10.BeerTime.csproj", "{5D6A5889-5C52-4425-AB9A-F56DF5FF2DD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.NumbersAsWords", "11.NumbersAsWords\11.NumbersAsWords.csproj", "{A469CD68-7144-4987-BE0B-8986695AD2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.ZeroSubset", "12.ZeroSubset\12.ZeroSubset.csproj", "{2BC42A0D-2105-4315-975E-0C08407C6CC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{5D6A5889-5C52-4425-AB9A-F56DF5FF2DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D6A5889-5C52-4425-AB9A-F56DF5FF2DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D6A5889-5C52-4425-AB9A-F56DF5FF2DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A469CD68-7144-4987-BE0B-8986695AD2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A469CD68-7144-4987-BE0B-8986695AD2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A469CD68-7144-4987-BE0B-8986695AD2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A469CD68-7144-4987-BE0B-8986695AD2EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC42A0D-2105-4315-975E-0C08407C6CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC42A0D-2105-4315-975E-0C08407C6CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC42A0D-2105-4315-975E-0C08407C6CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC42A0D-2105-4315-975E-0C08407C6CC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
