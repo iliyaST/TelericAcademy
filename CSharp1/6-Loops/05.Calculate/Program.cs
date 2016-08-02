@@ -9,17 +9,17 @@ class Calculate
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        double x = double.Parse(Console.ReadLine());
-        double t = 1;
-        double m = 1;
+        int x = int.Parse(Console.ReadLine());
+        int t = 1;
+        int m = 1;
         double sum = 1;
 
         for (int i = 1; i <= n; i++)
         {
-            sum += (m*=i) / t;
-            t *= x;
-            
-            Console.WriteLine(sum);
+            double currentFactioriel = m *= i;
+            double currentPow = t *= x;
+            double currentTerm = currentFactioriel / currentPow;
+            sum += currentTerm;
         }
         Console.WriteLine("{0:F5}", sum);
     }
