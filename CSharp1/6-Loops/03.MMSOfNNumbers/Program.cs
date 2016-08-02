@@ -12,58 +12,28 @@ class MinMaxSumAndAverageOfNNumbers
     {
         string howManyNumbers = Console.ReadLine();
         double numbers;
-
+        double minValue = double.MaxValue;
+        double maxValue = double.MinValue;
+        double sum = 0;
         if (double.TryParse(howManyNumbers, out numbers))
         {
-            if (1 <= numbers && numbers <= 1000)
+            for (int i = 0; i < numbers; i++)
             {
-                int counter = 2;
-                double randomNumberOne = double.Parse(Console.ReadLine());
-                double randomNumberTwo = double.Parse(Console.ReadLine());
-                double max = randomNumberOne;
-                double min = randomNumberTwo;
-                double sum = max + randomNumberTwo;
-                double averege = 0;
-
-                if (randomNumberTwo > max)
+                double currentNumber = double.Parse(Console.ReadLine());
+                if (currentNumber > maxValue)
                 {
-                    min = max;
-                    max = randomNumberTwo;
+                    maxValue = currentNumber;
                 }
-
-                while (counter < numbers)
+                if (currentNumber < minValue)
                 {
-                    double randomNumber = double.Parse(Console.ReadLine());
-
-                    sum += randomNumber;
-
-                    if (randomNumber > max)
-                    {
-                        max = randomNumber;
-                    }
-                    else if (randomNumber < min)
-                    {
-                        min = randomNumber;
-                    }
-
-                    counter++;
+                    minValue = currentNumber;
                 }
-
-                averege = sum / numbers;
-
-                Console.WriteLine("min={0:0.00}", min);
-                Console.WriteLine("max={0:0.00}", max);
-                Console.WriteLine("sum={0:0.00}", sum);
-                Console.WriteLine("avg={0:0.00}", averege);
+                sum += currentNumber;
             }
-            else
-            {
-                Console.WriteLine("N is not between 1 and 1000");
-            }
-        }
-        else
-        {
-            Console.WriteLine("Invalid input for N");
+            Console.WriteLine("min={0:F2} ", minValue);
+            Console.WriteLine("max={0:F2} ", maxValue);
+            Console.WriteLine("sum={0:F2} ", sum);
+            Console.WriteLine("avg={0:F2} ", sum / numbers);
         }
     }
 }
