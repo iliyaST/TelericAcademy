@@ -10,23 +10,18 @@ class TrailingZerosInNFact
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        BigInteger fact = 1;
-        int zeroCounter = 0;
+        int countA = 5;
+        int countB = 0;
 
-        //find the factoriel
-        for (int i = 1; i <= n; i++)
+        while (n / countA >= 1)
         {
-            fact *= i;
+            countB += n / countA;
+            countA *= 5;
         }
-
-        while (fact % 10 == 0)
-        {
-            fact /= 10;
-            zeroCounter++;
-        }
-        Console.WriteLine(zeroCounter);
-        Console.WriteLine("Quick way: {0} / 5 = {1}. {0}! has {1} trailing zeros.", n, n / 5);
+        Console.WriteLine(countB);
 
     }
+
 }
+
 
