@@ -36,7 +36,7 @@ class XXpression
                 }
             }
             else
-            {              
+            {
                 if (symbol >= '0' && symbol <= '9')
                 {
                     if (currentOperrator == '+')
@@ -89,7 +89,7 @@ class XXpression
                 result += tempResult;
                 tempResult = 0;
             }
-            if(symbol=='=')
+            if (symbol == '=')
             {
                 break;
             }
@@ -98,5 +98,6 @@ class XXpression
         Console.WriteLine("{0:F2}", result);
     }
 }
+
 
 

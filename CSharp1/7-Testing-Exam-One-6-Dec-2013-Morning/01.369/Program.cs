@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Numerics;
+
 
 class Encrypt369
 {
@@ -9,8 +9,8 @@ class Encrypt369
         long positiveIntegerB = long.Parse(Console.ReadLine());
         long positiveIntegerC = long.Parse(Console.ReadLine());
 
-        BigInteger R = 0;
-        BigInteger result = 0;
+        long R = 0;
+        long result = 0;
 
         if (positiveIntegerB == 3)
         {
