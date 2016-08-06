@@ -10,6 +10,7 @@ class XXpression
         char currentOperrator = '+';
         bool currentBracker = false;
         char tempOperrator = '+';
+        char helpOperator = '+';
 
         foreach (var symbol in expression)
         {
@@ -81,12 +82,28 @@ class XXpression
             if (symbol == '(')
             {
                 currentBracker = true;
+                helpOperator = currentOperrator;
                 tempOperrator = '+';
             }
             if (symbol == ')')
             {
                 currentBracker = false;
-                result += tempResult;
+                if (helpOperator == '+')
+                {
+                    result += tempResult;
+                }
+                if (helpOperator == '-')
+                {
+                    result -= tempResult;
+                }
+                if (helpOperator == '*')
+                {
+                    result *= tempResult;
+                }
+                if (helpOperator == '/')
+                {
+                    result /= tempResult;
+                }
                 tempResult = 0;
             }
             if (symbol == '=')
