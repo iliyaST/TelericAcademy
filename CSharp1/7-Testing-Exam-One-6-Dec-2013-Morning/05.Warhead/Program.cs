@@ -4,7 +4,6 @@ class Warhead
 {
     static void Main()
     {
-        
-    }
-}
+      
+    }  
 
