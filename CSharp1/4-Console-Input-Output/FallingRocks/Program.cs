@@ -23,7 +23,7 @@ class FallingRocks
         Object userSpaceShit = new Object();
         userSpaceShit.x = 7;
         userSpaceShit.y = 20;
-        userSpaceShit.c = "0";
+        userSpaceShit.c = "Y";
         userSpaceShit.color = ConsoleColor.White;
         Console.BufferHeight = Console.WindowHeight = 30;
         Console.BufferWidth = Console.WindowWidth = 33;
@@ -89,6 +89,15 @@ class FallingRocks
                 Object rock = new Object();
                 rock.color = ConsoleColor.DarkYellow;
                 rock.c = "$";
+                rock.x = rand.Next(0, 14);
+                rock.y = 0;
+                rocks.Add(rock);
+            }
+            if (chance < 35)
+            {
+                Object rock = new Object();
+                rock.color = ConsoleColor.Yellow;
+                rock.c = "g";
                 rock.x = rand.Next(0, 14);
                 rock.y = 0;
                 rocks.Add(rock);
@@ -202,6 +211,9 @@ class FallingRocks
             drawOnPosition(15, 6, "'WIN' to win !" , ConsoleColor.Yellow);
             drawOnPosition(15, 10, "Lives:" + lifesCount, ConsoleColor.White);         
             drawOnPosition(15, 11, "Acceleration:" + (int)acc, ConsoleColor.White);
+            drawOnPosition(15, 13, "If You hit '+' ", ConsoleColor.White);
+            drawOnPosition(15, 14, "gives you 1 life", ConsoleColor.White);
+
             if (i == 0)
             {
                 drawOnPosition(15, 15, "_ _ _", ConsoleColor.White);

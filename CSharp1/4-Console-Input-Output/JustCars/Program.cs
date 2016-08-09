@@ -148,6 +148,7 @@ class Program
             printOnPosition(8, 4, "Lives: " + livesCount, ConsoleColor.White);
             printOnPosition(8, 5, "Speed: " + speed, ConsoleColor.White);
             printOnPosition(8, 6, "Acceleration: " + acc, ConsoleColor.White);
+            speed++;
             Thread.Sleep((int)(600 - speed));
         }
     }
