@@ -11,17 +11,25 @@ class DrunkenNumbers
         for (int i = 0; i < numberOfRounds; i++)
         {
             long tempNumber = long.Parse(Console.ReadLine());
-            int basicCounter = 1;
-            foreach (var digit in tempNumber.ToString())
+            if (tempNumber < 0)
             {
-                if (tempNumber.ToString().Length / 2 != 0)
+                tempNumber = -tempNumber;
+            }
+            int basicCounter = 1;
+            string drunkenNumber = tempNumber.ToString().TrimStart('0');
+
+            foreach (var digit in drunkenNumber)
+            {
+                if (drunkenNumber.Length % 2 != 0)
                 {
-                    if (basicCounter == ((tempNumber.ToString().Length + 1) / 2))
-                    {                      
+                    if (basicCounter == ((drunkenNumber.Length + 1) / 2))
+                    {
+                        counterV += digit - '0';
+                        counterM += digit - '0';
                         basicCounter++;
                         continue;
                     }
-                    if (basicCounter > ((tempNumber.ToString().Length + 1) / 2))
+                    if (basicCounter > ((drunkenNumber.Length + 1) / 2))
                     {
                         counterV += digit - '0';
                         continue;
@@ -31,7 +39,7 @@ class DrunkenNumbers
                 }
                 else
                 {
-                    if (basicCounter >= (tempNumber.ToString().Length / 2) + 1)
+                    if (basicCounter > (drunkenNumber.Length / 2))
                     {
                         counterV += digit - '0';
                         continue;
