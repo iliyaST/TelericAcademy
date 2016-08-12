@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.BullsAndCows", "03.Bulls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Fire", "04.Fire\04.Fire.csproj", "{1BC5C7A7-F145-4F76-A9F0-9BA6164F40E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.NeuronMapping", "05.NeuronMapping\05.NeuronMapping.csproj", "{B4B2CE22-1D53-470A-B708-3BF029F8C9A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.NeuronsSolvedBit", "05.NeuronsSolvedBit\05.NeuronsSolvedBit.csproj", "{76A2D39B-EE36-405D-825C-249DDCEF5C67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{1BC5C7A7-F145-4F76-A9F0-9BA6164F40E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BC5C7A7-F145-4F76-A9F0-9BA6164F40E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BC5C7A7-F145-4F76-A9F0-9BA6164F40E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B2CE22-1D53-470A-B708-3BF029F8C9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B2CE22-1D53-470A-B708-3BF029F8C9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B2CE22-1D53-470A-B708-3BF029F8C9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B2CE22-1D53-470A-B708-3BF029F8C9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A2D39B-EE36-405D-825C-249DDCEF5C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A2D39B-EE36-405D-825C-249DDCEF5C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A2D39B-EE36-405D-825C-249DDCEF5C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A2D39B-EE36-405D-825C-249DDCEF5C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
