@@ -91,6 +91,13 @@ class CardWarsOther
                     thirdCardB = int.Parse(temp);
                     currentResultA = firstCardA + secondCardA + thirdCardA;
                     currentResultB = firstCardB + secondCardB + thirdCardB;
+                    if (isXA == true && isXB == true)
+                    {
+                        finalResultA += 50;
+                        finalResultB += 50;
+                        isXA = false;
+                        isXB = false;
+                    }
                     if (currentResultA > currentResultB)
                     {
                         finalResultA += currentResultA;
@@ -110,12 +117,7 @@ class CardWarsOther
                     {
                         Console.WriteLine("X card drawn! Player two wins the match!");
                         Environment.Exit(0);
-                    }
-                    if (isXA == true && isXB == true)
-                    {
-                        finalResultA += 50;
-                        finalResultB += 50;
-                    }                  
+                    }                        
                 }
 
             }
