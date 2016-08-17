@@ -1,187 +1,246 @@
 ﻿using System;
+using System.Numerics;
 
 class CardWars
 {
     static void Main()
     {
         int numberOfRounds = int.Parse(Console.ReadLine());
-        int counter = 0;
-        int firstCardPlayerA = 0;
-        int secondCardPlayerA = 0;
-        int thirdCardPlayerA = 0;
-        int firstCardPlayerB = 0;
-        int secondCardPlayerB = 0;
-        int thirdCardPlayerB = 0;
-        int resultA = 0;
-        int resultB = 0;
+        int zCounterA = 1;
+        int zCounterB = 1;
+        int yCounterA = 0;
+        int yCounterB = 0;
+        int firstCardA = 0;
+        int secondCardA = 0;
+        int thirdCardA = 0;
+        int firstCardB = 0;
+        int secondCardB = 0;
+        int thirdCardB = 0;
+        BigInteger currentScoreA = 0;
+        BigInteger currentScoreB = 0;
+        bool isXA = false;
+        bool isYA = false;
+        bool isZA = false;
+        bool isXB = false;
+        bool isYB = false;
+        bool isZB = false;
         int gamesWonA = 0;
         int gamesWonB = 0;
-        bool isZ = false;
-        bool isY = false;
-        bool isX = false;
+        BigInteger finalResultA = 0;
+        BigInteger finalResultB = 0;
 
-        for (int i = 0; i < 6 * numberOfRounds; i++)
+        for (int i = 0; i < numberOfRounds; i++)
         {
-            string temp = Console.ReadLine();
-            switch (temp)
+            for (int j = 0; j < 6; j++)
             {
-                case "2":
-                    temp = "10";
-                    break;
-                case "3":
-                    temp = "9";
-                    break;
-                case "4":
-                    temp = "8";
-                    break;
-                case "5":
-                    temp = "7";
-                    break;
-                case "6":
-                    temp = "6";
-                    break;
-                case "7":
-                    temp = "5";
-                    break;
-                case "8":
-                    temp = "4";
-                    break;
-                case "9":
-                    temp = "3";
-                    break;
-                case "10":
-                    temp = "2";
-                    break;
-                case "A":
-                    temp = "1";
-                    break;
-                case "J":
-                    temp = "11";
-                    break;
-                case "Q":
-                    temp = "12";
-                    break;
-                case "K":
-                    temp = "13";
-                    break;
-                case "Z":
-                    if (counter > 3)
-                    {
-                        resultB *= 2;
-                    }
-                    if (counter <= 3)
-                    {
-                        resultA *= 2;
-                    }
-                    isZ = true;
-                    break;
-                case "Y":
-                    if (counter <= 3)
-                    {
-                        resultA -= 200;
-                    }
-                    if (counter > 3)
-                    {
-                        resultB -= 200;
-                    }
-                    isY = true;
-                    break;
-                case "X":
-                    {
-                        temp = "14";
-                        isX = true;
+                string temp = Console.ReadLine();
+                #region Temp rename
+                switch (temp)
+                {
+                    case "2":
+                        temp = "10";
                         break;
+                    case "3":
+                        temp = "9";
+                        break;
+                    case "4":
+                        temp = "8";
+                        break;
+                    case "5":
+                        temp = "7";
+                        break;
+                    case "6":
+                        temp = "6";
+                        break;
+                    case "7":
+                        temp = "5";
+                        break;
+                    case "8":
+                        temp = "4";
+                        break;
+                    case "9":
+                        temp = "3";
+                        break;
+                    case "10":
+                        temp = "2";
+                        break;
+                    case "A":
+                        temp = "1";
+                        break;
+                    case "J":
+                        temp = "11";
+                        break;
+                    case "Q":
+                        temp = "12";
+                        break;
+                    case "K":
+                        temp = "13";
+                        break;
+                    case "X":
+                        if (j > 2)
+                        {
+                            isXB = true;
+                        }
+                        else
+                        {
+                            isXA = true;
+                        }
+                        temp = "0";
+                        break;
+                    case "Y":
+                        if (j > 2)
+                        {
+                            yCounterB++;
+                            isYB = true;
+                        }
+                        else
+                        {
+                            yCounterA++;
+                            isYA = true;
+                        }
+                        temp = "0";
+                        break;
+                    case "Z":
+                        if (j > 2)
+                        {
+                            zCounterB *= 2;
+                            isZB = true;
+                        }
+                        else
+                        {
+                            zCounterA *= 2;
+                            isZA = true;
+                        }
+                        temp = "0";
+                        break;
+                }
+                #endregion
+                #region cards
+                if (j == 0)
+                {
+                    firstCardA = int.Parse(temp);
+                    continue;
+                }
+                if (j == 1)
+                {
+                    secondCardA = int.Parse(temp);
+                    continue;
+                }
+                if (j == 2)
+                {
+                    thirdCardA = int.Parse(temp);
+                    continue;
+                }
+                if (j == 3)
+                {
+                    firstCardB = int.Parse(temp);
+                    continue;
+                }
+                if (j == 4)
+                {
+                    secondCardB = int.Parse(temp);
+                    continue;
+                }
+                if (j == 5)
+                {
+                    thirdCardB = int.Parse(temp);
+                    currentScoreA += firstCardA + secondCardA + thirdCardA;
+                    currentScoreB += firstCardB + secondCardB + thirdCardB;
+
+                    if (isXA == true && isXB == false)
+                    {
+                        Console.WriteLine("X card drawn! Player one wins the match!");
+                        Environment.Exit(0);
                     }
-            }
-            if (isZ == true || isY == true)
-            {
-                isZ = false;
-                isY = false;
-                counter++;
-                continue;
-            }
-            counter++;
-            if (counter == 1)
-            {
-                firstCardPlayerA = int.Parse(temp);
-                continue;
-            }
-            if (counter == 2)
-            {
-                secondCardPlayerA = int.Parse(temp);
-                continue;
-            }
-            if (counter == 3)
-            {
-                thirdCardPlayerA = int.Parse(temp);
-                continue;
-            }
-            if (counter == 4)
-            {
-                firstCardPlayerB = int.Parse(temp);
-                continue;
-            }
-            if (counter == 5)
-            {
-                secondCardPlayerB = int.Parse(temp);
-                continue;
-            }
-            if (counter == 6)
-            {
-                thirdCardPlayerB = int.Parse(temp);
-                counter = 0;
-                int playerAscore = firstCardPlayerA + secondCardPlayerA + thirdCardPlayerA;
-                int playerBscore = firstCardPlayerB + secondCardPlayerB + thirdCardPlayerB;
-                if ((firstCardPlayerA == 14 || secondCardPlayerA == 14 || thirdCardPlayerA == 14) && (firstCardPlayerB != 14 &&
-                    secondCardPlayerB != 14 && thirdCardPlayerB != 14))
-                {
-                    Console.WriteLine("X card drawn! Player one wins the match!");
-                    Environment.Exit(0);
-                }
-                if ((firstCardPlayerA != 14 && secondCardPlayerA != 14 && thirdCardPlayerA != 14) && (firstCardPlayerB == 14 ||
-                    secondCardPlayerB == 14 || thirdCardPlayerB == 14))
-                {
-                    Console.WriteLine("X card drawn! Player two wins the match!");
-                    Environment.Exit(0);
-                }
-                if ((firstCardPlayerA == 14 || secondCardPlayerA == 14 || thirdCardPlayerA == 14) && (firstCardPlayerB == 14 ||
-                    secondCardPlayerB == 14 || thirdCardPlayerB == 14))
-                {
-                    resultA += 50;
-                    resultB += 50;
-                }
+                    if (isXA == false && isXB == true)
+                    {
+                        Console.WriteLine("X card drawn! Player two wins the match!");
+                        Environment.Exit(0);
+                    }
+                    if (isZA == true)
+                    {
+                        finalResultA *= zCounterA;
+                        isZA = false;
+                        zCounterA = 1;
+                    }
+                    if (isZB == true)
+                    {
+                        finalResultB *= zCounterB;
+                        isZB = false;
+                        zCounterB = 1;
+                    }
+                    if (isXA == true && isXA == true)
+                    {
 
-                if (playerAscore > playerBscore)
-                {
-                    resultA += playerAscore;
-                    gamesWonA++;
+                        if (currentScoreA > currentScoreB)
+                        {
+                            gamesWonA++;
+                        }
+                        if (currentScoreB > currentScoreA)
+                        {
+                            gamesWonB++;
+                        }
+                        if (i < numberOfRounds - 1)
+                        {
+                            finalResultA += 50;
+                            finalResultB += 50;
+                        }
+                        else
+                        {
+                            finalResultA += 50 + currentScoreA;
+                            finalResultB += 50 + currentScoreB;
+                        }
+                        isXA = false;
+                        isXB = false;
+                        currentScoreA = 0;
+                        currentScoreB = 0;
+                    }
+                    if (isYA == true)
+                    {
+                        finalResultA += (-200 * yCounterA);
+                        isYA = false;
+                        yCounterA = 0;
+                    }
+                    if (isYB == true)
+                    {
+                        finalResultB += (-200 * yCounterB);
+                        isYB = false;
+                        yCounterB = 0;
+                    }
+                    if (currentScoreA > currentScoreB)
+                    {
+                        finalResultA += currentScoreA;
+                        gamesWonA++;
+                    }
+                    if (currentScoreB > currentScoreA)
+                    {
+                        finalResultB += currentScoreB;
+                        gamesWonB++;
+                    }
+                    currentScoreA = 0;
+                    currentScoreB = 0;
                 }
-                if (playerBscore > playerAscore)
-                {
-                    resultB += playerBscore;
-                    gamesWonB++;
-                }
-
+                #endregion      
             }
         }
-
-        if (resultA == resultB)
+        if (finalResultA == finalResultB)
         {
             Console.WriteLine("It's a tie!");
-            Console.WriteLine("Score: {0}", resultA + resultB);
+            Console.WriteLine("Score: {0}", finalResultB);
         }
-        if (resultA > resultB)
-        {
-            Console.WriteLine("First player wins!");
-            Console.WriteLine("Score: {0}", resultA);
-            Console.WriteLine("Games won: {0}", gamesWonA);
-        }
-        if (resultA < resultB)
+        if (finalResultB > finalResultA)
         {
             Console.WriteLine("Second player wins!");
-            Console.WriteLine("Score: {0}", resultB);
+            Console.WriteLine("Score: {0}", finalResultB);
             Console.WriteLine("Games won: {0}", gamesWonB);
         }
+        if (finalResultA > finalResultB)
+        {
+            Console.WriteLine("First player wins!");
+            Console.WriteLine("Score: {0}", finalResultA);
+            Console.WriteLine("Games won: {0}", gamesWonA);
+        }
+
     }
 }
 
