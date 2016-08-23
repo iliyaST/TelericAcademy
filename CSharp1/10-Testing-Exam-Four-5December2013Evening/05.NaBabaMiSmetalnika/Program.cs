@@ -1,39 +1,65 @@
 ﻿using System;
 using System.IO;
+using System.Numerics;
 
 class NaBabaMiSmetalnika
 {
     static void Main()
     {
         int width = int.Parse(Console.ReadLine());
-        long row0 = long.Parse(Console.ReadLine());
-        long row1 = long.Parse(Console.ReadLine());
-        long row2 = long.Parse(Console.ReadLine());
-        long row3 = long.Parse(Console.ReadLine());
-        long row4 = long.Parse(Console.ReadLine());
-        long row5 = long.Parse(Console.ReadLine());
-        long row6 = long.Parse(Console.ReadLine());
-        long row7 = long.Parse(Console.ReadLine());
-        int row, col, mask;
+        BigInteger row0 = long.Parse(Console.ReadLine());
+        BigInteger row1 = long.Parse(Console.ReadLine());
+        BigInteger row2 = long.Parse(Console.ReadLine());
+        BigInteger row3 = long.Parse(Console.ReadLine());
+        BigInteger row4 = long.Parse(Console.ReadLine());
+        BigInteger row5 = long.Parse(Console.ReadLine());
+        BigInteger row6 = long.Parse(Console.ReadLine());
+        BigInteger row7 = long.Parse(Console.ReadLine());
+        int row, col;
+        BigInteger mask;
         int counter = 0;
         int counterA = 0;
         int counterB = 0;
+        BigInteger finalScore = 0;
+        int countZeroes = 0;
+        BigInteger zeroesSum = 0;
 
         while (true)
         {
+            finalScore = row0 + row1 + row2 + row3 + row4 + row5 + row6 + row7;
             string tempCommand = Console.ReadLine();
             if (tempCommand == "stop")
             {
+                zeroesSum = row0 | row1 | row2 | row3 | row4 | row5 | row6 | row7;
+                for (int i = 0; i < width; i++)
+                {
+                    if ((zeroesSum & (1 << i)) == 0)
+                    {
+                        countZeroes++;
+                    }
+                }
+                if (countZeroes > 0)
+                {
+                    Console.WriteLine(finalScore * countZeroes);
+                }
+                else
+                {
+                    Console.WriteLine(finalScore);
+                }
                 break;
             }
             if (tempCommand == "right")
             {
                 row = int.Parse(Console.ReadLine());
                 col = int.Parse(Console.ReadLine());
-                long temp = 0; ;
+                BigInteger temp = 0;
                 if (col < 0)
                 {
                     col = 0;
+                }
+                if(col>0)
+                {
+                    col = width - 1;
                 }
                 switch (row)
                 {
@@ -49,12 +75,12 @@ class NaBabaMiSmetalnika
                 for (int i = 0; i < width - col; i++)
                 {
                     mask = 1 << i;
-                    long nAndMask = temp & mask;
-                    long bit = nAndMask >> i;
+                    BigInteger nAndMask = temp & mask;
+                    BigInteger bit = nAndMask >> i;
                     if (bit == 1)
                     {
                         mask = ~(1 << i);
-                        long result = temp & mask;
+                        BigInteger result = temp & mask;
                         temp = temp & result;
                         counter++;
                     }
@@ -62,7 +88,7 @@ class NaBabaMiSmetalnika
                 for (int i = 0; i < counter; i++)
                 {
                     mask = 1 << i;
-                    long result = temp | mask;
+                    BigInteger result = temp | mask;
                     temp = temp | result;
                 }
                 switch (row)
@@ -80,7 +106,7 @@ class NaBabaMiSmetalnika
             counter = 0;
             if (tempCommand == "reset")
             {
-                long temp = 0;
+                BigInteger temp = 0;
                 for (int i = 0; i < 8; i++)
                 {
                     switch (i)
@@ -94,21 +120,21 @@ class NaBabaMiSmetalnika
                         case 6: temp = row6; break;
                         case 7: temp = row7; break;
                     }
-                    for (int j = 0; j < 8; j++)
+                    for (int j = 0; j < width; j++)
                     {
                         mask = 1 << j;
-                        long nAndMask = temp & mask;
-                        long bit = nAndMask >> j;
+                        BigInteger nAndMask = temp & mask;
+                        BigInteger bit = nAndMask >> j;
                         if (bit == 1)
                         {
                             counterA++;
                         }
                     }
                     temp = 0;
-                    for (int x = 7; x >= counterA; x--)
+                    for (int x = width; x >= width - counterA; x--)
                     {
                         mask = 1 << x;
-                        long result = temp | mask;
+                        BigInteger result = temp | mask;
                         temp = temp | result;
                     }
                     counterA = 0;
@@ -129,10 +155,14 @@ class NaBabaMiSmetalnika
             {
                 row = int.Parse(Console.ReadLine());
                 col = int.Parse(Console.ReadLine());
-                long temp = 0; ;
+                BigInteger temp = 0; ;
                 if (col < 0)
                 {
                     col = 0;
+                }
+                if(col>0)
+                {
+                    col = col - 1;
                 }
                 switch (row)
                 {
@@ -145,24 +175,24 @@ class NaBabaMiSmetalnika
                     case 6: temp = row6; break;
                     case 7: temp = row7; break;
                 }
-                for (int i = 7; i >= 7 - col; i--)
+                for (int i = width - 1; i >= (width - 1) - col; i--)
                 {
                     mask = 1 << i;
-                    long nAndMask = temp & mask;
-                    long bit = nAndMask >> i;
+                    BigInteger nAndMask = temp & mask;
+                    BigInteger bit = nAndMask >> i;
                     if (bit == 1)
                     {
-                        mask = ~(1 << i);
-                        long result = temp & mask;
+                        mask =~(1 << i);
+                        BigInteger result = temp & mask;
                         temp = temp & result;
-                        counterB++;                       
+                        counterB++;
                     }
-                }             
-                for (int i = 7; i > 7 - counterB; i--)
+                }
+                for (int i = width - 1; i > (width - 1) - counterB; i--)
                 {
                     mask = 1 << i;
-                    long result = temp | mask;
-                    temp = temp | result;                 
+                    BigInteger result = temp | mask;
+                    temp = temp | result;
                 }
                 counterB = 0;
                 switch (row)
@@ -177,16 +207,17 @@ class NaBabaMiSmetalnika
                     case 7: row7 = temp; break;
                 }
             }
-            Console.WriteLine(Convert.ToString(row0, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row1, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row2, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row3, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row4, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row5, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row6, 2).PadLeft(8, '0'));
-            Console.WriteLine(Convert.ToString(row7, 2).PadLeft(8, '0'));
-
         }
+        //Console.WriteLine(Convert.ToString(row0, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row1, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row2, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row3, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row4, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row5, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row6, 2).PadLeft(8, '0'));
+        //Console.WriteLine(Convert.ToString(row7, 2).PadLeft(8, '0'));
+
     }
 }
+
 
