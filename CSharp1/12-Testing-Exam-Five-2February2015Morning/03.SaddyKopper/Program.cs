@@ -8,35 +8,48 @@ class SaddyKopper
     {
         StreamReader sr = new StreamReader("../../input.txt");
         Console.SetIn(sr);
-
-        string randomNumber = Console.ReadLine();
-        long result = 0;
+        BigInteger input = BigInteger.Parse(Console.ReadLine());
         BigInteger product = 1;
-        int counter = 0;
-        string copyNumber = "";
-        int countTransformations = 0;
+        int numberOfTransformations = 1;
 
-        while (countTransformations < 10)
+        while (true)
         {
-            for (int i = 0; i < randomNumber.Length - 1 - counter; i++)
+            long currentResult = 0;
+            input /= 10;
+            string randomNumber = Convert.ToString(input);
+            for (int i = 0; i < randomNumber.Length; i += 2)
             {
-                copyNumber += randomNumber[i].ToString();
-                if (i % 2 == 0)
+                currentResult += Convert.ToInt64((randomNumber[i]).ToString());
+            }
+
+            product *= currentResult;
+
+            if (input / 10 < 1)
+            {
+                if (product > 9)
                 {
-                    result += randomNumber[i] - '0';
+                    if (numberOfTransformations == 10)
+                    {
+                        break;
+                    }
+                    numberOfTransformations++;
+                    input = product;
+                    product = 1;                    
+                }
+                else
+                {
+                    break;
                 }
             }
-            counter++;
-            product *= result;
-            result = 0;
-            copyNumber = "";
-            if (counter == randomNumber.Length - 1)
-            {
-                product *= result;
-                Console.WriteLine(product);
-                countTransformations++;
-                break;
-            }
+        }
+        if (numberOfTransformations == 10)
+        {
+            Console.WriteLine(product);
+        }
+        else
+        {
+            Console.WriteLine(numberOfTransformations);
+            Console.WriteLine(product);
         }
     }
 }
