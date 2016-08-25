@@ -1,64 +1,56 @@
-﻿
-namespace Maslancho
+﻿using System;
+using System.Numerics;
+public class Maslan
 {
-    using System;
-    using System.Numerics;
-
-    public class Maslan
+    public static void Main()
     {
-        public static void Main()
+        BigInteger randomPositiveNumber = BigInteger.Parse(Console.ReadLine());
+        int transformations = 1;
+        BigInteger product = 1;
+
+        while (true)
         {
-            // keep track of transformations
-            int transformationsCount = 0;
+            randomPositiveNumber /= 10;
+            string number = Convert.ToString(randomPositiveNumber);
+            long currentSum = 0;
 
-            // the input in some cases overflows ulong
-            BigInteger n = BigInteger.Parse(Console.ReadLine());
-
-            // maslan does transformations while these two conditions are met
-            while (transformationsCount < 10 && 9 < n)
+            for (int i = 1; i < number.Length; i += 2)
             {
-                BigInteger oddProduct = 1;
+                currentSum += Convert.ToInt64(number[i].ToString());
+            }
+            if (currentSum != 0)
+            {
+                product *= currentSum;
+            }
 
-                // while maslan's number has any digits left
-                while (n > 0)
+            if (randomPositiveNumber < 1)
+            {
+                if (product > 9)
                 {
-                    n /= 10;
-                    string nString = n.ToString();
-                    int oddSum = 0;
-
-                    // take every odd digit, hence the starting from 1 and the update by 2
-                    for (int i = 1; i < nString.Length; i += 2)
+                    randomPositiveNumber = product;
+                    if (transformations == 10)
                     {
-                        // convert char digit to it's corresponding int value
-                        oddSum += nString[i] - '0';
+                        break;
                     }
-
-                    // ignore 0 sums
-                    if (oddSum != 0)
-                    {
-                        oddProduct *= oddSum;
-                    }
+                    transformations++;
+                    product = 1;
                 }
-
-                // take the product of the sums and make it the new number
-                n = oddProduct;
-                // one more transformation has occurred
-                transformationsCount++;
+                else
+                {
+                    break;
+                }
             }
+        }
 
-            // if less than 10, print the count
-            if (transformationsCount < 10)
-            {
-                Console.WriteLine(transformationsCount);
-            }
-            else if (transformationsCount > 10)
-            {
-                // some reality check ;>
-                throw new Exception("Should not happen");
-            }
-
-            // print answer
-            Console.WriteLine(n);
+        if (transformations == 10)
+        {
+            Console.WriteLine(product);
+        }
+        else
+        {
+            Console.WriteLine(transformations);
+            Console.WriteLine(product);
         }
     }
 }
+
