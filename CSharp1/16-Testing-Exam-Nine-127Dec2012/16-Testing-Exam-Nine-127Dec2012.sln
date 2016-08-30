@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Sheets", "03.Sheets\03.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Carpets", "04.Carpets\04.Carpets.csproj", "{032B53F5-1FCF-4896-AD97-194A1562C92B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.FormulaBit1", "FormulaBit1\05.FormulaBit1.csproj", "{55A9A7B5-D8BD-4B19-B401-2EF0F809FEED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{032B53F5-1FCF-4896-AD97-194A1562C92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{032B53F5-1FCF-4896-AD97-194A1562C92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{032B53F5-1FCF-4896-AD97-194A1562C92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A9A7B5-D8BD-4B19-B401-2EF0F809FEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A9A7B5-D8BD-4B19-B401-2EF0F809FEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A9A7B5-D8BD-4B19-B401-2EF0F809FEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A9A7B5-D8BD-4B19-B401-2EF0F809FEED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
