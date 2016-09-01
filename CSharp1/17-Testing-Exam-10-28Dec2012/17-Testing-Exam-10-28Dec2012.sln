@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SevenlandNumbersAnotherS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ANacci", "02.ANacci\02.ANacci.csproj", "{DB388AE4-F95E-4602-B607-3357A1BBF584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ExcelColumns", "03.ExcelColumns\03.ExcelColumns.csproj", "{0211E65A-8502-48AB-85A8-D54549FA0214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.TelericLogo", "04.TelericLogo\04.TelericLogo.csproj", "{3959956A-1A88-46D8-B7E9-43C9D9CF50CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{DB388AE4-F95E-4602-B607-3357A1BBF584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB388AE4-F95E-4602-B607-3357A1BBF584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB388AE4-F95E-4602-B607-3357A1BBF584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0211E65A-8502-48AB-85A8-D54549FA0214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0211E65A-8502-48AB-85A8-D54549FA0214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0211E65A-8502-48AB-85A8-D54549FA0214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0211E65A-8502-48AB-85A8-D54549FA0214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3959956A-1A88-46D8-B7E9-43C9D9CF50CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3959956A-1A88-46D8-B7E9-43C9D9CF50CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3959956A-1A88-46D8-B7E9-43C9D9CF50CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3959956A-1A88-46D8-B7E9-43C9D9CF50CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
