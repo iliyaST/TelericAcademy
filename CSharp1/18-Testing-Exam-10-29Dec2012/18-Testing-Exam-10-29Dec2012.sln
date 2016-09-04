@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.QuadronacciRectangle", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Poker", "03.Poker\03.Poker.csproj", "{FCE83EB1-9FC3-49FC-ADD8-A3A417E1B8E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.AngryBits", "05.AngryBits\05.AngryBits.csproj", "{827D0935-C11B-4F52-A394-4530A8206C5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FCE83EB1-9FC3-49FC-ADD8-A3A417E1B8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCE83EB1-9FC3-49FC-ADD8-A3A417E1B8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCE83EB1-9FC3-49FC-ADD8-A3A417E1B8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{827D0935-C11B-4F52-A394-4530A8206C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827D0935-C11B-4F52-A394-4530A8206C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827D0935-C11B-4F52-A394-4530A8206C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827D0935-C11B-4F52-A394-4530A8206C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
