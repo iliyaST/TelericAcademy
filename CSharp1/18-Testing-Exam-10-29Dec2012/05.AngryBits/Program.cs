@@ -24,7 +24,6 @@ class AngryBits
         int currentResult = 0;
         int currentRow = 0;
         bool isUp = false;
-        bool is15 = false;
         //Console.WriteLine(Convert.ToString(row0, 2).PadLeft(16, '0'));
         //Console.WriteLine(Convert.ToString(row1, 2).PadLeft(16, '0'));
         //Console.WriteLine(Convert.ToString(row2, 2).PadLeft(16, '0'));
@@ -35,7 +34,7 @@ class AngryBits
         //Console.WriteLine(Convert.ToString(row7, 2).PadLeft(16, '0'));
         //Console.WriteLine(".........................................");
         for (int i = 8; i < 16; i++)
-        {   
+        {
             isUp = true;
             for (int j = 0; j < 8; j++)
             {
@@ -75,9 +74,11 @@ class AngryBits
                     for (int x = 0; x < 16 - j; x++)
                     {
                         if (isEnd == true)
-                        {
-                            totalResult += currentResult;
+                        {                         
                             currentResult = posCounter * pigsKilled;
+                            totalResult += currentResult;
+                            posCounter = 0;
+                            currentResult = 0;
                             isEnd = false;
                             break;
                         }
@@ -86,10 +87,12 @@ class AngryBits
                             currentResult = posCounter * pigsKilled;
                             totalResult += currentResult;
                             isPig = false;
+                            posCounter = 0;
+                            currentResult = 0;
                             break;
                         }
                         curCol--;
-                        if (currentRow > 0 && isUp == false)
+                        if (currentRow > 0 && isUp == true)
                         {
                             currentRow--;
                             switch (currentRow)
@@ -109,34 +112,34 @@ class AngryBits
                             int bit1 = nAndMask1 >> curCol;
                             if (bit1 == 1)
                             {
-                                for (int z = curCol - 1; z < 3; z++)
+                                for (int z = curCol - 1; z >= curCol +1; z--)
                                 {
-                                    int mask2 = 1 << curCol;
+                                    int mask2 = 1 << z;
                                     int nAndMask2 = topRow & mask2;
-                                    int bit2 = nAndMask2 >> curCol;
+                                    int bit2 = nAndMask2 >> z;
                                     if (bit2 == 1)
                                     {
                                         pigsKilled++;
-                                        int mask3 = ~(1 << curCol);
-                                        topRow = topRow & mask;
+                                        int mask3 = ~(1 << z);
+                                        topRow = topRow & mask3;
                                     }
-                                    mask2 = 1 << curCol;
+                                    mask2 = 1 << z;
                                     nAndMask2 = curRow & mask2;
-                                    bit2 = nAndMask2 >> curCol;
+                                    bit2 = nAndMask2 >> z;
                                     if (bit2 == 1)
                                     {
                                         pigsKilled++;
-                                        int mask3 = ~(1 << curCol);
-                                        curRow = curRow & mask;
+                                        int mask3 = ~(1 << z);
+                                        curRow = curRow & mask3;
                                     }
-                                    mask2 = 1 << curCol;
+                                    mask2 = 1 << z;
                                     nAndMask2 = bottomRow & mask2;
-                                    bit2 = nAndMask2 >> curCol;
+                                    bit2 = nAndMask2 >> z;
                                     if (bit2 == 1)
                                     {
                                         pigsKilled++;
-                                        int mask3 = ~(1 << curCol);
-                                        bottomRow = bottomRow & mask;
+                                        int mask3 = ~(1 << z);
+                                        bottomRow = bottomRow & mask3;
                                     }
                                 }
                                 isPig = true;
@@ -156,7 +159,7 @@ class AngryBits
                         else
                         {
                             currentRow++;
-                            isUp = true;
+                            isUp = false;
                             switch (currentRow)
                             {
                                 case 0: curRow = row0; bottomRow = row1; break;
@@ -207,7 +210,6 @@ class AngryBits
                                 if (currentRow == 7)
                                 {
                                     isEnd = true;
-                                    break;
                                 }
                                 isPig = true;
                                 switch (currentRow)
