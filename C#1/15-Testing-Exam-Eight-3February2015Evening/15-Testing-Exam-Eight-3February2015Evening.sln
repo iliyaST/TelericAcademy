@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.A,BAndC", "01.A,BAndC\01.A,BAndC.csproj", "{9B8DCF4A-D7C2-4737-946B-35AEB39E231B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.FindBits", "05.FindBits\05.FindBits.csproj", "{304E8AF0-0709-46E2-8AA5-13288D330B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B8DCF4A-D7C2-4737-946B-35AEB39E231B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8DCF4A-D7C2-4737-946B-35AEB39E231B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8DCF4A-D7C2-4737-946B-35AEB39E231B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8DCF4A-D7C2-4737-946B-35AEB39E231B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304E8AF0-0709-46E2-8AA5-13288D330B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304E8AF0-0709-46E2-8AA5-13288D330B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304E8AF0-0709-46E2-8AA5-13288D330B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304E8AF0-0709-46E2-8AA5-13288D330B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
