@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class FindSumInArray
 {
@@ -6,37 +7,46 @@ class FindSumInArray
     {
         int N = int.Parse(Console.ReadLine());
         int S = int.Parse(Console.ReadLine());
-        int[] array = new int[N];
+        List<int> subArray = new List<int>();
+        int[] mainArray = new int[N];
         int currentSum = 0;
+        int counter = 0;
 
         for (int i = 0; i < N; i++)
         {
-            array[i] = int.Parse(Console.ReadLine());
+            mainArray[i] = int.Parse(Console.ReadLine());
         }
 
         for (int i = 0; i < N; i++)
         {
-            if ((currentSum += array[i]) < S)
+            if ((currentSum + mainArray[i]) < S)
             {
-                currentSum += array[i];
+                currentSum += mainArray[i];
+                subArray.Add(mainArray[i]);
+                counter++;
             }
-            else if ((currentSum += array[i]) == S)
+            else if ((currentSum + mainArray[i]) == S)
             {
-                Console.WriteLine(array[i]);
-                Environment.Exit(0);
-            }
-            int iCounter = i;
-
-            while (true)
-            {
-                if ((currentSum += array[iCounter]) < 11)
+                currentSum += mainArray[i];
+                subArray.Add(mainArray[i]);
+                counter++;
+                for (int t = 0; t < counter; t++)
                 {
-                    currentSum += array[iCounter];
+                    Console.Write(subArray[t]+" ");
                 }
-                else if((currentSum += array[i]) == S)
+                Console.WriteLine();
+                subArray.Clear();
+                currentSum = 0;
+                counter = 0;
+            }
+            else if ((currentSum + mainArray[i]) > S)
+            { 
+                counter = 0;
+                i += -1;
+                subArray.Clear();
+                currentSum = 0;
             }
         }
-
     }
 }
 
