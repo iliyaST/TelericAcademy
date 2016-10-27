@@ -10,6 +10,8 @@ class MaximalSum
         int currentSum = 0;
         int maxSum = int.MinValue;
 
+        int a = int.Parse(Console.ReadLine());        
+        
         //fill the array
         for (int i = 0; i < numberOfEl; i++)
         {

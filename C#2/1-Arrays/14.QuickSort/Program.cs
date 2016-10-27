@@ -7,18 +7,23 @@ namespace Quicksort
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // Create an unsorted array of string elements
-            string[] unsorted = { "z", "e", "x", "c", "m", "q", "a" };
+            int N = int.Parse(Console.ReadLine());
 
-            // Print the unsorted array
+
+            int[] unsorted = new int[N];
+
             for (int i = 0; i < unsorted.Length; i++)
             {
-                Console.Write(unsorted[i] + " ");
+                unsorted[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine();
+            // Print the unsorted array
+            
+
+            
 
             // Sort the array
             Quicksort(unsorted, 0, unsorted.Length - 1);
@@ -26,15 +31,13 @@ namespace Quicksort
             // Print the sorted array
             for (int i = 0; i < unsorted.Length; i++)
             {
-                Console.Write(unsorted[i] + " ");
+                Console.WriteLine(unsorted[i]);
             }
 
-            Console.WriteLine();
-
-            Console.ReadLine();
+           
         }
 
-        public static void Quicksort(IComparable[] elements, int left, int right)
+        public static void Quicksort(int[] elements, int left, int right)
         {
             int i = left, j = right;
             IComparable pivot = elements[(left + right) / 2];
@@ -54,7 +57,7 @@ namespace Quicksort
                 if (i <= j)
                 {
                     // Swap
-                    IComparable tmp = elements[i];
+                    int tmp = elements[i];
                     elements[i] = elements[j];
                     elements[j] = tmp;
 

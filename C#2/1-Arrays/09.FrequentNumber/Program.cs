@@ -29,7 +29,7 @@ class FrequentNumber
             pairs[number]++;
         }
 
-        Console.WriteLine(new string('-', 20));
+        
         int maxNum = 0;
         int maxCount = 0;
         foreach (var pair in pairs)
@@ -41,7 +41,7 @@ class FrequentNumber
             }
         }
 
-        Console.WriteLine("{0}({1} times)", maxNum, maxCount);
+        Console.WriteLine("{0} ({1} times)", maxNum, maxCount);
     }
 }
 

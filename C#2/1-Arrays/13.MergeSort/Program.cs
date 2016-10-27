@@ -14,7 +14,7 @@ class MergeSort
 
         int[] sortedArray = mergeSort(array);
 
-        Console.WriteLine(String.Join(" ", sortedArray));
+        Console.WriteLine(String.Join("\n", sortedArray));
     }
 
     static int[] mergeSort(int[] array)

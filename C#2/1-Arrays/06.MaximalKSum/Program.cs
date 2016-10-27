@@ -1,49 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class MaximalKSum
+class SubsetKWithSumS
 {
     static void Main()
     {
         int N = int.Parse(Console.ReadLine());
         int K = int.Parse(Console.ReadLine());
-        int[] array = new int[N];
-        List<int> maxElements = new List<int>();
-        int max = int.MinValue;
+        int[] maxArray = new int[K];
         int counter = 0;
-        int MaximalSum = 0;
+        int[] array = new int[N];
+        int max = int.MinValue;
+        int result = 0;
 
         for (int i = 0; i < N; i++)
         {
-            array[i] = int.Parse(Console.ReadLine());
+            array[i] = int.Parse(Console.ReadLine());           
         }
 
-        while (counter != K)
+        while (counter < K)
         {
             for (int i = 0; i < N; i++)
             {
                 if (max < array[i])
                 {
                     max = array[i];
+                    maxArray[counter] = max;
                 }
             }
+
             for (int i = 0; i < N; i++)
             {
-                if(max==array[i])
+                if (max == array[i])
                 {
                     array[i] = int.MinValue;
+                    max = int.MinValue;
                 }
             }
-            maxElements.Add(max);
-            max = int.MinValue;
             counter++;
         }
 
-        foreach (var item in maxElements)
+        for (int i = 0; i < K; i++)
         {
-            MaximalSum += item;
+            result += maxArray[i];
         }
 
-        Console.WriteLine(MaximalSum);
+        Console.WriteLine(result);
     }
 }
+

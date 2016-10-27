@@ -105,16 +105,8 @@ class MaximalIncreasingSequince
             }
         }
 
-        for (int i = 0; i < max; i++)
-        {         
-            if (i == max - 1)
-            {
-                Console.Write(maxArray[max-1]);
-                break;
-            }
-            Console.Write(maxArray[i] + ", ");
-        }
-        Console.WriteLine();
+        
+        Console.WriteLine(max);
     }
 }
 
