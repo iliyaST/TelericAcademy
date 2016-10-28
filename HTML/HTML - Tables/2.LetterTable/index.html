@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Letter Table</title>
+	<style>
+		.C {
+            position:relative;
+            right:8px;
+        }
+		
+		.tableTwo td {
+			border: 1px solid grey;
+			width: 25px;
+			padding: 5px;
+			padding-left: 10px;
+		}
+        .J{
+            position:relative;
+            top:20px;
+        }
+	</style>
+</head>
+
+<body>
+	<tr>
+		<td colspan="2">
+			<table style="border-collapse:collapse; border: 1px solid grey" class="tableTwo">
+				<thead>
+					<tr>
+						<td colspan="3">Title goes here</td>
+						<td>A</td>
+						<td style="text-align:right">B</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="3" class="C">C</td>
+						<td>D</td>
+						<td>E</td>
+						<td>F</td>
+						<td style="text-align:right">G</td>
+					</tr>
+					<tr>
+						<td>H</td>
+						<td colspan="2" style="text-align:center">I</td>
+						<td style="text-align:right" rowspan="2" class="J">J</td>
+					</tr>
+					<tr>
+						<td>K</td>
+						<td>L</td>
+						<td>M</td>
+					</tr>
+					<tr>
+						<td>N</td>
+						<td colspan="4" style="text-align:center">O</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</td>
+	</tr>
+</body>
+
+</html>
