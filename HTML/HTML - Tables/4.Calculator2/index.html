@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <title>Calculator</title>
+      <style>
+          .result{
+              font-size: 35px;
+              color: darkgreen;
+          }
+          h3{
+              color: darkgreen;
+              font-size: 20px;           
+          }
+          .O{
+               height: 55px;
+              width: 185px;
+          }
+          button{
+              height: 55px;
+              width: 85px;
+          }
+        .tableTwo {
+            border-collapse:collapse;
+            border: 1px solid black;
+            box-shadow:3px 3px  darkgreen; 
+            font-size: 45px; 
+            width:400px;
+            height:400px;       
+            color: blue;
+            font-weight:bold;          
+        }
+        td{    
+            background-color: lightpink;
+            border:5px solid green; 
+            text-align:center;       
+        }
+      </style>
+</head>
+
+<body>   
+<table  class="tableTwo">
+    <thead>
+          <tr> 
+               <td style="text-align:right" colspan="4"><input class="result" style="text-align:right" type="text" value="123"><br></td>
+          </tr>
+    </thead>
+    <tbody>
+          <tr>
+               <td><button type="button"><h3>1</h3></button></td>
+               <td><button type="button"><h3>2</h3></button></td>
+               <td><button type="button"><h3>3</h3></button></td>
+               <td><button type="button"><h3>4</h3></button></td>
+          </tr>
+          <tr>
+              <td><button type="button"><h3>4</h3></button></td>
+              <td><button type="button"><h3>5</h3></button></td>
+              <td><button type="button"><h3>6</h3></button></td>
+              <td><button type="button"><h3>-</h3></button></td>
+          </tr>
+          <tr>
+              <td><button type="button"><h3>7</h3></button></td>
+              <td><button type="button"><h3>8</h3></button></td>
+              <td><button type="button"><h3>9</h3></button></td>
+              <td><button type="button"><h3>*</h3></button></td>
+          </tr>
+          <tr>
+              <td colspan="2"><button class="O" type="button"><h3>0</h3></button></td>
+              <td><button type="button"><h3>.</h3></button></td>
+              <td><button type="button"><h3>/</h3></button></td>
+          </tr>
+    </tbody>
+        
+</table>
+</body>
+
+</html>
