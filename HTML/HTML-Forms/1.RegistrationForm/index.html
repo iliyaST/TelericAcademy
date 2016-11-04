@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>/sample-form.html</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<form name="register" action="index.html" method="POST">
+		<!--create table with 12 rows and 2 colums where we will put our form-->
+		<table class="mainTable">
+			<!--first row contains 2 colums (Last Name and input field)-->
+			<tr>
+				<td colspan="2"><b>Last Name</b></td>
+				<td colspan="3"><input type="" value="Nakov"></td>
+			</tr>
+			<!-- second row contains 2 colums ( First Name and input field)-->
+			<tr>
+				<td colspan="2"><b>First Name</b></td>
+				<td colspan="3"><input type="text" value="Svetlin"></td>
+			</tr>
+			<!-- third row contains 2 colums ( Adress and input field)-->
+			<tr>
+				<td colspan="2"><b>Adress</b></td>
+				<td colspan="3"><textarea name="" id="" cols="30" rows="3" value>17 Hristo Botev Str. floor 3, apt. 12</textarea></td>
+			</tr>
+			<!-- fourth row contains 2 colums ( City and input field)-->
+			<tr>
+				<td colspan="2"><b>City</b></td>
+				<td colspan="1"> <input type="text" value="Kaspichan"></td>
+				<td cospan="1"> <b>State</b></td>
+				<td colspan="1"> <input type="text"></td>
+			</tr>
+			<!-- fifth row contains 2 colums ( ZipPostalCode and input field)-->
+			<tr>
+				<td colspan="2"><b>Zip/Postal Code</b></td>
+				<td colspan="3"><input type="text" value="9325"></td>
+			</tr>
+			<!-- sixst row contains 2 colums ( County and select menu)-->
+			<tr>
+				<td colspan="2"><b> County</b></td>
+				<td colspan="3">
+					<select name="name" id="country">
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="USA">USA</option>
+                        <option value="Germany">Germany</option>
+                        <option value="UK">UK</option>
+                    </select>
+				</td>
+			</tr>
+			<!-- seventh row contains 2 colums ( Phone(county code, area code, number) and input field)-->
+			<tr>
+				<td colspan="2"><b>Phone(county code, <br>area code, number)</b></td>
+				<td colspan="3">
+					+ ( <input id="country code" value="359"> )
+					<input id="area code" value="88"> - <input id="number" value="8334343">
+				</td>
+			</tr>
+			<!-- eigth row contains 2 colums ( E-mail and input field)-->
+			<tr>
+				<td colspan="2"><b>E-mail</b></td>
+				<td colspan="3"><input type="text" value="nakov@kaspichan.org"></td>
+			</tr>
+			<!-- nineth row contains 2 colums ( Birth Date and input field)-->
+			<tr>
+				<td colspan="2"><b>Birth date</b></td>
+				<td colspan="3">
+					<b>Month</b> <input id="month" value="06"><b> Day</b> <input id="day" value="14"><b> Year (4 digit)</b> <input id="year"
+						value="1980">
+				</td>
+			</tr>
+			<!-- 10th row contains 2 colums (Gender and select menu)-->
+			<tr>
+				<td colspan="2"><b>Gender</b></td>
+				<td colspan="3">
+					<select name="" id="">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    </select>
+				</td>
+			</tr>
+			<!-- 11th row contains 2 colums ( Starting date and input field)-->
+			<tr>
+				<td colspan="2"><b>Starting date</b></td>
+				<td colspan="3">
+					<input type="radio" value="Spring 2006" id="spring">
+					<label for="spring2006">Spring 2006</label>
+					<input type="radio" value="Summer 2006" id="summer">
+					<label for="spring2006">Summer 2006</label>
+				</td>
+			</tr>
+			<!-- 12th row contains 2 colums ( Comments/Qetions and textarea field)-->
+			<tr>
+				<td colspan="2"><b>Comments/Qestions</b></td>
+				<td colspan="3"><textarea name="" cols="30" rows="10">Please send me more information about the lodging.</textarea></td>
+			</tr>
+			<!--bottom field of the table (submit and clear this forum )-->
+			<tfoot class="bottomn">
+				<tr>
+					<td  class="submit" colspan="5">
+						<button class="submitButton" type="button">Submit</button>
+						<button class="clearButton" type="Clear">Clear this Form</button>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</form>
+</body>
+
+</html>

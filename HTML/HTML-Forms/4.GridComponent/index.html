@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GridComponent.html</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<table>
+		<colgroup>
+			<col width="60" />
+			<col width="250" />
+			<col width="150" />
+			<col width="150" />
+			<col width="150" />
+			<col width="100" />
+		</colgroup>
+		<!--Make the first 3 main rows of the table (titles)-->
+		<tr class="mainRow0">
+			<td class="title" colspan="6">Drag a column header and drop it here to group by that colum</td>
+		</tr>
+		<tr class="mainRow1">
+			<td class="td1">ProductID</td>
+			<td class="tdTwo">ProductName</td>
+			<td class="tdThree">Unit Price</td>
+			<td class="tdFour">Quantity per unit</td>
+			<td class="tdFive">Units in stock</td>
+			<td class="tdSix">Discontinued</td>
+		</tr>
+		<tr class="mainRow2">
+			<td><input class="input1" type="text"></td>
+			<td><input class="input2" type="text"></td>
+			<td>
+				<input class="input3" type="text">
+				<button type="button"><img src="final.jpg" alt=""></button>
+			</td>
+			<td><input class="input4" type="text"></td>
+			<td>
+				<input class="input5" type="text">
+				<button type="button"><img src="final.jpg" alt=""></button>
+			</td>
+			<td>
+				<input class="checkB" type="checkbox">
+				<button type="button"><img src="final.jpg" alt=""></button>
+			</td>
+		</tr>
+		<!--middle part of the table-->
+		<tr>
+			<td class="numberSpacing">1</td>
+			<td class="nameSpacing"> Chai</td>
+			<td class="priceSpacing">$18.00</td>
+			<td class="weirdSpacing">10 boxes x 20 bags</td>
+			<td class="nu">39</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">2</td>
+			<td class="nameSpacing"> Chang</td>
+			<td class="priceSpacing">$19.00</td>
+			<td class="weirdSpacing">24-12 oz bottles</td>
+			<td class="nu">17</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">3</td>
+			<td class="nameSpacing"> Aniseed Syrup</td>
+			<td class="priceSpacing">$10.00</td>
+			<td class="weirdSpacing">12-500 ml bottles</td>
+			<td class="nu">13</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">4</td>
+			<td class="nameSpacing"> Chef Anton`s Cajun Seasoning</td>
+			<td class="priceSpacing">$22.00</td>
+			<td class="weirdSpacing">48-6 oz jars</td>
+			<td class="nu">53</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">5</td>
+			<td class="nameSpacing"> Chef Anton`s Gymbo`s Mix</td>
+			<td class="priceSpacing">$21.35</td>
+			<td class="weirdSpacing">36 boxes</td>
+			<td class="nu">0</td>
+			<td class="checkB"><input type="checkbox" checked disabled></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">6</td>
+			<td class="nameSpacing"> Grandma`s Boysenberry Spread</td>
+			<td class="priceSpacing">$25.00</td>
+			<td class="weirdSpacing">12-8 oz jars</td>
+			<td class="nu">120</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">7</td>
+			<td class="nameSpacing"> Uncle`s Bob Organic Dried Pears</td>
+			<td class="priceSpacing">$30.00</td>
+			<td class="weirdSpacing">12-1 lb pkgs</td>
+			<td class="nu">15</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">8</td>
+			<td class="nameSpacing"> Northwoods Cranberry Sauce</td>
+			<td class="priceSpacing">$40.00</td>
+			<td class="weirdSpacing">12-12 oz jars</td>
+			<td class="nu">6</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">9</td>
+			<td class="nameSpacing"> Mishi Kobe Niku</td>
+			<td class="priceSpacing">$97.00</td>
+			<td class="weirdSpacing">18-500 g pkgs</td>
+			<td class="nu">29</td>
+			<td class="checkB"><input type="checkbox" checked disabled></td>
+		</tr>
+		<tr>
+			<td class="numberSpacing">10</td>
+			<td class="nameSpacing"> Ikura</td>
+			<td class="priceSpacing">$31.00</td>
+			<td class="weirdSpacing">12-200 ml jars</td>
+			<td class="nu">31</td>
+			<td class="checkB"><input type="checkbox"></td>
+		</tr>
+		<!--bottom part of table-->
+		<tfoot>
+			<tr>
+				<td class="bottomRow" colspan="6">
+					<div>
+						<button class="button1" type="button"><img  class="photo1" src="1.jpg" alt=""></button>
+						<button type="button"><img src="1-2.jpg" alt=""></button> 1 2 3 4 5 6 7 8 9 10
+						<button type="button"><img src="2.jpg" alt=""></button>
+						<button type="button"><img src="2-2.jpg" alt=""></button> <span class="PageSize">Page size:</span>
+						<select name="" class="select">
+                        <option value="">10</option>
+                        <option value="">9</option>
+                        <option value="">8</option>
+                        <option value="">7</option>
+                        <option value="">6</option>
+                        <option value="">5</option>
+                        <option value="">4</option>
+                        <option value="">3</option>
+                        <option value="">2</option>
+                        <option value="">1</option>
+                    </select>
+						<span class="lastSpan">335104 items in 33511 pages</span>
+					</div>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>

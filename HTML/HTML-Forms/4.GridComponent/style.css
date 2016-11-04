@@ -1,0 +1,142 @@
+table{
+    border-collapse:collapse;
+    font-family: "AngsanaUPC";
+    font-size: 130%;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+.mainRow0{
+background-color:rgb(209, 206, 239);
+}
+.mainRow1{
+    background-color:rgb(209, 206, 239);
+}
+.mainRow2{
+    background-color:rgb(209, 206, 239);
+}
+.bottomRow{
+    background-color:rgb(209, 206, 239);
+}
+.input1{
+     width: 24px;
+}
+.input2{
+    position: relative;
+    left: 5px;
+    width: 135px;
+}
+.input3{
+     width: 75px;
+}
+.input4{
+     width: 90px;
+}
+.input5{
+     width: 80px;
+}
+img{
+    position:relative;
+    right: 8px;
+    bottom: 3px;
+    width: 20px;
+    height: 20px;
+}
+button{
+    position: relative;
+    top: 8px;
+    width: 19px;
+    height: 20px;
+}
+.photo1{
+    width: 19px;
+}
+.lastSpan{
+    position: relative;
+    left: 380px;
+}
+.PageSize{
+    position: relative;
+    left: 15px;
+}
+.select{
+    position: relative;
+    left: 16px;
+    bottom: 3px;
+    height: 23px;
+    width: 40px;
+}
+div{
+    position: relative;
+    left: 15px;
+}
+.td1{
+    position: relative;
+    left: 5px;
+    width: 70px;
+}
+.input1{
+    position: relative;
+    left: 6px;
+    width: 30px;
+}
+.numberSpacing{
+ position: relative;
+ left: 6px;
+}
+.nameSpacing{
+ position: relative;
+ left: 6px;
+}
+.priceSpacing{
+ position: relative;
+ left: 6px;
+}
+.weirdSpacing{
+ position: relative;
+ left: 6px;
+}
+.nu{
+ position: relative;
+ left: 6px;
+}
+.checkB{
+ position: relative;
+ left: 6px;
+}
+.tdTwo{
+  position: relative;
+    left: 5px;
+}
+.tdThree{
+  position: relative;
+    left: 5px;
+}
+.tdFour{
+  position: relative;
+    left: 5px;
+}
+.tdFive{
+  position: relative;
+    left: 5px;
+}
+.tdSix{
+  position: relative;
+    left: 10px;
+}
+.title{
+    position: relative;
+    left: 5px;
+}
+.input3{
+ position: relative;
+    left: 5px;
+}
+.input4{
+ position: relative;
+    left: 5px;
+}
+.input5{
+ position: relative;
+    left: 5px;
+}

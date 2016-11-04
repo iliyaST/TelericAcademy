@@ -1,0 +1,22 @@
+.mainTable{
+    border-collapse:collapse;
+}
+td{
+    border: 1px solid black;
+    padding:1px;
+}
+.submit{
+    text-align:center;
+}
+textarea{
+    width: 655px;
+    height: 35px;
+}
+.smallTable{
+    border-collapse:collapse;
+    border: 1px;
+}
+tfoot
+{
+    background-color: lightblue;
+}
