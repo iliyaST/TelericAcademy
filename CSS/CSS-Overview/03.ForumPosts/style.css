@@ -1,0 +1,48 @@
+body{
+    background-color: #A9A9A9;
+}
+h1{
+    text-align: center;
+    color:#EAD3A9;
+    font-size: 2.5em;
+}
+li{
+    list-style-type: none;
+    text-align: center;    
+}
+
+a{
+    font-size: 25px;
+    color:white;
+    text-decoration: none
+}
+nav ul li:last-child a{
+    text-decoration: underline;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+p{
+    font-size: 1.3em;
+}
+
+.nameLink{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.telerikFooter{
+    text-align: center;
+}
+.currentItem{
+    font-size: 25px;
+    text-decoration: none;
+    background: #D3D3D3;
+}
+
+body>footer{
+    text-align: center;
+}
+/*.articleHeader{
+    font-size: 50px;
+}*/

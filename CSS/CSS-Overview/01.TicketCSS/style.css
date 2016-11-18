@@ -1,0 +1,101 @@
+ body {
+     background-color: #595959;
+ }
+ .upper{
+     font-style: italic;
+     color: white;
+     font-size:14px;
+     height: 25px;
+     position: relative;
+     right: 8px
+ }
+ .header{
+     font-weight: 500;
+     font-size: 18px;
+     color: darkgray;
+     position: relative;
+     right: 8px;
+     letter-spacing: 1px;
+     font-family: "Arial Narrow";
+ }
+ .upper1{
+     height: 60px;
+     font-style: italic;
+     color: white;
+     font-size:14px;
+     position: relative;
+     bottom: 8px;
+     right: 8px
+ }
+ .upper2{
+     height: 80px;
+     font-style: italic;
+     color: white;
+     font-size:14px;
+     position: relative;
+     bottom: 10px;
+     right: 8px   
+ }
+ .notAnswered{
+     color: #DF6B1F;
+     font-size: 13px;
+     margin: 20px;
+     padding-left: 23px;
+     letter-spacing: 1px;
+     font-weight: 500;
+ }
+ .linkto{  
+     position: relative;
+     top:15px;
+     color: #E4D987;
+     font-weight: 0;
+     font-size: 14px;
+     font-family: "Arial Narrow";
+     letter-spacing: 1px;
+ }
+ .email{
+     position: relative;
+     bottom: 1px;
+     color: #E4D987;
+     font-weight: 0;
+     font-size: 14px;
+     padding-left: 23px;
+     font-family: "Arial Narrow";
+ }
+ .parker{
+     position: relative;
+     color: #E4D987;
+     font-weight: 0;
+     font-size: 14px;
+     padding-left: 23px;
+     font-family: "Arial Narrow";
+     letter-spacing: 1px;
+ }
+ .activeSupport{
+     position: relative;
+     color: #FF2038;
+     font-weight: 600;
+     top:3px;
+ }
+ .hours{
+     color: darkgray;
+     font-size: 14px;
+     padding-left: 23px;
+     font-family: "Arial Narrow";
+ }
+ .neverBeenLocked{
+     color: darkgray;
+     font-size: 14px;
+     padding-left: 23px
+ }
+ .parker::before{   
+   background-image: url('http://imagehost7.online-image-editor.com/oie_upload/images/1812324765j2V/transparent.png');
+    background-size: 21px 21px;
+    display: inline-block;
+    width: 21px; 
+    height: 21px;
+    content:"";
+    position: relative;
+    right: 5px;
+    top: 5px;
+ }
