@@ -1,0 +1,8 @@
+Fixed no sounds bug
+Added sound telling you that maphack was loaded
+Added flash window when game start to war3, like msn does 
+when you receive new msg...
+ Added anti detection to maphack, so even if the patch
+to garena failed for some reason, the maphack will still work
+and will not be detected and you will be able to use maphack
+without garena hack if you want. thanks to dark.one for tips
