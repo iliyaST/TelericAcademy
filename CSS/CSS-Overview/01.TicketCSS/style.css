@@ -1,5 +1,5 @@
  body {
-     background-color: #595959;
+     background-color:#595959;
  }
  .upper{
      font-style: italic;
@@ -37,7 +37,7 @@
      right: 8px   
  }
  .notAnswered{
-     color: #DF6B1F;
+     color: #E16B1C;
      font-size: 13px;
      margin: 20px;
      padding-left: 23px;
@@ -47,7 +47,7 @@
  .linkto{  
      position: relative;
      top:15px;
-     color: #E4D987;
+     color: #D5D28B;
      font-weight: 0;
      font-size: 14px;
      font-family: "Arial Narrow";
@@ -56,7 +56,7 @@
  .email{
      position: relative;
      bottom: 1px;
-     color: #E4D987;
+     color: #D5D28B;
      font-weight: 0;
      font-size: 14px;
      padding-left: 23px;
@@ -64,7 +64,7 @@
  }
  .parker{
      position: relative;
-     color: #E4D987;
+     color: #D5D28B;
      font-weight: 0;
      font-size: 14px;
      padding-left: 23px;
@@ -89,13 +89,13 @@
      padding-left: 23px
  }
  .parker::before{   
-   background-image: url('http://imagehost7.online-image-editor.com/oie_upload/images/1812324765j2V/transparent.png');
-    background-size: 21px 21px;
+   background-image: url('oie_transparent (1).png');
+    background-size: 30px 28px;
     display: inline-block;
-    width: 21px; 
-    height: 21px;
+    width: 30px; 
+    height: 27px;
     content:"";
     position: relative;
-    right: 5px;
+    right: 7px;
     top: 5px;
  }
