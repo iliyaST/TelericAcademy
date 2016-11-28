@@ -1,0 +1,10 @@
+
+body {
+	width: 960px;
+}
+.nestedDiv {
+	background-color: black;
+	border: 1px solid red;
+	border-radius: 70px;
+	padding-right: 4%;
+}
