@@ -2,13 +2,17 @@
 
 class EnterNumbers
 {
-    static void ReadNumber(int start, int end)
+    static int ReadNumber(int start, int end)
     {
         int number = int.Parse(Console.ReadLine());
 
-        if (number < start || number > end)
+        if (number <= start || number >= end)
         {
-            throw new ArgumentOutOfRangeException(string.Format("The number : {0} is not in range ({1} , {2})", number, start, end));
+            throw new ArgumentOutOfRangeException("Exeption");
+        }
+        else
+        {
+            return number;
         }
     }
 
@@ -16,22 +20,50 @@ class EnterNumbers
     {
         int start = 1;
         int end = 100;
+        string result = "1 < ";
+        int number = 0;
 
         for (int i = 0; i < 10; i++)
         {
+            if (i == 9)
+            {
+                try
+                {
+                    number = ReadNumber(start, end);
+                    start = number;
+                    result += number.ToString();
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                    Console.WriteLine("Exception");
+                    Environment.Exit(0);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Exception");
+                    Environment.Exit(0);
+                }
+                break;
+            }
             try
             {
-                ReadNumber(start, end);
+                number = ReadNumber(start, end);
+                start = number;
+                result += number.ToString() + " < ";
             }
-            catch (ArgumentOutOfRangeException AE)
+            catch (ArgumentOutOfRangeException)
             {
-                Console.WriteLine(AE.Message);
-                Console.WriteLine("Enter another number:");
-                i = i - 1;
-            }          
+                Console.WriteLine("Exception");
+                Environment.Exit(0);
+            }
+            catch(FormatException)
+            {
+                Console.WriteLine("Exception");
+                Environment.Exit(0);
+            }
         }
 
-        Console.WriteLine("You have sucssesfully completed the task, Good bye!");
+        Console.WriteLine(result+" < 100");
     }
 }
 

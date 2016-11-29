@@ -6,7 +6,7 @@ class SquareRoot
     {
         try
         {
-            int number = int.Parse(Console.ReadLine());
+            double number = double.Parse(Console.ReadLine());
 
             if (number < 0)
             {
@@ -14,7 +14,7 @@ class SquareRoot
             }
             else
             {
-                Console.WriteLine(Math.Sqrt(number));
+                Console.WriteLine("{0:F3}", Math.Sqrt(number));
             }
         }
         catch
@@ -23,8 +23,8 @@ class SquareRoot
         }
         finally
         {
-            Console.WriteLine("Good Bye.");
-        }      
+            Console.WriteLine("Good bye");
+        }
     }
 }
 
