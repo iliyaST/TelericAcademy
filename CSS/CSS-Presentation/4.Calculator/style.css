@@ -89,7 +89,8 @@ h1{
 }
 .menu{
     word-spacing: 10px;
-    border: 1px solid black;
+    border: 1px solid #C1C5D1;
+    border-top-color: 1px solid #8E9BAA;
     height: 15px;
     font-size: 14px;
     padding-top: 8px;
@@ -125,16 +126,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaebed', end
 .main{
   position: relative;
   bottom: 50px;
-  border: 1px solid black;
+  border: 1px solid #748290;
   height: 425px;
 }
 .bitViewer{
     position: relative;
     top: 65px;
     left:10px;
-    border: 1px solid black;
+    border: 1px solid #C1C5D1;
     width: 436px;
     background-color: #D9E4F1;
+
 }
 .keyboard{
     position: relative;
@@ -153,13 +155,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaebed', end
     background-color: #D9E4F1;
 }
 .numericSystem{
-    border: 1px solid black;
+    border: 1px solid #8999AC;
     padding: 5px;
     padding-right:20px; 
     background-color: #D9E4F1;
 }
 .bitLength{
-    border: 1px solid black;
+    border: 1px solid #8999AC;
     padding: 5px;
     padding-right:10px; 
     width: 80px;
@@ -204,6 +206,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaebed', end
     position: relative;
     bottom: 10px;
 }
- #Equal{
-    color: red;
+.keyboard .active{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5ecf5+48,d5e0ed+50,d5e0ed+51,d5e0ed+100 */
+background: rgb(229,236,245); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(229,236,245,1) 48%, rgba(213,224,237,1) 50%, rgba(213,224,237,1) 51%, rgba(213,224,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(229,236,245,1) 48%,rgba(213,224,237,1) 50%,rgba(213,224,237,1) 51%,rgba(213,224,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(229,236,245,1) 48%,rgba(213,224,237,1) 50%,rgba(213,224,237,1) 51%,rgba(213,224,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ecf5', endColorstr='#d5e0ed',GradientType=0 ); /* IE6-9 */
+}
+ .keyboard .doubleWidth{
+    color: green;
+    width: 78px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.keyboard .doubleHeigth{
+    color: green;
+    height: 60px;
+    float: right;
+    font-size: 22px;
+    font-weight: 200;
+}
+.keyboard .letterA{
+    background: transparent;
+    border-color: #D9E4F1;
+    border: 1px solid #C0CDDC;
+}
+.keyboard .helloWorld{
+    color: green;
+}
+.keyboard .buttonCE{
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9e9c7+35,fbd27b+51,fbd27b+100 */
+background: rgb(249,233,199); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(249,233,199,1) 35%, rgba(251,210,123,1) 51%, rgba(251,210,123,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(249,233,199,1) 35%,rgba(251,210,123,1) 51%,rgba(251,210,123,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(249,233,199,1) 35%,rgba(251,210,123,1) 51%,rgba(251,210,123,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e9c7', endColorstr='#fbd27b',GradientType=0 ); /* IE6-9 */
+border-color: #FBD27B;
 }
