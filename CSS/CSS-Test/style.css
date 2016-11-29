@@ -1,0 +1,14 @@
+.sub-menu{
+    display: none;
+    position: absolute;
+}
+li{
+    display: inline-block;
+}
+.sub-menu li {
+    display: block;
+}
+
+.clearfix li:hover .sub-menu{
+    display: block;
+}
