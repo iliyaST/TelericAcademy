@@ -245,3 +245,7 @@ background: linear-gradient(to bottom,  rgba(249,233,199,1) 35%,rgba(251,210,123
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e9c7', endColorstr='#fbd27b',GradientType=0 ); /* IE6-9 */
 border-color: #FBD27B;
 }
+
+.opperation{
+    text-align: center;
+}
