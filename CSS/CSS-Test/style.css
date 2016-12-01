@@ -1,6 +1,7 @@
 .sub-menu{
     display: none;
-    position: absolute;
+    position: relative;
+    top:10px;
 }
 li{
     display: inline-block;
@@ -12,3 +13,8 @@ li{
 .clearfix li:hover .sub-menu{
     display: block;
 }
+
+.main{
+                                margin: 100px;
+}
+
