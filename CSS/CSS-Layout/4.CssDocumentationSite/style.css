@@ -1,0 +1,27 @@
+.flex {
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.leftSection {
+    width: 200px;
+}
+
+.middleSection {
+    width: 400px;
+}
+
+.rightSection {
+    width: 200px;
+}
+
+.flexItem {
+    margin-right: 100px;
+}
+
+.leftSection section dt>dd {
+    color: red;
+}
