@@ -1,0 +1,14 @@
+9
+// many spaces will this class contain
+class     ManySpaces
+{
+     // and many comments
+    static void Main()
+    {
+        int whitespaceCode   =   32;
+        // mucho many comments
+   bool  muchWhitespaceInCode   =    true     ;
+   // i hope you didn't remove the spaces from the string
+ string   whitespaceString   =   "      can't touch this       ";
+    }
+}

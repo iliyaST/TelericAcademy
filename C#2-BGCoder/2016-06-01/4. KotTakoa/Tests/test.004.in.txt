@@ -1,0 +1,40 @@
+39
+namespace Kots
+{
+    using System;
+                 using System.Collections.Generic;
+    using System.Linq;
+
+    class Class2
+    {
+        static void Main()
+        {
+            int a = 3;
+            /*
+            IDictionary<string, string> dict = new Dictionary<string, string>();
+            List<object> list = new List<object>();
+            string situation = "whole lotta bullshit";
+            string inComment = "i'm a commented string, y'all";
+            */
+
+            for (int i = 0; i < 10 /* gadnichko, nali */; i++)
+            {
+                a += 5; /* repeat ten
+                times */
+            }
+
+            /*
+            hot hot hot
+            */
+            var sneakyVar = 1;
+            /* 
+            stuuuuuuuff
+            */
+
+            // print the result
+            Console.WriteLine(a + sneakyVar); // print the result
+            // print the result
+        }
+    }
+}
+// bb

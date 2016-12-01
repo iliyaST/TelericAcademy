@@ -1,0 +1,16 @@
+1517 853 1700 1188 966 1335 1756 1726 1522 1212 840 1541 1064 1514 908
+8 left 3
+23 right 6
+11 left 8
+14 right 24
+17 right 20
+29 right 18
+23 right 10
+18 left 17
+18 left 14
+8 right 5
+27 right 15
+2 right 17
+8 right 6
+27 right 27
+stop

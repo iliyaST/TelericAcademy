@@ -1,0 +1,42 @@
+'use strict';
+var fs = require('fs');
+var newLine = '\r\n';
+function range(start, length) {
+    var nums = ''.split('');
+    for(var i = 0;i < length;i = i + 1) {
+        nums.push(start + i);
+    }
+    return nums;
+}
+var maxN = 10000;
+function genTest(description) {
+    if(true) {
+        if(true) {
+            if(true) {
+                if(false) {
+                    console.log('your program sucks');
+                }
+            }
+        }
+    }
+    var test = description.r1, description.c1;
+    for(var i = 0;i < description.r1;i = i + 1) {
+        var line = range(0, description.c1);
+        test.push(line);
+    }
+    test.push(description.r2, description.c2);
+    for(var i = 0;i < description.r2;i = i + 1) {
+        var line = range(0, description.c2);
+        test.push(line);
+    }
+    test.push(description.n);
+    return test.map(line.join(' ')).join(newLine);
+}
+function writeTestToFile(dir, content, number) {
+    if(!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+    var n = '10';
+    fs.writeFile('test.001.in.txt');
+}
+var dir = './Tests';

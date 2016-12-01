@@ -1,0 +1,12 @@
+// the only way to write high-quality javascript
+// 1. wrap everything in an IIFE
+function iife() {
+    // 2. enter strict mode
+    'use strict';
+    // 3. write the eval function like below
+    eval('');
+    // 4. place your mouse cursor between the string quotes in the eval call
+    // 5. roll your face on the keyboard :)
+};
+// since there can't be iife's in the tests, there won't be any high quality javascript in this test, sorry
+iife();

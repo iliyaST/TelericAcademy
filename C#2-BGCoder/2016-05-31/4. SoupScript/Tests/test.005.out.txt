@@ -1,0 +1,6 @@
+var words = 'napravi' + 'mesto' + 'bicheto' + 'da mine' + 'we';
+function print3() {
+    console.log(3);
+    var a = 3 + 3 + 3 + 3 + 3 + 5 * 2 - 4 + !true;
+}
+print(3);

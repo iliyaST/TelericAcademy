@@ -1,0 +1,35 @@
+34
+function solve() {
+    
+function                       sum(arr) {
+var sum =                       0;
+
+        if (!arr) {     // kato ku ku kukata
+            console.log('erorrrrrrr r rr r rr rr r rrr');
+        }
+
+        if (!arr.length)                                                                                        {
+            return 0;
+        }
+
+        function sum2    (    element){
+            //ko kaza
+                       if (isNaN(element)) { // if NaN
+              console  .log( false   );
+      }
+
+  sum= sum +      element;
+
+             return   sum;
+        }
+        
+        
+        
+        
+        var gadnichko = !false-!true+!!false*!!!true-!(!false);
+
+           return   sum;
+    }
+    
+ return     sum;
+}

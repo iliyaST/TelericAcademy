@@ -1,0 +1,28 @@
+2
+6
+0 0
+1 1
+R T 3
+R L 3
+R B 2
+R R 3
+R R 3
+R R 2
+R T 1
+P T 3
+P L 3
+P B 2
+P R 3
+P R 3
+P R 2
+P T 1
+P T 2
+R L 2
+R T 2
+R L 2
+R B 1
+R B 3
+R R 1
+R B 1
+R B 2
+END

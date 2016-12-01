@@ -1,0 +1,22 @@
+21
+using System;
+
+class Printing
+{
+    static void Main()
+    {
+        string numberOfStudentsAsString = Console.ReadLine();
+        string sheetsPerStudentAsString = Console.ReadLine();
+        string realmPriceAsString = Console.ReadLine();
+
+        int N = int.Parse(numberOfStudentsAsString);
+        int S = int.Parse(sheetsPerStudentAsString);
+        var P = decimal.Parse(realmPriceAsString);
+
+        var paperCost = N * S * P / 500;
+
+        var formattedPaperCost = string.Format("{0:F2}", paperCost);
+
+        Console.WriteLine(formattedPaperCost);
+    }
+}

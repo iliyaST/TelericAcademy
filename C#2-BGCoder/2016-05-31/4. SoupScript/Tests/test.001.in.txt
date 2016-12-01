@@ -1,0 +1,10 @@
+9
+// template handling
+var template = '<h1>{this.title}</h1>';
+var handlebars = window.handlebars; // magic
+// use handlebars to compile the template
+var compiledTemplate = handlebars.compile(template); // compile the template
+// after the template is compiled
+// it must be inserted in the DOM tree
+document.getElementById('content').appendChild(compiledTemplate('gosho'));
+// done

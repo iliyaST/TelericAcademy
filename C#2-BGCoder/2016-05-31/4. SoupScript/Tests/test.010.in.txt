@@ -1,0 +1,43 @@
+42
+var    easyExam=!!false; // not true
+    var goodTrainers=!false   ; // true
+
+if(easyExam + goodTrainers) {
+console              .log(       'nosim vi damadjana rakiya'); // shte nosite, ami
+
+
+
+
+}
+
+var otivameNaKopon = !(3<4+5);
+
+if(otivameNaKopon) {
+console.log('shte densim do sutrinta-a-a-a');
+console.log('za tebe imam, test pulen s taini, ' + 'ela i si kopni, ela i si kopni');
+}
+
+// 1
+// 2
+// 3
+// 4
+var someRandomCodePassingThroughThisProm=5; // 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 11
+// 12!!!!!!!!!!!!!
+
+function       otivamNaBal(     ){
+console.log('    20 leva    za ciganskiq orkestur'+' i 2    paket salfetki'); // kot - takoa
+var     obleklo    ='kostium s djapanki i  chorapi';
+var        kola ='bavarec pod naem';
+var pari = 100105;
+while(pari){
+    console.log( '  aide oshte edno golqmo');
+    pari = pari - 5;
+}
+return true;
+}

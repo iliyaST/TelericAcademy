@@ -1,0 +1,10 @@
+9
+class     ManySpaces
+{
+    static void Main(string   args)
+    {
+        int whitespaceCode   =   32;
+   bool  muchWhitespaceInCode   =    true     ;
+ string   whitespaceString   =   "      can't touch this       ";
+    }
+}

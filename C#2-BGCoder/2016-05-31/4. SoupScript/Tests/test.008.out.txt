@@ -1,0 +1,24 @@
+function solve() {
+    function sum(arr) {
+        var sum = 0;
+        // kato ku ku kukata
+        if(!arr) {
+            console.log('erorrrrrrr r rr r rr rr r rrr');
+        }
+        if(!arr.length) {
+            return 0;
+        }
+        function sum2(element) {
+            //ko kaza
+            // if NaN
+            if(isNaN(element)) {
+                console.log(false);
+            }
+            sum = sum + element;
+            return sum;
+        }
+        var gadnichko = !false - !true + !!false * !!!true - !(!false);
+        return sum;
+    }
+    return sum;
+}

@@ -1,0 +1,26 @@
+25
+namespace Kots
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    public class Class3
+    {
+        public Class3()
+        {
+            var azsymkon = true;
+            var tisikon = false;
+            bool myHorseIsAmazing = true;
+            bool yourHorseIsAmazing = false;
+            var number = 5;
+            bool easyExam = true;
+            string myName = "kon";
+            string yourName = "chushkopek";
+            string hisName = "bop";
+            string kuci = "cuki";
+            string str = "many variables";
+            var money = 1012.0M;
+        }
+    }
+}

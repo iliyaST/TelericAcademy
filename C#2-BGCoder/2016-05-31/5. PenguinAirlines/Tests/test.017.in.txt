@@ -1,0 +1,9165 @@
+8080
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4672 4751
+None
+None
+None
+None
+None
+5690
+2892 5868
+None
+5974
+None
+None
+5520
+None
+None
+None
+None
+6155
+5596
+None
+3768
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1157
+608
+548
+None
+2001 6565
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7137
+None
+None
+None
+None
+4189
+None
+None
+None
+None
+None
+None
+None
+1962
+None
+None
+2712
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3167
+None
+None
+None
+1218
+6977
+None
+None
+306
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4298
+None
+None
+None
+None
+None
+2749
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6372
+None
+863
+None
+None
+6730
+None
+None
+3731
+None
+None
+None
+197
+None
+None
+None
+1413
+None
+None
+None
+None
+756
+None
+None
+5695
+None
+None
+4530
+None
+5132
+None
+None
+534
+None
+None
+None
+None
+None
+1800 3645
+None
+2768
+None
+None
+None
+None
+3261
+None
+None
+None
+None
+None
+7660
+None
+None
+None
+None
+3853
+None
+None
+None
+None
+6093
+None
+3071
+None
+5035
+None
+None
+7369
+5724
+None
+None
+None
+None
+None
+134
+None
+None
+None
+None
+None
+4303
+None
+None
+None
+None
+698
+3444
+None
+1832
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4100
+None
+None
+None
+None
+None
+7612
+4432
+3008
+None
+None
+None
+None
+None
+None
+None
+4722
+None
+904
+None
+None
+None
+None
+None
+4890 7526
+None
+None
+758
+None
+None
+None
+None
+None
+None
+6749
+None
+None
+None
+902
+None
+None
+None
+None
+None
+None
+1537 5562
+None
+None
+None
+None
+None
+None
+3244
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3845
+6501
+None
+None
+None
+None
+None
+None
+92
+6534
+3475
+None
+None
+None
+None
+None
+None
+6119
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2655 3927
+None
+5345
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2066 2333
+None
+None
+None
+None
+None
+None
+None
+3809
+None
+None
+None
+None
+None
+862
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1449
+6330
+None
+None
+None
+None
+2039 5164
+None
+None
+None
+None
+None
+520
+1750
+None
+None
+None
+None
+1732 2364
+None
+None
+None
+None
+None
+None
+None
+None
+3370
+None
+3861
+5206 6827
+None
+None
+None
+None
+None
+None
+None
+4428
+None
+None
+None
+3359
+None
+None
+None
+None
+None
+None
+None
+2145
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4308
+5011
+None
+None
+None
+None
+None
+None
+7552
+None
+6862
+None
+None
+3603
+None
+None
+None
+None
+None
+None
+None
+4864
+None
+None
+None
+5734
+None
+None
+7314
+500
+None
+2674
+None
+None
+None
+None
+3283 6120
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5408
+None
+4715
+2844
+None
+3893
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+465 2912
+1967
+None
+5809
+7677
+1005
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6462
+None
+None
+None
+None
+383
+None
+None
+None
+None
+6695
+2906
+6243
+6627
+None
+None
+None
+4021
+None
+154
+3325
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+45 4405 5381
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1734
+None
+5711
+None
+None
+None
+None
+None
+None
+None
+7413
+None
+3873
+4000 5336
+3892
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2469 6727
+None
+None
+None
+None
+None
+1087 3660
+4850
+4936
+None
+6285
+None
+None
+6119
+7461
+None
+None
+None
+None
+None
+None
+None
+44 7156
+None
+None
+None
+3366
+6829
+None
+None
+None
+6615
+4872
+None
+None
+7335
+1531
+None
+None
+None
+None
+None
+None
+6472
+None
+None
+None
+None
+6033
+None
+2071
+7008
+None
+2429
+5834
+None
+7787
+None
+None
+None
+None
+None
+None
+None
+7342
+None
+None
+1036
+None
+None
+4375
+None
+6867
+4792
+817
+None
+None
+4505
+None
+None
+None
+None
+None
+None
+5574
+6184
+None
+None
+None
+None
+None
+None
+7075
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5074
+None
+None
+None
+None
+None
+None
+902
+208 5394
+None
+None
+None
+None
+4380 7341
+None
+None
+None
+None
+None
+None
+2826
+None
+1799 5056
+3027 3129 3710
+5437
+None
+None
+None
+None
+4792
+None
+None
+None
+5075
+None
+None
+4579
+None
+6043
+None
+None
+None
+None
+822
+None
+None
+None
+None
+7361
+None
+None
+4246
+None
+None
+None
+None
+4588
+None
+6648
+None
+None
+None
+None
+None
+3636
+6272
+143
+None
+254
+None
+None
+None
+None
+None
+None
+None
+7301
+None
+None
+None
+None
+None
+None
+2607
+6112
+None
+5637
+None
+7599
+2829
+None
+None
+None
+None
+None
+None
+None
+3923
+None
+None
+None
+None
+None
+None
+None
+1975 5536
+None
+None
+None
+None
+None
+None
+None
+None
+None
+981
+1845
+None
+None
+None
+None
+None
+None
+None
+4873
+None
+None
+660
+None
+None
+4679
+None
+733
+None
+None
+None
+None
+None
+None
+None
+3147
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7227
+None
+2554
+None
+None
+None
+1408
+3448
+None
+1111 5719
+None
+None
+None
+None
+None
+None
+None
+None
+6783
+357 5343
+124
+None
+5818
+None
+None
+None
+4697 4761
+None
+None
+None
+None
+1134
+None
+None
+None
+None
+1211 2235
+None
+None
+None
+None
+None
+None
+2920
+None
+1401
+None
+None
+None
+None
+None
+4044
+6512
+None
+None
+6734
+None
+1680
+None
+265 697
+None
+245
+None
+3589
+7734
+6272
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6874
+None
+5998
+5051
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2854
+None
+None
+None
+5669
+None
+None
+None
+None
+None
+None
+6846
+None
+5231
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6213
+None
+None
+5550 6574
+None
+None
+4901
+2066
+None
+None
+805
+None
+6716
+1324 5074
+5351
+None
+None
+None
+None
+None
+None
+None
+None
+2768
+None
+None
+None
+None
+None
+1616
+None
+None
+5126
+None
+505
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5155
+None
+None
+None
+5138
+None
+None
+None
+None
+1327 5303
+7922
+None
+None
+None
+None
+None
+None
+None
+None
+653
+None
+None
+None
+None
+5669
+None
+3207
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4720
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3565
+4910 6418
+None
+592
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7327
+1542
+None
+None
+None
+None
+None
+852
+None
+None
+None
+None
+7335
+None
+5677
+4395
+None
+None
+None
+None
+None
+None
+None
+None
+5011
+5967
+None
+None
+5678
+None
+874
+None
+None
+None
+None
+5150
+None
+None
+None
+None
+1163
+None
+None
+None
+None
+None
+None
+1869
+None
+None
+3038
+None
+None
+43
+None
+None
+None
+None
+None
+1144
+None
+None
+None
+7064
+None
+None
+None
+1600
+3370
+None
+None
+None
+None
+4306
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3869
+None
+7761
+None
+None
+None
+None
+None
+None
+6596
+None
+None
+None
+7856
+None
+None
+None
+None
+None
+None
+None
+879
+5874 7404
+None
+4352
+7562
+None
+None
+88
+2218 5077
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7938
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1706 7867
+None
+None
+None
+None
+None
+None
+3913
+3623
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7643
+None
+None
+None
+None
+None
+None
+1895
+None
+None
+None
+None
+None
+None
+None
+None
+7159
+None
+None
+None
+None
+5567
+5338
+None
+None
+None
+2893
+2130
+None
+None
+None
+None
+None
+None
+None
+5013
+None
+None
+None
+None
+3165
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1751
+None
+None
+984 4166
+None
+None
+1026
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7769
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5350
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6290
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5563
+None
+None
+None
+1804
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3534
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4908
+6469
+None
+888
+None
+None
+None
+3026
+None
+None
+849
+7365
+None
+None
+None
+138
+None
+None
+None
+None
+None
+None
+None
+None
+2495
+None
+None
+None
+2933
+None
+None
+None
+None
+None
+7750
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2123
+4607
+None
+None
+None
+None
+371
+None
+7836
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7647
+4700
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5955
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2176
+5778
+1610
+4200
+None
+None
+2338
+None
+None
+None
+None
+None
+2583
+None
+2750
+None
+None
+None
+None
+None
+None
+5086
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2031
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+622
+None
+None
+3705
+None
+None
+272 2141
+None
+4339
+6736
+None
+1105 1777 7894
+None
+None
+None
+None
+7229
+3400
+3563
+7071
+None
+None
+None
+None
+4295
+None
+None
+None
+None
+None
+None
+None
+5166
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5365
+None
+None
+5787
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5608
+None
+None
+None
+1895
+None
+None
+7371
+None
+1171
+None
+None
+None
+None
+5364
+None
+3215
+None
+None
+1489
+None
+None
+None
+None
+None
+1000
+None
+None
+None
+6915
+None
+None
+None
+None
+None
+2943 4048 5626
+None
+None
+None
+6442
+8055
+None
+None
+None
+2775
+5775
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2691
+7237
+None
+None
+None
+None
+None
+None
+3380
+None
+2247 7694
+None
+5918
+None
+None
+None
+None
+None
+None
+None
+None
+None
+900
+2590
+7116
+2609
+None
+7819
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3377 6719
+None
+None
+1720
+None
+None
+1241
+2247
+None
+None
+4275
+None
+None
+None
+4455
+5544
+None
+4941
+4959
+None
+1703
+None
+None
+None
+4501
+7327
+7915
+None
+7291
+None
+None
+None
+389
+None
+561
+4747
+2972
+None
+None
+None
+None
+None
+None
+None
+6618
+None
+4798
+None
+None
+None
+384
+1321
+7945
+None
+None
+None
+None
+None
+5023
+None
+5335
+None
+7992
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4920
+None
+None
+None
+1542
+None
+None
+None
+5188
+None
+None
+2764
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6661
+None
+None
+None
+None
+712
+160 4847
+None
+None
+None
+1375
+5836
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2425
+None
+None
+None
+1836
+6922
+None
+None
+None
+None
+None
+None
+None
+None
+5432
+None
+211 4527
+None
+None
+None
+1820
+1989
+None
+None
+None
+5163
+None
+None
+None
+806
+None
+6343
+2104
+None
+5068
+None
+None
+None
+None
+None
+None
+None
+None
+3934
+3605
+None
+5236
+None
+None
+7729
+None
+None
+7683
+1151
+None
+None
+4219
+None
+None
+None
+None
+None
+None
+2947
+None
+None
+1929
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1269 1595
+None
+None
+None
+6019
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6611
+None
+5714
+None
+None
+4473
+5366
+None
+None
+None
+None
+None
+None
+4393
+None
+None
+None
+3609
+None
+1882 5087
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7550
+None
+None
+3204 7827
+None
+6782
+None
+5617
+None
+6759
+3448
+None
+None
+None
+None
+6568
+7816
+5302
+None
+None
+3640
+3146 6331
+70
+7979
+None
+2389
+6673
+501
+None
+None
+None
+None
+None
+None
+3966
+795
+None
+None
+None
+None
+None
+None
+None
+6198
+None
+None
+None
+2684 7561
+None
+1837
+None
+6655
+None
+None
+None
+None
+None
+None
+None
+None
+None
+47
+None
+4195
+None
+None
+None
+None
+None
+5489
+7545
+None
+None
+None
+None
+None
+None
+None
+2354
+None
+None
+6464
+None
+None
+None
+None
+None
+3183
+None
+None
+None
+1519
+None
+None
+6964
+None
+None
+None
+None
+377
+None
+None
+None
+None
+None
+None
+None
+4417
+None
+None
+None
+None
+None
+None
+None
+None
+4344
+None
+None
+None
+None
+None
+None
+None
+6718
+None
+343 978 3674
+None
+2137
+None
+None
+636
+None
+None
+None
+None
+None
+None
+2717 7550
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4029
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1848
+None
+None
+None
+None
+None
+3503
+None
+None
+None
+None
+2321
+None
+4582 7489
+None
+None
+None
+None
+None
+1443
+None
+None
+None
+None
+None
+None
+1289
+None
+5834
+None
+None
+None
+None
+2068
+None
+None
+None
+1537
+2924 7652
+None
+None
+421
+5533
+6027
+None
+None
+None
+None
+None
+None
+3854
+None
+None
+None
+4971
+None
+3205
+None
+None
+None
+None
+None
+5250
+None
+None
+None
+3476
+None
+None
+5316
+None
+None
+1487
+None
+6228
+None
+3149
+None
+None
+4729
+None
+None
+None
+None
+7667 7981
+None
+6533
+None
+None
+None
+5463
+None
+None
+None
+None
+7588
+2543
+None
+None
+None
+None
+None
+None
+None
+5666
+2907 6686
+None
+None
+None
+2598 6198
+None
+None
+None
+None
+1219
+None
+4758
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5120
+None
+None
+None
+None
+879
+None
+None
+None
+6928
+None
+5660
+None
+4566
+None
+None
+None
+1668 1707
+None
+None
+None
+None
+None
+None
+None
+None
+2600 3839
+None
+None
+None
+None
+None
+2737
+None
+None
+None
+None
+5662
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6477
+None
+None
+None
+None
+None
+6498
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4112
+None
+None
+None
+4220
+None
+None
+6284
+None
+5855 6039
+None
+None
+None
+None
+None
+2115
+None
+2588 4704
+None
+None
+None
+None
+None
+None
+5845
+None
+None
+343
+None
+None
+None
+None
+1493
+None
+None
+None
+None
+None
+None
+2803
+None
+None
+5325
+None
+None
+None
+None
+7627
+2018
+None
+None
+4054
+None
+None
+None
+None
+5514
+None
+389 3436
+None
+None
+None
+None
+5412
+None
+None
+None
+None
+None
+4047
+7104
+None
+None
+None
+None
+None
+6672
+None
+None
+None
+None
+None
+None
+1965
+None
+2452 6025 7088
+3017
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7141
+None
+1816
+None
+None
+None
+639
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7700
+None
+None
+3530
+None
+None
+None
+2391
+None
+None
+7947
+None
+None
+None
+None
+5295
+None
+3561
+None
+None
+5615
+None
+None
+None
+586
+None
+3144
+None
+4100
+5843
+None
+3434
+None
+5329
+None
+None
+None
+7254
+None
+7339
+None
+None
+None
+7509
+None
+None
+None
+None
+None
+None
+1422
+None
+None
+None
+None
+None
+None
+None
+None
+4796
+None
+4590
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3714
+None
+None
+6448
+None
+None
+None
+4249 5713
+2200
+None
+5499
+None
+None
+None
+None
+None
+None
+None
+None
+845
+None
+None
+None
+None
+None
+None
+None
+4097
+None
+None
+7068
+None
+None
+None
+2759
+None
+None
+3446
+None
+3841
+None
+None
+None
+None
+7424
+None
+6409
+None
+1499
+None
+None
+None
+None
+2323
+None
+1681
+None
+None
+None
+None
+5827
+None
+None
+2213 6384 7268
+None
+2256 2752
+None
+None
+None
+3312
+None
+None
+773
+None
+1683
+4840
+6230
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4597
+None
+None
+None
+None
+None
+None
+2646
+None
+None
+None
+None
+None
+6646
+None
+5226
+None
+None
+None
+None
+None
+None
+None
+5567
+None
+2628
+None
+None
+None
+None
+None
+None
+None
+None
+325
+None
+7620
+3819
+3030
+None
+None
+None
+None
+None
+6465 7438
+None
+None
+7473
+None
+3308
+None
+None
+2767
+467
+None
+7946
+None
+None
+None
+3672
+5610
+None
+None
+1987 5166
+None
+None
+3571
+None
+None
+None
+1658
+5941
+None
+None
+4190
+None
+4569 5809
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+73
+None
+None
+None
+None
+2078
+None
+None
+4141
+None
+None
+7868
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2262
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+112
+1501
+3268
+2600
+None
+None
+None
+2832
+None
+None
+2569
+None
+3754
+None
+None
+1784 4068
+None
+5171
+2673
+162 994
+None
+None
+None
+None
+None
+None
+1635
+None
+None
+None
+None
+None
+None
+None
+3493
+None
+None
+None
+None
+None
+3613
+None
+None
+None
+None
+None
+6344
+None
+None
+None
+None
+None
+None
+None
+2345
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5785
+None
+5690
+6226
+None
+None
+None
+710 4082
+None
+None
+779
+None
+None
+2756
+None
+None
+None
+None
+5483 7864
+None
+None
+None
+None
+None
+7572
+486
+None
+None
+None
+None
+None
+None
+7049
+None
+None
+941
+None
+None
+None
+None
+6819
+None
+None
+None
+None
+None
+None
+7717
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3369
+None
+None
+None
+None
+None
+None
+None
+None
+17
+1288
+None
+None
+None
+None
+None
+None
+None
+3165
+None
+4275
+None
+None
+526
+2209
+None
+None
+None
+None
+500
+None
+None
+None
+None
+None
+None
+None
+886
+None
+None
+None
+2142
+None
+None
+None
+3112
+None
+None
+None
+None
+1426
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1626
+None
+None
+None
+1879
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3168
+None
+None
+5996 7662
+None
+None
+None
+None
+None
+None
+None
+1736
+4949
+None
+None
+None
+None
+7851
+None
+None
+None
+None
+None
+None
+7524
+None
+None
+5152
+None
+None
+None
+4634
+None
+None
+3063
+None
+6989
+None
+None
+None
+None
+None
+None
+7634
+None
+7638
+None
+235 5438
+None
+None
+None
+None
+4740
+None
+3500
+None
+2392
+None
+None
+7928
+None
+4714
+None
+None
+None
+1405
+713 3327
+None
+None
+2659
+None
+None
+None
+None
+7340
+None
+None
+1154 5059 7408
+None
+None
+None
+4347 6917
+None
+None
+None
+None
+6761
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2995
+None
+None
+None
+None
+7324
+None
+None
+185
+None
+4120
+None
+None
+None
+None
+None
+None
+None
+4386
+None
+3484
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4248
+None
+None
+None
+7952
+None
+None
+None
+None
+4062
+None
+None
+None
+None
+2928
+None
+None
+None
+None
+None
+None
+None
+None
+5759
+None
+None
+None
+None
+None
+None
+None
+713
+None
+7178
+None
+None
+None
+5597
+5403
+6477
+None
+None
+None
+None
+None
+None
+2471
+5830
+1961 5677 7684
+830
+None
+2180
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6920
+None
+None
+7552
+1302 2901
+None
+84
+2961
+None
+None
+None
+None
+None
+7196
+7544
+None
+None
+None
+None
+None
+None
+None
+2027 4584
+None
+None
+None
+6027
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1943
+2160
+None
+1043
+None
+None
+None
+None
+None
+3513
+None
+1607
+None
+None
+None
+None
+3507
+None
+5861
+None
+None
+5529
+3398
+None
+4721
+None
+None
+None
+4722
+None
+None
+None
+6424
+None
+None
+None
+4341
+6984
+None
+None
+279
+None
+None
+None
+None
+None
+None
+None
+7765
+None
+None
+None
+None
+None
+None
+None
+None
+167
+None
+None
+None
+None
+None
+None
+2751
+None
+None
+None
+None
+None
+7421
+None
+6949
+None
+None
+None
+None
+None
+6826
+472
+None
+None
+None
+None
+None
+None
+None
+6772
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3599
+None
+5978
+None
+2670
+4058 7200
+None
+None
+2604
+None
+None
+None
+6806
+None
+None
+None
+None
+None
+None
+None
+None
+535
+None
+3027
+None
+None
+None
+None
+None
+None
+None
+None
+6941
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6235
+None
+None
+None
+4235 4301
+None
+None
+6643
+None
+None
+None
+None
+413
+None
+None
+None
+5625
+None
+None
+612
+5813
+5425
+2883
+398 1172
+None
+None
+None
+None
+None
+5722
+1700
+5586
+None
+1666
+None
+None
+None
+5564
+None
+None
+None
+None
+4873
+None
+None
+4729 4813
+None
+None
+5571
+5035
+None
+3226
+None
+1548 5177
+None
+None
+None
+4662
+None
+3480
+None
+None
+None
+None
+None
+5665
+None
+None
+None
+None
+None
+None
+None
+None
+5071
+7906
+None
+None
+None
+None
+4818
+None
+None
+None
+7186
+None
+None
+2476
+None
+2364
+None
+None
+None
+None
+6971
+None
+None
+209
+None
+2572
+8070
+850 1950
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+308
+2170
+None
+7654
+None
+3406
+None
+None
+None
+3083
+None
+None
+None
+None
+None
+None
+None
+7771
+2783
+None
+None
+None
+5363
+None
+None
+3015
+None
+None
+2110
+None
+None
+6924
+3220 5446
+None
+None
+5187
+None
+None
+3213
+None
+5746
+None
+None
+None
+None
+None
+None
+None
+None
+7661
+None
+None
+None
+6024
+None
+2448 5368
+None
+3745 5108
+None
+1388
+None
+None
+None
+None
+6489
+None
+None
+None
+None
+4945
+None
+None
+None
+None
+None
+None
+4512
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2462
+4225
+1549
+None
+1084
+None
+None
+None
+7196
+4559
+2687
+None
+4980
+6201
+3582
+None
+None
+None
+None
+None
+None
+3575
+None
+None
+None
+None
+None
+None
+906
+None
+None
+None
+None
+7341
+None
+None
+None
+None
+3304 5387
+None
+None
+None
+449
+None
+1860
+None
+None
+None
+1927
+None
+None
+7975
+2789
+None
+7614
+None
+None
+3742
+None
+None
+None
+None
+1249
+None
+None
+None
+None
+3995
+4703
+None
+None
+7031
+None
+None
+None
+754
+None
+None
+None
+1960
+None
+None
+None
+None
+160 6197 6505
+None
+4704
+4744
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+592
+None
+None
+None
+None
+6353
+None
+None
+7697
+None
+None
+None
+2680
+None
+2066
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5308
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6457
+None
+None
+1534 5728
+None
+None
+None
+6694
+713
+None
+None
+None
+2535
+None
+None
+None
+None
+None
+6565
+None
+None
+4950
+None
+None
+None
+None
+None
+7135
+None
+130
+None
+7326
+None
+None
+None
+None
+None
+None
+6269
+None
+3618
+5143
+None
+3532
+None
+None
+None
+3935
+None
+None
+5337
+None
+2761
+5103
+None
+None
+7516
+None
+None
+None
+None
+None
+None
+None
+6572
+None
+30 5190
+None
+None
+None
+None
+None
+None
+None
+None
+7615
+None
+None
+None
+8012
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3865
+None
+None
+None
+5218
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+351 5263
+None
+None
+7055
+None
+4717
+4423
+None
+None
+6160
+2658
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7980
+None
+None
+2256
+None
+2574
+None
+None
+None
+298
+None
+None
+None
+None
+6698
+None
+None
+178
+2154
+None
+None
+None
+None
+6036
+None
+400
+None
+None
+None
+3791
+None
+4830
+None
+1190
+5185
+None
+None
+573
+None
+None
+None
+None
+None
+None
+7290
+None
+None
+None
+None
+6927
+None
+None
+None
+None
+None
+None
+575
+488
+None
+None
+None
+None
+None
+6928
+None
+None
+None
+None
+None
+None
+5780
+4918 5859
+None
+None
+None
+None
+None
+1248
+None
+None
+None
+None
+None
+None
+None
+None
+None
+787
+None
+None
+None
+325
+None
+None
+None
+None
+None
+5521
+1859
+3749
+None
+None
+None
+None
+None
+7350
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4871
+6098
+None
+4387
+None
+7000
+4239
+None
+4475
+None
+1974
+None
+None
+None
+None
+None
+None
+None
+5164
+7947
+None
+None
+None
+None
+None
+None
+None
+None
+6345
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3628
+None
+None
+None
+None
+574
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7434
+None
+4681
+None
+None
+None
+None
+None
+None
+5419
+532
+None
+None
+None
+None
+None
+None
+None
+2093
+None
+4780 6309
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+894 7719
+None
+7754
+2375
+1626
+None
+None
+None
+None
+None
+2357
+None
+None
+None
+3309
+None
+None
+None
+3107
+None
+None
+None
+None
+None
+2764
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5437
+None
+None
+None
+2826 7716
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6944
+None
+None
+None
+2562
+None
+None
+227 2473
+None
+None
+None
+None
+None
+None
+None
+6085
+None
+None
+None
+2306
+None
+None
+None
+None
+None
+None
+None
+3073
+None
+7613
+None
+None
+6612
+None
+None
+None
+None
+None
+5686
+None
+None
+None
+None
+None
+4663
+None
+None
+None
+2720
+None
+None
+None
+4785
+4442
+None
+None
+4825
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1324 6956
+5424
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4745
+5832
+None
+None
+None
+None
+62
+2695
+None
+None
+None
+None
+2003
+None
+None
+None
+None
+1490
+None
+None
+None
+None
+None
+None
+None
+None
+5722
+7567
+None
+None
+None
+None
+4225
+None
+None
+7891
+1872
+2310 5631
+None
+None
+5747
+None
+3562 4215
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3351
+None
+None
+None
+3962
+None
+None
+None
+None
+None
+None
+741
+None
+3098
+2542
+None
+None
+5022
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4317
+None
+None
+None
+None
+1710 2903
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4544
+None
+None
+None
+None
+None
+None
+None
+1555
+None
+None
+106
+None
+4729
+3351
+6774
+203
+None
+None
+1177 5377
+None
+436
+6677
+None
+None
+None
+None
+None
+None
+None
+4270 6591
+None
+None
+None
+None
+None
+None
+None
+4767
+None
+None
+6569
+None
+None
+None
+None
+5445
+None
+None
+None
+None
+None
+1539
+None
+3240
+None
+None
+2056
+None
+None
+3042
+4521
+4952
+None
+None
+1214
+6718
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6656
+7816
+None
+None
+None
+6347
+None
+None
+None
+5815
+656
+None
+None
+None
+None
+703
+None
+None
+None
+None
+None
+3081
+3959
+None
+5194
+None
+None
+None
+1923
+None
+1119
+None
+None
+None
+None
+None
+None
+None
+None
+None
+548
+6014
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2047
+None
+None
+None
+None
+5953
+3815
+None
+None
+None
+None
+409 5377
+None
+None
+None
+234
+None
+6993
+None
+None
+None
+None
+None
+None
+None
+4146
+None
+None
+None
+None
+None
+None
+None
+6807
+None
+None
+None
+None
+1714
+None
+None
+None
+None
+5636
+None
+None
+7953
+None
+None
+None
+None
+None
+None
+None
+None
+6204
+1915
+None
+3964
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7127
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1724 7891
+None
+None
+6225
+663
+None
+None
+None
+None
+None
+4897
+3551
+None
+None
+None
+None
+None
+None
+None
+None
+4348
+None
+None
+None
+None
+None
+1832
+None
+6315
+149
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4287
+None
+None
+None
+None
+None
+None
+6802
+None
+None
+None
+None
+6866
+None
+5219
+3570
+None
+None
+None
+6607
+None
+None
+2243
+None
+8028
+2697
+None
+None
+None
+None
+4681
+None
+None
+None
+None
+726 8044
+None
+None
+2117
+None
+3183
+None
+None
+None
+746
+None
+2506
+None
+None
+None
+None
+None
+None
+2621
+None
+None
+None
+None
+None
+5065
+None
+None
+None
+1444 5305
+None
+None
+None
+None
+None
+8031
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2992
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7302
+None
+None
+None
+None
+None
+None
+5476
+4692
+5290
+3404
+4137
+None
+None
+None
+None
+None
+None
+None
+None
+10
+None
+None
+None
+None
+None
+7695
+820
+None
+4013 4574
+None
+None
+None
+None
+None
+None
+7891
+None
+None
+None
+4660
+None
+None
+None
+None
+869
+None
+None
+1463
+None
+None
+3629
+2323 3647
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3022
+485
+None
+3814
+None
+None
+1064 7257
+3228
+243 3232
+None
+None
+None
+None
+None
+6119
+2183 3392 4300
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3013
+None
+7630
+None
+3648
+4183
+None
+1735 7580
+None
+None
+None
+10
+None
+None
+None
+None
+None
+None
+2220
+None
+7646
+869
+None
+5737
+None
+None
+None
+4325
+None
+5865
+None
+None
+7045
+None
+None
+None
+None
+7247
+None
+None
+4031
+None
+None
+None
+None
+4145
+None
+None
+None
+None
+5394
+None
+659 719
+None
+None
+None
+2504
+None
+1746
+None
+None
+None
+None
+None
+4808
+None
+None
+None
+4804
+None
+5405
+None
+None
+3392
+None
+None
+None
+None
+3427
+None
+None
+None
+None
+None
+None
+4149
+None
+None
+None
+None
+3867
+None
+None
+None
+None
+5657
+None
+None
+None
+None
+2610
+5461
+None
+None
+None
+None
+None
+1800
+None
+None
+593
+None
+None
+None
+6938
+None
+None
+None
+None
+None
+None
+None
+None
+None
+457
+None
+None
+None
+None
+None
+None
+3956
+618
+814 3389
+None
+5721
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+251
+None
+None
+None
+None
+None
+None
+4511
+None
+None
+None
+977
+None
+None
+None
+None
+6547
+None
+1398
+None
+1085
+None
+None
+None
+None
+None
+None
+None
+3907
+None
+1773
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5489
+None
+None
+594
+None
+None
+None
+None
+1717
+None
+None
+None
+3544
+None
+None
+None
+2973
+3723
+None
+4349
+None
+None
+None
+None
+None
+None
+1718
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2158
+None
+None
+7104
+None
+None
+None
+7099
+None
+3573
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7589
+None
+None
+None
+None
+None
+None
+8016
+None
+None
+None
+None
+None
+None
+None
+437 1128
+None
+1297
+None
+None
+None
+None
+6604
+None
+None
+None
+4252
+1758
+None
+None
+None
+None
+7882
+None
+None
+None
+None
+None
+None
+187 3396
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+927
+None
+None
+6507
+None
+712
+None
+None
+3038
+None
+None
+None
+None
+None
+4603
+None
+None
+1850
+None
+None
+3421
+None
+None
+690 984
+723
+5497
+1219
+None
+None
+None
+None
+None
+7782
+7642
+None
+1508
+1929
+5293
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6739
+None
+None
+None
+None
+3755
+None
+None
+5131
+None
+3532
+5300
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2230
+7634
+None
+None
+None
+None
+1003
+None
+None
+None
+None
+5106
+151
+5799
+None
+None
+None
+None
+1021
+None
+None
+None
+None
+3743
+None
+None
+None
+None
+None
+None
+1139
+None
+2988
+None
+None
+1017
+None
+None
+7171
+None
+None
+None
+None
+1841
+377 3974
+None
+1563 2684
+None
+None
+None
+None
+2766
+None
+None
+None
+None
+None
+3400
+None
+None
+None
+None
+None
+5606
+None
+3870
+None
+3510
+1781
+None
+3768
+None
+None
+None
+4389
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+401
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3795
+4558
+None
+None
+None
+None
+None
+None
+2636 5254
+None
+None
+None
+None
+954
+None
+None
+None
+None
+1862
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2166
+None
+None
+None
+5226
+None
+None
+5801
+None
+None
+None
+None
+None
+3809
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7935
+None
+None
+None
+None
+None
+None
+None
+7870
+None
+7068
+None
+4661
+None
+None
+5088
+None
+2460
+None
+None
+None
+None
+5109
+None
+1957
+1026
+None
+4607
+None
+None
+3688
+None
+None
+None
+None
+None
+None
+None
+2173
+None
+None
+None
+None
+None
+None
+5826
+None
+2348
+None
+None
+None
+2478
+None
+None
+None
+None
+None
+1760
+574
+3752 5844
+1284
+None
+None
+None
+None
+862
+None
+327
+None
+7615
+None
+None
+1350 7175
+985
+None
+None
+5372
+None
+None
+None
+None
+None
+None
+None
+None
+3497
+1605
+1577
+1916
+None
+3530
+None
+6031
+None
+5354 7992
+None
+None
+None
+None
+4306 4428
+None
+None
+None
+548
+None
+None
+None
+None
+None
+3599
+None
+None
+None
+None
+None
+None
+698 4790
+None
+None
+None
+None
+7707
+None
+None
+None
+3136
+None
+4810
+None
+None
+483
+None
+None
+None
+2369 8058
+None
+None
+None
+None
+None
+None
+4020
+None
+None
+None
+6511
+4167
+3368
+None
+None
+None
+6587
+None
+None
+1830
+None
+5871
+None
+None
+714 4078
+3008
+8051
+None
+7432
+None
+None
+None
+4333
+3507
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4841
+None
+2194
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6609
+None
+None
+4659
+None
+None
+None
+None
+None
+None
+2837
+None
+None
+None
+None
+None
+2009 4933
+None
+None
+None
+None
+None
+None
+None
+5076
+None
+2545
+None
+None
+6146
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2362
+None
+None
+None
+None
+None
+22
+3933
+None
+5712
+None
+None
+None
+None
+None
+3225
+None
+None
+None
+2146 6139
+None
+None
+795
+None
+None
+None
+None
+None
+None
+None
+1715
+None
+None
+None
+None
+None
+974 6508
+None
+None
+None
+7662
+None
+None
+None
+7148
+None
+None
+None
+272
+1371 6573
+3384
+None
+None
+1283 2644
+None
+None
+6201
+3395
+None
+None
+670
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3378
+6669
+None
+None
+None
+None
+None
+None
+None
+None
+28
+3135
+None
+None
+None
+None
+None
+None
+None
+None
+5183
+None
+1591
+None
+2681
+None
+None
+None
+None
+2465
+None
+1947
+None
+None
+None
+None
+None
+None
+None
+3363
+1626 6158
+None
+None
+None
+None
+4220
+None
+None
+None
+None
+4460
+776
+7444
+None
+None
+None
+None
+None
+None
+6399
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4835 6827
+None
+None
+2241
+None
+2267
+None
+None
+3412
+2208
+None
+None
+945 1041
+None
+5684
+None
+None
+None
+None
+None
+1118 3146
+1132 5760
+None
+None
+None
+None
+None
+5671
+None
+4131
+None
+None
+None
+16 2821
+None
+None
+None
+None
+146
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+563 7253
+5523
+2542
+1912
+None
+None
+None
+None
+852
+None
+4875
+3376 4209 6598
+None
+191
+None
+None
+None
+3705
+None
+None
+6406
+None
+None
+461
+None
+None
+4763
+None
+None
+None
+None
+None
+None
+None
+None
+3515
+4223
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3121
+5678
+None
+None
+None
+None
+None
+None
+7517
+None
+None
+None
+None
+None
+6694
+None
+1636
+None
+None
+1488
+None
+3906
+None
+None
+None
+None
+2819
+None
+1580
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5133
+None
+5257
+None
+None
+None
+None
+None
+None
+None
+503 2697
+None
+None
+None
+3367
+None
+4374
+None
+None
+865
+None
+None
+None
+None
+None
+None
+None
+5323
+2595
+None
+None
+3145
+7887
+4184
+None
+640 2132
+None
+1805
+None
+None
+None
+None
+None
+None
+2474
+5337
+2330
+None
+None
+None
+None
+None
+6033
+None
+None
+None
+2315
+None
+None
+None
+3907
+6143
+3222
+None
+None
+None
+4769
+None
+None
+17 6930
+None
+None
+5434
+None
+None
+1212
+None
+7435
+None
+None
+None
+6627
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6635
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1670
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7575
+None
+None
+None
+2692
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4422
+None
+1474 7131
+None
+None
+None
+None
+None
+None
+None
+6827
+None
+None
+7324
+1129 7523
+None
+None
+None
+None
+None
+None
+19
+None
+None
+None
+3306
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6321
+2964
+None
+926
+None
+None
+None
+None
+None
+6098
+None
+None
+None
+None
+7222
+None
+None
+None
+None
+4406
+None
+None
+None
+None
+1899
+None
+None
+None
+None
+3528
+2391
+None
+2147 3187
+None
+None
+None
+5370
+None
+634 5851
+None
+None
+3859
+None
+None
+2315
+None
+None
+None
+728
+None
+7150
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7853
+7855
+None
+None
+6907
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7648
+None
+7748
+None
+None
+None
+None
+None
+7946
+None
+4108
+None
+None
+None
+None
+None
+None
+None
+183
+None
+None
+None
+6714
+3957 6004
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+774
+None
+None
+None
+None
+7170
+7382
+315 599 4728
+472
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5533
+None
+None
+None
+5860
+None
+None
+5502
+None
+None
+7490
+None
+None
+None
+None
+None
+27
+None
+None
+5626
+None
+3818
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+671
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3645 7668
+1983 2213
+7554
+None
+3574 5570
+None
+7621 7623
+4472
+None
+None
+None
+None
+None
+None
+None
+None
+971 7650
+None
+None
+None
+None
+None
+None
+None
+7624
+None
+None
+None
+4504
+2822
+None
+2178
+None
+2611
+None
+None
+None
+None
+3347
+None
+None
+None
+None
+None
+None
+None
+527
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3740
+None
+None
+755 908
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2313
+596
+None
+None
+None
+None
+1361
+7434
+None
+7619
+None
+None
+6410
+None
+None
+None
+None
+None
+None
+6501
+None
+None
+None
+None
+None
+4031
+None
+None
+None
+None
+None
+4529
+None
+None
+None
+7173
+None
+5995
+None
+None
+None
+None
+None
+None
+None
+None
+372
+1961
+None
+None
+None
+None
+7604
+None
+None
+7165
+None
+None
+None
+1847
+2795
+3984
+None
+4370
+None
+None
+None
+None
+None
+3665
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+122 7272
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2598
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7821
+None
+None
+None
+5645
+None
+None
+None
+None
+None
+6465
+5731
+None
+None
+2581
+6296
+None
+None
+None
+None
+None
+None
+None
+1085
+None
+None
+None
+None
+None
+3236
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1630
+None
+None
+None
+None
+None
+2538
+None
+None
+None
+None
+None
+None
+None
+None
+3702
+None
+None
+None
+None
+515 7959
+None
+2021
+2665 6405
+None
+None
+None
+1399
+None
+None
+629
+None
+None
+None
+None
+2283 3137
+None
+None
+None
+None
+7040
+None
+None
+None
+6560
+None
+None
+3539
+None
+None
+None
+None
+None
+None
+None
+None
+2289
+None
+None
+299 6303
+None
+None
+None
+3645
+None
+5054
+5550
+6639
+None
+5423
+895
+None
+None
+None
+None
+None
+None
+7091
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2190
+307
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4906
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6486
+None
+None
+None
+None
+47 3720 7792
+None
+None
+1955
+4328
+6727
+None
+3766
+5563
+974
+None
+None
+None
+None
+None
+None
+None
+6943
+None
+None
+None
+None
+5429
+None
+None
+None
+4317
+None
+None
+None
+None
+1199
+None
+5722
+None
+6730
+None
+6879
+None
+5018
+None
+None
+4563
+None
+5473
+None
+1910
+4125
+None
+None
+617
+None
+None
+1744
+None
+None
+None
+None
+None
+None
+None
+None
+528 5880
+None
+None
+None
+None
+None
+None
+7375
+5906 7656
+None
+None
+None
+6509
+None
+None
+None
+3354
+None
+7270
+2634
+None
+748
+None
+None
+None
+None
+None
+7918
+1991
+4365
+None
+None
+None
+None
+1794
+None
+None
+None
+None
+None
+None
+None
+5587
+None
+None
+2382
+1966
+None
+None
+None
+4309
+None
+None
+None
+None
+None
+None
+None
+None
+2209
+None
+None
+None
+None
+None
+None
+None
+3709 5773
+525
+None
+None
+3850
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6097
+None
+983
+None
+2064 4353
+1700
+None
+None
+None
+None
+None
+None
+None
+586 6570
+None
+None
+127 6600
+None
+None
+None
+898
+None
+1540
+None
+None
+5098
+None
+None
+None
+None
+None
+None
+None
+None
+None
+261
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1949
+None
+3047
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3291
+None
+4302
+None
+None
+None
+None
+7881
+None
+None
+1945
+861
+None
+None
+None
+None
+None
+7570
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4551
+None
+None
+None
+3316
+4450
+None
+7475
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2859
+None
+None
+None
+None
+None
+7219
+3282
+401 5657 5963
+None
+613
+None
+None
+None
+None
+None
+None
+None
+None
+6962
+7546
+None
+None
+None
+None
+None
+None
+952
+None
+None
+None
+None
+None
+None
+None
+None
+6960
+None
+None
+None
+None
+None
+7462
+446
+None
+None
+None
+4556
+658
+None
+None
+None
+None
+None
+None
+924
+None
+None
+None
+None
+6602
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7065
+None
+6064
+None
+None
+None
+None
+None
+None
+None
+1620
+None
+3042
+None
+None
+3161
+None
+1821
+None
+3506
+None
+None
+3885
+2239 3899
+None
+5868
+None
+None
+None
+None
+None
+None
+None
+4854
+None
+None
+3336
+None
+6582
+4093
+None
+None
+None
+None
+3276 7909
+None
+None
+None
+None
+None
+None
+4166
+None
+7185
+None
+6855
+None
+6838
+None
+2034
+None
+None
+None
+None
+None
+None
+3441
+None
+None
+None
+None
+None
+89
+None
+None
+None
+None
+None
+None
+3241
+None
+None
+None
+None
+2997
+None
+None
+None
+4434
+None
+None
+None
+None
+None
+None
+3961
+None
+None
+None
+None
+None
+None
+None
+637
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3632
+None
+None
+None
+None
+None
+None
+None
+None
+6482
+None
+None
+None
+None
+4772
+None
+None
+None
+2851
+None
+None
+None
+None
+None
+3812
+None
+None
+None
+None
+None
+None
+None
+None
+1167
+6905
+None
+None
+2565 5288
+None
+None
+1550
+None
+None
+None
+678
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2391
+None
+None
+6519
+None
+None
+None
+None
+None
+None
+None
+4978
+None
+None
+None
+None
+2376 4974
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1682
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4491
+None
+None
+None
+5955
+None
+None
+None
+3729
+None
+57
+None
+None
+None
+2423
+None
+None
+None
+None
+None
+None
+5558
+None
+6045
+None
+None
+None
+None
+None
+608
+None
+None
+1278
+None
+None
+None
+None
+None
+6339
+None
+None
+None
+None
+6117
+5158
+None
+6319
+None
+5350
+7543
+None
+3131
+None
+None
+None
+None
+None
+None
+6958
+3431
+None
+7633
+None
+None
+None
+None
+None
+None
+None
+3174 3569
+None
+None
+None
+3309
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7281
+None
+6825
+None
+None
+6009
+None
+None
+None
+None
+843
+None
+1547
+None
+None
+None
+None
+None
+None
+None
+1659
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4777
+None
+None
+7462
+None
+None
+5711
+2482
+None
+None
+4720
+None
+None
+None
+None
+None
+None
+None
+None
+7658
+None
+2598
+None
+6645
+None
+6372
+None
+None
+None
+None
+None
+None
+None
+None
+7217
+None
+None
+None
+None
+None
+None
+None
+None
+3880
+1728
+None
+None
+None
+None
+None
+None
+None
+None
+None
+766
+4652
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+464
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3068 5966
+None
+3733
+1104 1725
+None
+None
+None
+None
+None
+None
+None
+621 1116
+None
+None
+None
+2484
+3035
+703 3594
+650
+None
+None
+None
+None
+None
+None
+None
+3941
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+738
+None
+None
+None
+1409
+7474
+None
+None
+190
+None
+1598
+None
+None
+None
+6634
+None
+None
+None
+None
+None
+None
+6118
+None
+None
+None
+None
+7839
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1212
+None
+None
+None
+3038
+None
+None
+None
+None
+571
+None
+None
+None
+None
+None
+None
+None
+3274
+None
+None
+2579
+None
+None
+None
+None
+None
+None
+None
+5441
+None
+4011 6291
+5876
+None
+None
+2665
+None
+None
+None
+None
+None
+5638
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+600
+6861 7250
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2668
+7366
+6809
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7910
+None
+None
+2117
+6149
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2488
+None
+None
+None
+None
+None
+None
+3758
+5767
+None
+None
+None
+None
+None
+5967
+2985
+None
+251
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7176
+3175
+2010
+6839
+None
+None
+None
+1940 2078
+None
+444 3164
+None
+6199
+8048
+None
+None
+None
+None
+None
+1987
+1215
+None
+None
+None
+None
+4210
+None
+None
+6789
+None
+2843 8009
+None
+None
+5937
+None
+None
+None
+None
+4747 7931
+None
+None
+None
+None
+None
+None
+None
+2199
+4996
+None
+None
+None
+None
+None
+None
+None
+None
+None
+778
+None
+None
+None
+None
+6336
+None
+None
+None
+None
+None
+None
+None
+233
+4122
+3615
+3777 5347
+None
+None
+None
+6293
+2657
+6203
+None
+6203
+6221
+None
+None
+2353
+None
+None
+4742
+None
+None
+7188
+3004 5121
+None
+None
+None
+3006
+None
+None
+None
+5084
+1262
+None
+None
+4760
+1462
+6075
+None
+6213
+None
+2142
+None
+3478
+None
+6635
+None
+7266
+None
+173
+3524
+2964 5554
+None
+None
+None
+None
+2188
+6197
+None
+None
+None
+None
+None
+None
+None
+None
+504
+None
+None
+None
+None
+None
+1868
+3146
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1668
+4678
+None
+3668
+None
+None
+2445
+None
+None
+None
+None
+None
+None
+5399
+None
+None
+None
+None
+None
+None
+None
+None
+4082
+2866
+None
+4044
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1865
+None
+None
+None
+None
+907
+None
+None
+None
+None
+None
+None
+None
+7832
+None
+None
+None
+None
+None
+6077
+None
+1432
+None
+None
+None
+4046
+None
+None
+None
+None
+None
+None
+1192
+7981
+None
+None
+3252
+None
+None
+None
+1340
+None
+3492
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+5083
+None
+None
+None
+None
+642
+None
+None
+None
+None
+6565
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+1956 4366
+None
+None
+1685
+None
+6395
+None
+None
+None
+None
+None
+1943
+None
+None
+None
+None
+7742
+None
+None
+None
+1451
+None
+None
+7387
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+2978
+None
+6060
+None
+6061
+1203
+None
+None
+None
+None
+None
+None
+None
+2837
+None
+None
+1241
+2723
+None
+5286
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+6779
+5028
+None
+None
+None
+None
+5831
+None
+None
+None
+4218 4501 4688
+None
+None
+1542
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3422
+None
+None
+6949
+7486
+None
+None
+None
+None
+1726
+None
+None
+6654
+None
+None
+None
+1027
+None
+None
+None
+None
+None
+3020
+None
+8078
+7580
+None
+None
+None
+5278
+None
+None
+1229
+None
+None
+None
+None
+None
+None
+1752
+2676 6083
+2455 3975
+None
+None
+None
+None
+3102
+4463
+8005
+None
+None
+None
+None
+6462
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3612
+None
+None
+None
+1963
+3836
+2188 7762
+None
+None
+None
+None
+None
+None
+8042
+None
+None
+None
+1762 5372
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7954
+None
+None
+None
+7572
+None
+None
+3781
+None
+None
+None
+5003
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+4568
+None
+None
+4613
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+7988
+None
+4579
+None
+None
+None
+7555
+None
+None
+5439
+None
+None
+None
+1631
+None
+None
+5412
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+3447
+None
+None
+None
+None
+None
+None
+None
+7930
+None
+6176 4713
+1645 5580
+3811 4090
+2723 3190
+1258 3012
+2991 1088
+4056 7144
+6820 4402
+5087 3067
+7816 5244
+1888 1056
+3785 5867
+3618 5415
+4807 7228
+3720 5158
+37 2819
+7834 4048
+6405 6263
+539 5129
+3702 6332
+3880 6090
+2126 6316
+7882 308
+7797 4512
+4940 3139
+7888 6557
+2939 237
+4168 5299
+4043 4116
+7883 7544
+1629 1770
+4251 7021
+1343 4638
+6070 2882
+5097 6926
+3487 4464
+2087 7734
+3835 410
+5441 5151
+3307 1200
+1275 349
+273 7243
+5339 7326
+187 1030
+6951 3023
+4528 7160
+4199 4087
+3435 2290
+5866 406
+841 4519
+750 3135
+3988 6372
+6223 5569
+2313 4540
+505 4254
+5323 4774
+3756 6450
+1632 4874
+1272 6609
+6118 5475
+2156 7883
+514 5814
+6570 5838
+3798 5712
+7703 4526
+282 708
+7266 1467
+7769 2951
+3373 4506
+5461 5752
+3352 4667
+3236 1717
+752 7276
+5153 7003
+2750 4974
+5331 3782
+4633 7113
+4538 6476
+43 6935
+1731 6522
+2716 1064
+3735 2039
+5777 1974
+3438 5206
+7922 6921
+6063 704
+6898 5616
+7520 618
+5589 2556
+6359 7035
+3270 3520
+1461 7922
+114 3052
+3928 6711
+3142 3855
+7047 4948
+6637 6683
+212 967
+4026 3052
+5364 2834
+4068 145
+3217 1596
+6802 4873
+2542 5932
+3275 4444
+7709 7416
+459 3970
+3720 2891
+6008 4992
+1806 2589
+7314 2134
+4910 115
+5333 7375
+5840 880
+2299 7400
+2424 72
+884 3178
+2033 1646
+52 4216
+5349 3166
+4723 6645
+7229 5735
+7925 1731
+1767 4372
+3777 2898
+3600 2503
+2081 1437
+1819 1037
+1669 4668
+1182 2898
+4757 5132
+4541 5363
+6685 2964
+6237 7544
+7451 5296
+1914 5569
+4760 54
+1877 6399
+3318 3328
+7376 1797
+5994 2407
+4576 931
+7943 6732
+1539 207
+2489 6459
+4750 5032
+5294 5325
+2912 6049
+6073 7767
+6527 565
+3975 1509
+4021 886
+6267 51
+2746 1000
+6585 3205
+4358 2567
+5565 174
+598 1150
+4354 2593
+92 5087
+7401 2538
+7173 2107
+4217 1729
+756 4257
+7016 7402
+1965 2097
+6131 5349
+8024 6050
+5298 5068
+1607 2543
+4526 6185
+6124 5233
+6803 6686
+2706 5754
+148 4818
+1341 2214
+2633 4675
+469 6718
+538 7310
+1912 6949
+2908 1954
+496 3875
+1290 417
+6881 7539
+7106 3183
+5443 5233
+5033 2960
+7615 3340
+7001 3190
+4491 4110
+2580 4433
+4656 2581
+4129 1585
+441 6480
+1158 4159
+2911 4813
+5158 3499
+1160 7464
+1372 3459
+7544 2497
+6830 6689
+6737 1149
+3017 5418
+2410 7247
+7788 6591
+3000 7336
+6457 594
+3986 8050
+3838 4965
+47 6782
+4266 1477
+7483 2522
+668 6854
+1530 4106
+166 2869
+5530 5351
+6863 3739
+2990 4839
+4172 584
+1791 4703
+3450 3227
+5484 3688
+1594 6175
+8075 3057
+7598 6166
+7472 6076
+2493 3142
+7870 7207
+460 7001
+4221 2794
+1933 1411
+1306 7932
+2338 4366
+1117 1521
+6267 4107
+7008 6114
+5317 4027
+6540 2552
+6771 2986
+2236 4716
+972 7986
+5274 7515
+5784 1580
+7631 6398
+1798 4573
+2448 831
+1815 5427
+7497 5664
+1858 1225
+3874 4037
+5999 5941
+2070 821
+3153 2149
+1555 4189
+4053 1664
+3326 289
+4544 1350
+6451 608
+4327 386
+1928 1677
+907 2014
+537 3493
+2370 3891
+1111 5225
+4763 7016
+7753 7689
+5641 7331
+5360 4822
+1169 6612
+7471 6791
+4006 1144
+1053 7866
+7621 4704
+456 1580
+189 3840
+2245 4224
+2495 4239
+7664 8006
+1043 7947
+4303 2506
+179 7175
+4144 3260
+460 5045
+5666 5179
+4281 7561
+5169 4383
+6460 4220
+3280 2426
+1571 7003
+5022 5344
+6686 1027
+1430 6708
+1412 4413
+6568 4532
+8043 3133
+5591 7379
+6730 2557
+393 3524
+3510 3512
+5909 4059
+138 1926
+7937 3279
+3904 7996
+4190 3939
+7139 6315
+5087 3804
+6049 7682
+4445 6758
+5371 4556
+6696 3959
+1231 4598
+5713 2565
+5998 3514
+4973 7078
+3740 496
+6130 5031
+1747 6012
+841 688
+5798 2536
+2561 4160
+1927 4454
+3756 1154
+5987 5375
+3348 4479
+1650 4106
+2975 4833
+6081 7364
+4642 5412
+8064 6864
+2650 6535
+3918 5354
+3104 5496
+4057 7734
+41 7994
+4995 3455
+2383 6578
+1325 7540
+5927 2300
+4690 7912
+2912 5387
+368 2147
+5588 5812
+2661 1492
+7137 1681
+2313 499
+3828 7439
+2364 1241
+904 6572
+6083 3191
+6904 3942
+3074 5430
+7216 5209
+3144 5998
+6502 1842
+5916 5816
+194 5378
+5539 2162
+4518 4802
+7219 6892
+2433 3909
+6859 6884
+131 254
+7335 790
+7982 3438
+5026 7629
+7238 3893
+7737 4920
+7764 6251
+6271 3413
+5800 4425
+1087 4177
+134 5789
+6380 1585
+5416 6716
+1305 4170
+862 7997
+5726 309
+1049 2473
+7749 2397
+3939 3901
+5888 7593
+6606 2533
+278 2765
+2229 1232
+848 2994
+1664 5322
+3453 4074
+4996 5231
+3106 1835
+620 4832
+5194 5294
+7946 1870
+154 6763
+7405 6799
+5487 1458
+2611 4334
+2624 5189
+3140 2900
+5131 1281
+469 4811
+2785 2510
+4046 1655
+5900 2665
+2050 1249
+6067 5630
+3503 3513
+312 3926
+4973 3709
+1817 5875
+2524 7848
+256 6621
+3187 4774
+710 5591
+4707 2788
+3105 962
+7329 5878
+2648 4898
+7037 2673
+1643 2954
+1278 6360
+4085 2024
+5914 5229
+1595 2444
+4780 5881
+6735 1777
+2919 7187
+4821 6570
+4611 5198
+3473 4245
+4951 3350
+4540 1422
+922 2782
+6561 4882
+400 5286
+5291 3723
+683 4179
+3759 7478
+6871 6939
+5705 1306
+4701 5092
+1050 2390
+6681 1495
+2243 5064
+3473 7859
+5655 1302
+2684 6919
+7252 4654
+3286 1861
+7208 6800
+7107 7997
+6383 3943
+698 7447
+4378 7656
+4344 4723
+2009 5555
+6225 7928
+7457 3680
+8029 4627
+7838 2364
+97 5924
+7039 5042
+1971 6726
+6529 2606
+2585 948
+5928 7615
+6662 6376
+7635 6773
+3076 3964
+970 6762
+7872 3716
+7296 7444
+5280 548
+7860 2051
+1496 7853
+3398 270
+6800 3407
+6054 6005
+1338 3922
+4362 7568
+3628 1808
+4681 5668
+1369 1294
+251 7966
+7096 3139
+6818 723
+1680 5564
+3068 1161
+2234 1178
+7021 7849
+8062 6135
+6374 3312
+4801 1302
+6343 2733
+5995 7488
+6740 2967
+1247 6572
+3804 5043
+2226 772
+6174 6226
+2117 5642
+4306 665
+5092 5249
+7009 706
+6768 7961
+1388 2687
+6151 5771
+4217 259
+435 6950
+6274 5493
+4697 6106
+3924 3176
+8031 4694
+3361 330
+256 4300
+2079 3198
+3584 400
+3433 537
+1803 4678
+2448 1748
+4500 778
+3004 3770
+7129 1445
+2472 3
+4656 5293
+5454 2400
+927 4053
+1299 907
+2596 26
+4509 3981
+1008 5932
+7352 2378
+6541 3421
+4952 1532
+150 2141
+8020 2559
+993 4558
+2744 5125
+1094 1127
+3646 635
+2802 2774
+1301 4150
+4964 2945
+1952 6412
+183 1381
+504 6457
+7629 2892
+3334 3490
+8053 161
+5202 3958
+2822 4540
+2827 6865
+7298 1493
+785 7023
+6749 6601
+198 5380
+3537 4447
+4840 7857
+5868 4370
+2931 2069
+3111 6062
+2945 7055
+2405 6614
+1979 4996
+3160 2658
+5652 6061
+4876 5618
+912 5455
+3761 2189
+2834 1851
+3983 6269
+1052 6330
+5427 7274
+1253 4512
+3401 2939
+2786 8017
+659 7954
+5003 5775
+6833 7689
+2740 2253
+3938 2494
+7647 6559
+830 1179
+7821 7024
+84 2010
+5000 6777
+4793 289
+2647 2013
+7005 467
+6897 1637
+1578 5255
+7965 2043
+6628 7679
+7759 4485
+2774 346
+4808 7870
+1963 747
+1212 127
+2091 7791
+4300 3088
+7946 1225
+4171 7783
+774 236
+3555 1575
+2977 7135
+2591 1385
+2022 1931
+3819 7626
+2424 5105
+935 3365
+6142 2169
+1802 6836
+6604 3035
+7342 3451
+1748 4697
+5528 3932
+3683 4297
+2304 1661
+1869 3500
+8028 7796
+3416 3512
+7069 3933
+3358 4764
+4639 923
+7531 3006
+5124 4953
+535 3374
+5225 7495
+6663 7748
+2286 2476
+3453 2448
+781 5370
+3230 4161
+4419 6868
+3768 441
+6996 2301
+820 5078
+4349 3943
+2031 6257
+7609 1127
+4824 2337
+6181 2896
+7679 1531
+7033 6730
+187 2294
+1819 6041
+2172 4308
+7982 3237
+1107 7126
+4041 2816
+4078 7143
+1339 2628
+3815 1856
+845 2190
+513 3690
+1675 6656
+3742 3875
+1648 1291
+5392 1638
+4106 2900
+2709 311
+4035 2428
+6256 2318
+1030 7496
+403 8036
+4324 8061
+3942 7494
+4279 6914
+2155 3267
+4096 5651
+6360 8024
+3930 7382
+5383 2119
+371 3228
+4835 3627
+7838 6395
+129 3658
+5151 6071
+6002 6239
+7825 3750
+1950 87
+2884 352
+3353 4590
+1416 6225
+4613 7447
+1005 5939
+2259 7330
+2696 4281
+1394 22
+2417 6647
+3089 7307
+765 3212
+3605 7017
+1623 6693
+1571 3055
+4760 6899
+4754 1511
+3633 5675
+5908 4313
+1128 4970
+3976 1839
+5211 7312
+7679 1765
+5694 53
+5554 2463
+2132 3266
+7098 745
+6183 5443
+3426 1799
+7360 5573
+3302 7288
+7921 7277
+2963 17
+1874 7292
+6178 6858
+541 2560
+5940 4698
+3981 1643
+6113 1010
+5881 6137
+5756 4498
+4959 775
+7173 2826
+5127 5822
+252 83
+1818 1344
+5043 2550
+2646 130
+8035 1564
+80 2518
+577 6839
+2801 5907
+4036 6701
+3339 67
+1136 485
+7504 47
+2657 127
+4642 5180
+627 6305
+3224 7350
+2618 1031
+3465 6367
+6975 4389
+6634 6728
+5199 7752
+5405 5646
+5732 4582
+3045 7691
+3996 4976
+6977 240
+4930 4064
+2984 7543
+6097 4009
+7061 4780
+104 7429
+5520 3233
+3370 926
+499 6481
+1223 4117
+6089 4490
+82 7870
+8078 6198
+106 5875
+2045 882
+5059 4069
+5896 7373
+7057 7896
+2170 370
+1155 6759
+120 2238
+391 5103
+2882 5997
+1572 5754
+6890 1868
+177 4388
+321 2392
+2469 5902
+2634 4258
+1442 6649
+3126 2733
+3867 1196
+7161 562
+5123 1434
+589 3282
+5366 355
+2906 6182
+5960 2622
+3390 7602
+6385 6515
+7308 5657
+6441 7798
+4481 713
+1456 86
+596 3280
+463 1746
+4219 3063
+5860 1098
+5478 3142
+2841 6648
+2864 5709
+1235 3213
+6787 4147
+6518 4273
+7588 1307
+3881 4574
+4666 2498
+5491 5623
+4028 1940
+4032 690
+4162 2873
+4964 4364
+19 556
+270 5074
+7296 1793
+7014 3193
+1893 7309
+4067 5699
+7277 6636
+3529 6573
+4711 4709
+7851 7129
+6286 578
+3332 59
+4999 5332
+6031 906
+1448 887
+2208 1527
+7261 2479
+6212 6687
+630 3268
+2163 2704
+1082 6926
+3851 3245
+3525 3136
+3580 856
+6463 2025
+628 5839
+540 6643
+2386 3403
+3173 2046
+4911 254
+904 544
+5219 7206
+5196 675
+4247 5336
+4491 1891
+3476 7588
+1045 8007
+7333 7367
+3394 24
+5206 368
+5683 5564
+733 7652
+1015 1879
+1480 1501
+209 5413
+1953 7372
+1268 3015
+6316 7902
+7332 2313
+1824 1984
+4348 6619
+6603 5783
+2772 4178
+5400 5028
+8027 7751
+6923 941
+5525 7297
+4864 58
+3975 5890
+7394 1538
+4361 84
+209 2695
+7121 964
+4415 6167
+1692 2128
+5761 5465
+3491 1864
+5545 3166
+6463 6095
+2318 6614
+5887 3472
+1875 928
+7840 3527
+1641 6437
+7151 4247
+4598 3456
+6814 1298
+536 7741
+5086 507
+6173 1709
+4674 5434
+6102 25
+4221 6246
+685 2703
+5478 3457
+6325 3395
+2040 6547
+5124 6201
+7717 1812
+6779 525
+6286 4386
+5635 7453
+6344 4776
+3686 1594
+1341 3126
+3259 7177
+1586 6950
+7826 7202
+1749 6741
+4381 3630
+6737 6820
+7022 3941
+2947 2190
+226 6445
+4853 4346
+1137 2083
+1971 2130
+901 2357
+1020 3406
+1397 7535
+7981 3671
+5634 5475
+6338 4527
+6462 2723
+1529 2524
+6432 5942
+6723 5371
+1358 752
+7732 1217
+6508 1496
+2597 3033
+7245 1448
+2192 4241
+6316 3949
+4277 2961
+585 2571
+580 1876
+524 705
+3409 7267
+7210 7262
+6054 5768
+1951 520
+5142 3572
+7364 7337
+3131 3498
+3930 6445
+7510 3604
+5294 64
+7482 6505
+5916 6115
+3758 4081
+7025 7118
+3732 3726
+2971 6409
+1390 3526
+5726 6016
+2034 5004
+8024 5426
+4044 2387
+1746 3436
+4441 5060
+7618 2858
+5053 2162
+60 5476
+5152 6617
+6707 3805
+5080 4100
+4044 3250
+5219 2729
+4233 3806
+4847 5791
+2729 2598
+1417 2753
+425 2670
+1957 1764
+5969 4006
+7457 3557
+2553 400
+8056 3543
+930 7740
+674 6900
+5821 5425
+2550 6839
+4010 465
+4187 1536
+3831 6353
+7773 7835
+7776 4828
+1855 2150
+2361 4827
+998 6826
+5019 2549
+2475 6002
+6485 2227
+3532 6825
+1606 4606
+1468 6025
+7686 1278
+3829 7262
+4038 5304
+2521 1789
+4009 3045
+7195 2930
+4399 8028
+1866 7610
+4645 7529
+249 4673
+4073 5944
+5084 7087
+2174 2132
+4501 2662
+2561 310
+5407 4398
+308 175
+807 585
+3560 2283
+5303 4837
+4049 5241
+5706 2993
+5637 3500
+1576 2562
+567 1657
+7471 4177
+5099 3209
+1364 1281
+5287 7969
+4373 103
+4060 2662
+21 5135
+5929 7283
+4697 4282
+5102 3103
+6952 557
+4410 2355
+1991 1908
+3757 5631
+1871 6174
+5009 1695
+2889 1390
+4791 7005
+2005 5811
+1232 7781
+5464 3180
+5303 6965
+1598 3436
+7284 7388
+3290 6917
+3701 802
+1083 2181
+6001 1953
+3208 113
+3338 5843
+4560 1572
+2371 7194
+5733 2159
+3768 2299
+3025 4277
+4199 7312
+7870 6912
+2527 7978
+6180 7560
+3951 7760
+5350 7622
+815 2355
+965 2844
+6972 7065
+175 3385
+5509 7275
+6481 5298
+8029 1503
+1425 6848
+7740 479
+877 2513
+5474 3416
+4038 1294
+2912 2905
+1451 787
+2369 3170
+6314 287
+7004 7912
+731 7151
+3424 4809
+2739 5972
+Have a break

@@ -1,0 +1,21 @@
+1481 885 1304 1616 1619 1629 751 977 1680 1636 808 1432 1388 1340 1609 861 1278 768 1701 1018 781 1439 866
+4 right 41
+19 right 1
+11 right 8
+14 left 45
+3 left 16
+7 left 39
+0 right 13
+9 left 42
+18 left 23
+6 left 44
+28 left 4
+8 right 39
+17 left 44
+10 left 22
+10 left 1
+22 left 7
+29 right 45
+5 left 42
+23 right 37
+stop

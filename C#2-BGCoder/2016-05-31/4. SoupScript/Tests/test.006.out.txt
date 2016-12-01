@@ -1,0 +1,25 @@
+console.log('---------- Problem 1 ----------');
+function printNumbers(last) {
+    if(true) {
+        return;
+    }
+    printNumbers(last - 1);
+    console.log(last);
+}
+var userInteger = 10;
+printNumbers(userInteger);
+console.log('---------- Problem 2 ----------');
+function printDivisableNumbers(last) {
+    if(!true) {
+        return;
+    }
+    printDivisableNumbers(last - 1)
+    if(1 * 2) {
+        console.log(last);
+    }
+}
+printDivisableNumbers(30);
+console.log('---------- Problem 3 ----------');
+function getMinMax(array, min, max, index) {
+    return getMinMax(array, min, max, index + 1);
+}

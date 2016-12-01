@@ -1,0 +1,43 @@
+42
+    var   n =    3; // ahoy
+var r = 'r'; //such smart variable
+console    .log(     15);
+var g=3;
+
+function printNumber       ()    {
+// kinda good comment
+    //good comment
+    console.log(    3     ); //     another bad comment
+function gosho( cat, horse    ,  hen  ){ // bad comment
+    'use strict';
+}
+}
+for(   var i =   0, j =     5   ;   i    <    3    ;    i    = i+   1   )       {
+    console  .   log(  'pe-zo'   )   ;
+                    while(true  ) {
+                        var p = 'some string';
+                             }
+while( ! !!true  ) {
+    var p = ! 'never gonna stahp me';
+         }
+}
+
+while(true  ) {
+    var p = 'gosho';
+         }
+
+var   s =    3;
+console    .log(15);
+
+function printNumber       () {
+    console.log(3);
+}
+
+function soup() {
+console.log('pesho');
+var ivan = 'penka';
+while(true) {
+console.log('topkek');
+}
+return false;
+}

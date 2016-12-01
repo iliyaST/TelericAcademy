@@ -1,0 +1,56 @@
+93
+50
+0 0
+1 1
+R L 127
+R B 47
+R R 105
+R L 118
+R R 47
+P B 6
+P L 30
+P B 36
+P L 49
+P B 32
+P T 1
+R T 14
+P L 38
+P B 0
+P B 4
+R B 39
+R R 195
+R T 10
+R B 19
+R L 765
+R L 939
+P L 512
+P L 644
+P T 39
+R T 2
+P T 2
+R L 1201
+P T 23
+P L 763
+P L 1509
+P L 319
+P B 6
+P B 18
+P R 935
+P T 27
+R T 29
+R T 27
+R B 4
+P L 1668
+R T 31
+R T 34
+R R 354
+P L 1909
+P L 486
+R B 32
+R T 0
+P L 1799
+P R 507
+R T 33
+P T 7
+END
+The porcupine destroyed the rabbit with 128287903 points. The rabbit must work harder. He scored 225468 points only.

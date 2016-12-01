@@ -1,0 +1,6 @@
+1 2 3 5 7 10 20
+5 right 1
+2 left 2
+3 right 2
+1 left 3
+stop

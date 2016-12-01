@@ -1,0 +1,1 @@
+class ManySpaces{static void Main(){int whitespaceCode=32;bool muchWhitespaceInCode=true;

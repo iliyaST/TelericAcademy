@@ -1,0 +1,56 @@
+58
+74
+0 0
+1 1
+R T 67
+R B 45
+R L 199
+R T 24
+R L 21
+R T 19
+R T 37
+R L 1478
+R R 373
+R L 1128
+R T 24
+R R 1098
+R R 284
+R L 469
+R T 30
+R L 424
+R B 34
+R L 1569
+R B 15
+R T 27
+R T 8
+R B 22
+R R 617
+R B 25
+R L 614
+R T 31
+R B 44
+R R 506
+R B 38
+R L 665
+R B 38
+R B 37
+R T 40
+R T 13
+R T 1
+R R 1789
+R T 46
+R R 698
+R L 722
+R T 19
+R L 862
+R B 5
+R L 409
+R T 14
+R T 3
+R B 15
+R R 1180
+R R 360
+R L 1077
+R R 1371
+END
+The rabbit WON with 1676500 points. The porcupine scored 1 points only.

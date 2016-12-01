@@ -1,0 +1,10 @@
+// comment
+console.log('beer beer beer beer');
+// purrrrson
+function imanawefulperson(parameter) {
+    // empty function
+    // will          you     leave    this      unformatted?
+// closing bracket and some     console
+}
+imanawefulperson('cats');
+// kofti

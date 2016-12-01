@@ -1,0 +1,30 @@
+29
+// mnogo pih kogat go pisah tozi kod
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class HJKjksdfg
+    {
+        // entry point
+        static void Main()
+        {
+            string input = Console.ReadLine();
+            string moreInput = Console.ReadLine();
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
+            {
+                // i have no idea what this code is doing
+                var list = new List<int>();
+            }
+
+
+            Console.WriteLine("Goshe, vzehme li go toq C reshetka?"); /* this needs to be
+             deleted */
+            Console.WriteLine("Oshte puskam Random.Next na 5-ta zadacha");
+        }
+    }
+}

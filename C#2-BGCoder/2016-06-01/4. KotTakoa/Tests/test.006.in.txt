@@ -1,0 +1,40 @@
+39
+namespace Kots
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    class Class3
+    {
+        static int Return3()
+        {
+            var azsymkon = true;
+            var tisikon = false;
+            bool myHorseIsAmazing = true;
+            bool yourHorseIsAmazing = false;
+            var number = 5;
+            var varosan = false;
+            bool easyExam = true;
+            /*
+            string myName = "kon";
+            string yourName = "chushkopek";
+            string hisName = "bop";
+            string kuci = "cuki";
+            string str = "many variables";
+            */
+            var money = 1012.0M;
+            string str2 = "3";
+            var gosho = "gosho";
+            string pesho = "pesho";
+            var toshko = "tosho";
+            // int shoshko = "shoshko";
+            int penka = 10;
+            int tonka = 11;
+            // oops
+            int minka = 12;
+            
+            return 3;
+        }
+    }
+}

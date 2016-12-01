@@ -1,0 +1,6 @@
+10 2 31 1000 2 15 10 10
+2 right 2
+2 right 1
+4 right 1
+2 left 1
+stop

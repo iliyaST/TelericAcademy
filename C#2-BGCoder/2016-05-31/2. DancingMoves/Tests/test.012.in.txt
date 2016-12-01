@@ -1,0 +1,21 @@
+380 460 768 317 960 744 517 324 1201 337 782 814 323 1196 849 654 856 1170 863 1273 1004 1187 687 1249 676 381 504
+17 right 13
+16 right 40
+16 right 47
+14 left 5
+17 left 49
+12 right 16
+6 left 29
+13 left 6
+1 right 12
+19 right 20
+13 right 32
+3 left 20
+1 right 29
+18 left 47
+10 left 17
+6 right 13
+1 right 41
+3 right 13
+16 left 11
+stop
