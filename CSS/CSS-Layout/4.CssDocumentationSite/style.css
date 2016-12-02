@@ -1,27 +1,280 @@
 .flex {
     display: flex;
-    width: 1000px;
-    height: 800px;
+    width: 70%;
+    height: 52%;
     border: 1px solid black;
-    background-color: gray;
+    background-color: #F1F1F1;
 }
 
 .leftSection {
     width: 200px;
+    position: relative;
+    right: 1%;
 }
 
 .middleSection {
-    width: 400px;
+    position: relative;
+    right: 5%;
+    top: 1px;
+    margin-top: 2px;
+    padding-right: 30px;
+    margin-right: 20px;
+    width: 50%;
+    height: 790px;
+    border: 1px solid #A2A2A2;
+    background-color: #fff;
 }
 
 .rightSection {
-    width: 200px;
+    width: 250px;
+    position: relative;
+    right: 13%;
+    padding-right: 5px;
+    height: 790px;
+    top: 3px;
+    margin-left: 1px;
 }
 
 .flexItem {
     margin-right: 100px;
 }
 
-.leftSection section dt>dd {
-    color: red;
+span {
+    color: #840000;
+}
+
+dt {
+    margin-top: 20px;
+}
+
+.leftSection h1 {
+    font-size: 20px;
+    position: relative;
+    left: 16%;
+}
+
+.leftSection h1::before {
+    content: url("capture1.png");
+    position: relative;
+    top: 5px;
+    right: 3px;
+}
+
+.middleSection h1 {
+    padding-left: 8px;
+}
+
+hr {
+    width: 97%
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid black;
+    height: 25px;
+}
+
+.buttonsFirst :nth-child(2) {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.buttonsFirst :nth-child(1) {
+    padding-right: 15px;
+    margin-right: 2px;
+    margin-left: 8px;
+}
+
+.firstArrow {
+    position: relative;
+    right: 8px;
+}
+
+.secondArrow {
+    position: relative;
+    left: 40px;
+}
+
+#theText {
+    font-weight: 800;
+}
+
+article h1 {
+    width: 97%;
+    margin-left: 1%;
+    background-color: #808080;
+    color: #fff;
+    font-weight: 400;
+}
+
+.middleSection>article {
+    height: 200px;
+    text-align: right;
+}
+
+img {
+    float: left;
+}
+
+a {
+    color: #9D2A28;
+}
+
+.middleSection article #theText a {
+    padding-left: 17%;
+}
+
+.text2 {
+    padding-left: 1%;
+}
+
+.buttonsFooter {
+    padding-left: 1%;
+}
+
+.buttonsFooter button {
+    height: 25px;
+    width: 100px;
+    margin-left: 2px;
+}
+
+.first {
+    position: relative;
+    right: 16%;
+}
+
+.second {
+    position: relative;
+    left: 32%;
+}
+
+.rightSection section {
+    border: 1px solid #989898;
+}
+
+.rightSection h1 {
+    font-size: 15px;
+    color: #fff;
+    background-color: #808080;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.rightSection button {
+    height: 19px;
+    width: 23px;
+}
+
+.rightSection .siteSearch {
+    height: 100px;
+}
+
+.rightSection .siteSearch a {
+    padding-left: 15%;
+    position: relative;
+    top: 10px;
+}
+
+.sectionTwo {
+    height: 90px;
+}
+
+.rightSection .sectionTwo a {
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+.sectionTwo button {
+    width: 120px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    background: -moz-linear-gradient(45deg, rgba(150, 213, 247, 1) 0%, rgba(192, 230, 250, 1) 45%, rgba(150, 213, 247, 1) 99%, rgba(150, 213, 247, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(150, 213, 247, 1)), color-stop(45%, rgba(192, 230, 250, 1)), color-stop(99%, rgba(150, 213, 247, 1)), color-stop(100%, rgba(150, 213, 247, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(150, 213, 247, 1) 0%, rgba(192, 230, 250, 1) 45%, rgba(150, 213, 247, 1) 99%, rgba(150, 213, 247, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(150, 213, 247, 1) 0%, rgba(192, 230, 250, 1) 45%, rgba(150, 213, 247, 1) 99%, rgba(150, 213, 247, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(150, 213, 247, 1) 0%, rgba(192, 230, 250, 1) 45%, rgba(150, 213, 247, 1) 99%, rgba(150, 213, 247, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(45deg, rgba(150, 213, 247, 1) 0%, rgba(192, 230, 250, 1) 45%, rgba(150, 213, 247, 1) 99%, rgba(150, 213, 247, 1) 100%);
+    /* w3c */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#96D5F7', endColorstr='#96D5F7', GradientType=1);
+    /* ie6-9 */
+    background-color: #C0E6FA;
+    border-color: gray;
+    color: #38CBFE;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.sectionThree {
+    height: 85px;
+}
+
+.sectionThree a {
+    margin-left: 15%;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.section4 {
+    height: 75px;
+}
+
+.section4 a {
+    margin-left: 15%;
+    position: relative;
+    top: 10%;
+}
+
+.section5 {
+    height: 45px;
+}
+
+.section5 a {
+    margin-left: 10%;
+    position: relative;
+    top: 10%;
+}
+
+.section6 {
+    height: 45px;
+}
+
+.section6 a {
+    margin-left: 10%;
+    position: relative;
+    top: 10%;
+}
+
+.section8 {
+    height: 45px;
+}
+
+.section8 a {
+    margin-left: 20%;
+    position: relative;
+    top: 10%;
+}
+
+.section9 {
+    height: 38px;
+}
+
+.section9 a {
+    margin-left: 14%;
+    position: relative;
+    top: 10%;
 }
