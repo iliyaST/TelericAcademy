@@ -1,0 +1,200 @@
+body {
+    font-size: 18px;
+    font-family: Arial
+}
+
+#root {
+    position: relative;
+    width: 610px;
+}
+
+h1 {
+    text-align: center;
+    color: #2AA0BD;
+    font-style: italic;
+}
+
+#me h2 {
+    margin-left: 5px;
+}
+
+#me ul li {
+    list-style: none;
+}
+
+#me ul .me strong {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+#me ul .me span {
+    margin-top: 10px;
+}
+
+#me ul .me {
+    border-bottom: 1px solid black;
+    position: relative;
+    right: 30px;
+    width: 270px;
+}
+
+#me ul .other strong {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#me ul .other {
+    float: right;
+}
+
+#me ul .other span {
+    position: relative;
+    left: 41px;
+}
+
+.sent-message {
+    position: relative;
+    top: 445px;
+}
+
+.sent-message input {
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #CCCCCC;
+    padding-left: 10px;
+    font-size: 25px;
+    width: 200px;
+    background: transparent;
+}
+
+.sent-message button {
+    height: 40px;
+    width: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #CCCCCC;
+    position: relative;
+    bottom: 1px;
+    padding-bottom: 0px;
+    background: transparent;
+    font-size: 20px;
+    color: #2AA0BD;
+    font-weight: 700;
+}
+
+#me {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #2AA0BD;
+    float: left;
+    height: 600px;
+    width: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ae871+0,a8f59b+47,d6fbaf+81,f1ffbc+100 */
+    background: rgb(74, 232, 113);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(74, 232, 113, 1) 0%, rgba(168, 245, 155, 1) 47%, rgba(214, 251, 175, 1) 81%, rgba(241, 255, 188, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(74, 232, 113, 1) 0%, rgba(168, 245, 155, 1) 47%, rgba(214, 251, 175, 1) 81%, rgba(241, 255, 188, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(74, 232, 113, 1) 0%, rgba(168, 245, 155, 1) 47%, rgba(214, 251, 175, 1) 81%, rgba(241, 255, 188, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc', GradientType=0);
+    /* IE6-9 */
+}
+
+#other {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #2AA0BD;
+    float: right;
+    height: 600px;
+    width: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ae871+0,a8f59b+47,d6fbaf+81,f1ffbc+100 */
+    background: rgb(74, 232, 113);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(74, 232, 113, 1) 0%, rgba(168, 245, 155, 1) 47%, rgba(214, 251, 175, 1) 81%, rgba(241, 255, 188, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(74, 232, 113, 1) 0%, rgba(168, 245, 155, 1) 47%, rgba(214, 251, 175, 1) 81%, rgba(241, 255, 188, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(74, 232, 113, 1) 0%, rgba(168, 245, 155, 1) 47%, rgba(214, 251, 175, 1) 81%, rgba(241, 255, 188, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc', GradientType=0);
+    /* IE6-9 */
+}
+
+#other li {
+    list-style: none;
+}
+
+#other .other strong {
+    display: block;
+}
+
+#other .me strong {
+    display: block;
+}
+
+#other .sent-message {
+    position: relative;
+    bottom: 60px;
+}
+
+#me .sent-message {
+    position: relative;
+    bottom: 5px;
+}
+
+#other h2 {
+    text-align: center;
+}
+
+#other .other strong {
+    position: relative;
+    left: 120px;
+}
+
+#other .other span {
+    position: relative;
+    left: 180px;
+}
+
+#other .me strong {
+    position: relative;
+    right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#other .me span {
+    position: relative;
+    right: 30px;
+}
+
+#other .messages .other {
+    border-bottom: 1px solid black;
+    width: 280px;
+    position: relative;
+    right: 30px;
+}
+
+.sent-message button:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ae871+1,97f394+32,f1ffbc+71,f1ffbc+100 */
+    background: rgb(74, 232, 113);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(74, 232, 113, 1) 1%, rgba(151, 243, 148, 1) 32%, rgba(241, 255, 188, 1) 71%, rgba(241, 255, 188, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(74, 232, 113, 1) 1%, rgba(151, 243, 148, 1) 32%, rgba(241, 255, 188, 1) 71%, rgba(241, 255, 188, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(74, 232, 113, 1) 1%, rgba(151, 243, 148, 1) 32%, rgba(241, 255, 188, 1) 71%, rgba(241, 255, 188, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc', GradientType=0);
+    /* IE6-9 */
+}
+
+.sent-message input {
+    color: #2AA0BD;
+}

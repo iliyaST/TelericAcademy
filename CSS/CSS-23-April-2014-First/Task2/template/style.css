@@ -1,0 +1,105 @@
+#wrapper {
+    width: 960px;
+    font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+    font-size: 16px;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content h3 {
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu li:hover .content {
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 130px;
+    margin-left: 15px;
+    text-align: left;
+    padding-left: 25px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8fdfe+0,a5daf0+96,a5daf0+96,a5daf0+99,a5daf0+99,a7dbf0+100 */
+    background: rgb(248, 253, 254);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(248, 253, 254, 1) 0%, rgba(165, 218, 240, 1) 96%, rgba(165, 218, 240, 1) 96%, rgba(165, 218, 240, 1) 99%, rgba(165, 218, 240, 1) 99%, rgba(167, 219, 240, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(248, 253, 254, 1) 0%, rgba(165, 218, 240, 1) 96%, rgba(165, 218, 240, 1) 96%, rgba(165, 218, 240, 1) 99%, rgba(165, 218, 240, 1) 99%, rgba(167, 219, 240, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(248, 253, 254, 1) 0%, rgba(165, 218, 240, 1) 96%, rgba(165, 218, 240, 1) 96%, rgba(165, 218, 240, 1) 99%, rgba(165, 218, 240, 1) 99%, rgba(167, 219, 240, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f8fdfe', endColorstr='#a7dbf0', GradientType=0);
+    /* IE6-9 */
+}
+
+.content ul li {
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+}
+
+.content ul {
+    padding: 0;
+}
+
+.content ul :nth-child(2) {
+    text-decoration: underline;
+}
+
+.menu li:hover {
+    height: 35px;
+    width: 130px;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.menu>li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    padding-left: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2cd6f1+0,59b0e8+49,7498e3+100,207cca+100,6d9ee4+100 */
+    background: rgb(44, 214, 241);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(44, 214, 241, 1) 0%, rgba(89, 176, 232, 1) 49%, rgba(116, 152, 227, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(109, 158, 228, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(44, 214, 241, 1) 0%, rgba(89, 176, 232, 1) 49%, rgba(116, 152, 227, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(109, 158, 228, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(44, 214, 241, 1) 0%, rgba(89, 176, 232, 1) 49%, rgba(116, 152, 227, 1) 100%, rgba(32, 124, 202, 1) 100%, rgba(109, 158, 228, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2cd6f1', endColorstr='#6d9ee4', GradientType=0);
+    /* IE6-9 */
+}
+
+#wrapper .menu :nth-child(3) {
+    padding-right: 40px;
+    padding-left: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #0000FF;
+}
+
+.menu li {
+    list-style: square;
+}
+
+.content ul :nth-child(3) a {
+    position: relative;
+    right: 30px;
+}
