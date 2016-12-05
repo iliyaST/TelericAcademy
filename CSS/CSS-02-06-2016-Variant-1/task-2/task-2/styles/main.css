@@ -1,0 +1,81 @@
+#root {
+    width: 950px;
+    height: 500px;
+}
+
+#site-header {
+    text-align: center;
+    margin-bottom: 35px;
+    background-color: #ccc;
+    padding: 15px 0;
+    background: #ccc url("../imgs/logo.png") 35% no-repeat;
+    background-size: 65px;
+    overflow: visible;
+    color: white;
+    text-shadow: 3px 2px 1px black
+}
+
+#site-header {
+    text-align: center;
+    width: 930px;
+    background-color: #CCCCCC;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    text-shadow: 3px 2px 1px black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+    right: 0px;
+    left: 50px;
+}
+
+#root .superheroes li {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 140px;
+}
+
+.hero-header {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 35px;
+    left: 50px;
+    color: #CCCCCC;
+    font-weight: 700;
+    opacity: 0.5;
+    background-color: #2C3333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+a {
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    margin: 0;
+    background-color: #2C3333;
+    padding-right: 40px;
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.superheroes li :hover a {
+    display: inline-block;
+}
