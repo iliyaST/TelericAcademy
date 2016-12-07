@@ -58,13 +58,13 @@ class SnakyTheSnake
                 case "r": cCol++; break;
             }
 
-            if (cRow > matrix.GetLength(0))
+            if (cRow >= matrix.GetLength(0))
             {
                 Console.WriteLine("Snacky will be lost into the depths with length {0}", lives);
                 Environment.Exit(0);
             }
 
-            if (cCol > matrix.GetLength(1))
+            if (cCol >= matrix.GetLength(1))
             {
                 cCol = 0;
             }
