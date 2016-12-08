@@ -1,0 +1,141 @@
+#wrapper {
+    width: 550px;
+    height: 630px;
+    border: 1px solid #CCCCCC;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+.header .name {
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    color: darkblue;
+    font-weight: 800;
+}
+
+.header .timestamp {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+    color: dimgray;
+}
+
+.header {
+    padding-bottom: 30px;
+}
+
+p {
+    color: dimgray;
+    padding-left: 15px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.event {
+    border: 1px solid #CCCCCC;
+    width: 500px;
+    margin-left: 15px;
+    padding-right: 10px;
+    box-shadow: 1px 1px 1px #888888;
+    padding-bottom: 20px;
+}
+
+.event img {
+    width: 510px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.event .title {
+    padding-top: 20px;
+    font-size: 22px;
+    width: 510px;
+    padding-left: 20px;
+}
+
+.event .author {
+    color: #CCCCCC;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.event .capital {
+    color: #CCCCCC;
+    padding-left: 20px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.footer {
+    position: relative;
+    top: 10px;
+    left: 8px;
+    border-top: 1px solid #CCCCCC;
+    width: 510px;
+    margin-left: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: dimgray;
+    margin: 5px;
+    margin-left: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.share {
+    position: relative;
+    left: 10px;
+}
+
+.like {
+    position: relative;
+    right: 15px;
+    top: 5px;
+}
+
+.like::before {
+    content: url(imgs/like.png);
+    position: relative;
+    right: 5px;
+}
+
+.comment {
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+
+.comment::before {
+    content: url(imgs/comment.png);
+    position: relative;
+    right: 10px;
+    top: 1px;
+}
+
+.share {
+    position: relative;
+    right: 25px;
+    top: 5px;
+}
+
+.share::before {
+    content: url(imgs/share.png);
+    position: relative;
+    right: 10px;
+    top: 1px;
+}

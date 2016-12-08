@@ -1,0 +1,124 @@
+.container {
+    width: 700px;
+    height: 500px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2f3138+60,645d6d+81,645d6d+81,645d6d+81,645d6d+82,aeb4b7+97,aeb4b7+97,b0ace0+100,49485e+100,363e47+100 */
+    background: rgb(0, 0, 0);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(47, 49, 56, 1) 60%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 82%, rgba(174, 180, 183, 1) 97%, rgba(174, 180, 183, 1) 97%, rgba(176, 172, 224, 1) 100%, rgba(73, 72, 94, 1) 100%, rgba(54, 62, 71, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(47, 49, 56, 1) 60%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 82%, rgba(174, 180, 183, 1) 97%, rgba(174, 180, 183, 1) 97%, rgba(176, 172, 224, 1) 100%, rgba(73, 72, 94, 1) 100%, rgba(54, 62, 71, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(47, 49, 56, 1) 60%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 81%, rgba(100, 93, 109, 1) 82%, rgba(174, 180, 183, 1) 97%, rgba(174, 180, 183, 1) 97%, rgba(176, 172, 224, 1) 100%, rgba(73, 72, 94, 1) 100%, rgba(54, 62, 71, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#363e47', GradientType=0);
+    /* IE6-9 */
+    position: relative;
+    bottom: 0px;
+    overflow: auto;
+}
+
+.nav-tabs .file-html {
+    background: url("../imgs/html-icon.png") 25% no-repeat;
+    background-size: 20px;
+    overflow: visible;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+
+.nav-tabs .file-css {
+    background: url("../imgs/css-icon.png") 25% no-repeat;
+    background-size: 20px;
+    overflow: visible;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+
+.nav-tabs .file-sass {
+    background: url("../imgs/sass-icon.png") 25% no-repeat;
+    background-size: 20px;
+    overflow: visible;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+
+.navigation {
+    width: 700px;
+    height: 40px;
+    background-color: #3D3D3D;
+}
+
+.navigation :nth-child(2) {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    right: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 17px;
+    color: #797979;
+    background-color: black;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.code-lines li:hover {
+    background-color: #797979;
+}
+
+.code-lines li:hover .property {
+    color: deepskyblue;
+}
+
+.code-lines .selector:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.file-html {
+    width: 50px;
+}
+
+.navigation li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    right: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 17px;
+    color: #797979;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.navigation li:hover {
+    background-color: #8a8c88;
+    color: #fff;
+}
+
+.selector {
+    color: yellowgreen;
+}
+
+.property {
+    color: dodgerblue;
+}
+
+.punctuation {
+    color: dimgray;
+}
+
+.code-lines {
+    color: #fff;
+    font-size: 10px;
+}
+
+.function {
+    color: red;
+}
