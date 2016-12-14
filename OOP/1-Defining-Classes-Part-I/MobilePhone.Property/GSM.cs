@@ -136,23 +136,23 @@ namespace MobilePhone.Property
             if (model != null)
             {
                 output.AppendLine("------------------");
-                output.AppendLine(model + " characteristics");
+                output.AppendLine(Model + " characteristics");
                 output.AppendLine();
             }
 
             if (manufacturer != null)
             {
-                output.AppendLine("Manufacturer: " + manufacturer);
+                output.AppendLine("Manufacturer: " + Manufacturer);
             }
 
             if (price != null)
             {
-                output.AppendLine("Price: $" + price);
+                output.AppendLine("Price: $" + Price);
             }
 
             if (owner != null)
             {
-                output.AppendLine("Owner: " + owner);
+                output.AppendLine("Owner: " + Owner);
             }
 
             if (Display != null && Display.Size != null)
