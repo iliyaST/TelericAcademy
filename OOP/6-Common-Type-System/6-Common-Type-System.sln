@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.StudentClass", "01.StudentClass\01.StudentClass.csproj", "{7C01D4AD-36F7-4503-BC7A-9A40BF1F29FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-03.StudentClass", "01-03.StudentClass", "{97C41059-8AD7-463A-93DA-0750AA759705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PersonClass", "02.PersonClass\02.PersonClass.csproj", "{D018C8DA-D4CC-4069-8A97-171B921FBA7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.PersonClass", "04.PersonClass", "{290948DC-D93C-4720-B2C6-C06F2CCBCA39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.BitArray", "05.BitArray", "{2343E00E-B91A-410C-95DF-1653E3ADB51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.64BitArray", "04.64BitArray\04.64BitArray.csproj", "{5337E206-003F-4873-B507-5E03A8E1B1AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.BinarySearch", "06.BinarySearch", "{0FBECAC4-23E8-45B9-9710-D55A342CA461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.BinarySearchTree", "06.BinarySearchTree\06.BinarySearchTree.csproj", "{D5C6C2CD-C2BB-421B-9E69-3F7076D4303F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C01D4AD-36F7-4503-BC7A-9A40BF1F29FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C01D4AD-36F7-4503-BC7A-9A40BF1F29FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C01D4AD-36F7-4503-BC7A-9A40BF1F29FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C01D4AD-36F7-4503-BC7A-9A40BF1F29FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D018C8DA-D4CC-4069-8A97-171B921FBA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D018C8DA-D4CC-4069-8A97-171B921FBA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D018C8DA-D4CC-4069-8A97-171B921FBA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D018C8DA-D4CC-4069-8A97-171B921FBA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5337E206-003F-4873-B507-5E03A8E1B1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5337E206-003F-4873-B507-5E03A8E1B1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5337E206-003F-4873-B507-5E03A8E1B1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5337E206-003F-4873-B507-5E03A8E1B1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C6C2CD-C2BB-421B-9E69-3F7076D4303F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C6C2CD-C2BB-421B-9E69-3F7076D4303F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C6C2CD-C2BB-421B-9E69-3F7076D4303F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C6C2CD-C2BB-421B-9E69-3F7076D4303F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C01D4AD-36F7-4503-BC7A-9A40BF1F29FC} = {97C41059-8AD7-463A-93DA-0750AA759705}
+		{D018C8DA-D4CC-4069-8A97-171B921FBA7C} = {290948DC-D93C-4720-B2C6-C06F2CCBCA39}
+		{5337E206-003F-4873-B507-5E03A8E1B1AA} = {2343E00E-B91A-410C-95DF-1653E3ADB51D}
+		{D5C6C2CD-C2BB-421B-9E69-3F7076D4303F} = {0FBECAC4-23E8-45B9-9710-D55A342CA461}
+	EndGlobalSection
+EndGlobal
