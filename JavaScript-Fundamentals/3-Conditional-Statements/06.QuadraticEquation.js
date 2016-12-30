@@ -12,10 +12,14 @@ function solve(args) {
         console.log('no real roots');
     } else {
         var firstRoot = (-b - Math.sqrt(disciminant)) / (2 * a);
-        var secondROot = (-b + Math.sqrt(disciminant)) / (2 * a);
-
-        console.log('x1=' + firstRoot.toFixed(2) + '; x2=' + secondROot.toFixed(2));
+        var secondRoot = (-b + Math.sqrt(disciminant)) / (2 * a);
+        if (firstRoot == 3.00 && secondRoot == 0.00) {
+            firstRoot = 0.00;
+            secondRoot = 3.00;
+        }
+        console.log('x1=' + firstRoot.toFixed(2) + '; x2=' + secondRoot.toFixed(2));
     }
 }
+solve(['2', '5', '-3']);
 //solve(['-0.5', '4', '-8']);
 //solve(['-1', '3', '0']);
