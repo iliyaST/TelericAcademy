@@ -79,7 +79,7 @@ namespace FurnitureManufacturer.Models
 
         public string Catalog()
         {
-            throw new NotImplementedException();
+            return "Catalog";
         }
 
         public IFurniture Find(string model)
