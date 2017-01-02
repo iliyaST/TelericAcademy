@@ -32,8 +32,6 @@ namespace FurnitureManufacturer.Models
             }
         }
 
-        public string Material { get; protected set; }
-
         public virtual decimal Price
         {
             get
@@ -63,9 +61,25 @@ namespace FurnitureManufacturer.Models
                 {
                     throw new ArgumentException("Height cannot be less or equal to 0.00 m");
                 }
+
+                this.height = value;
+            }
+        }
+
+        public virtual string Material
+        {
+            get
+            {
+                return this.MaterialType.ToString();
             }
         }
 
         protected MaterialType MaterialType { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}",
+                this.GetType().Name, this.Model, this.Material, this.Price, this.Height);
+        }
     }
 }

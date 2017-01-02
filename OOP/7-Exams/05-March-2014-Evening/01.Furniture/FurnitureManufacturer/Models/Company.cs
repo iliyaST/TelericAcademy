@@ -5,6 +5,7 @@ namespace FurnitureManufacturer.Models
     using System.Collections.Generic;
     using FurnitureManufacturer.Interfaces;
     using System.Linq;
+    using System.Text;
 
     public class Company : ICompany
     {
@@ -79,7 +80,23 @@ namespace FurnitureManufacturer.Models
 
         public string Catalog()
         {
-            return "Catalog";
+            var sb = new StringBuilder();
+
+            sb.AppendLine(String.Format("{0} - {1} - {2} {3}",
+            this.Name,
+            this.RegistrationNumber,
+            this.Furnitures.Count != 0 ? this.Furnitures.Count.ToString() : "no",
+            this.Furnitures.Count != 1 ? "furnitures" : "furniture"
+            ));
+
+            foreach (var furnitureInCompany in this.listOfFurnitures
+                .OrderBy(f => f.Price)
+                .ThenBy(f => f.Model))
+            {
+                sb.AppendLine(furnitureInCompany.ToString());
+            }
+
+            return sb.ToString().TrimEnd();
         }
 
         public IFurniture Find(string model)

@@ -20,5 +20,10 @@ namespace FurnitureManufacturer.Models
         }
 
         public int NumberOfLegs { get; protected set; }
+
+        public override string ToString()
+        {
+            return base.ToString() + string.Format(", Legs: {0}", this.NumberOfLegs);
+        }
     }
 }

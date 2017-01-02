@@ -32,5 +32,11 @@ namespace FurnitureManufacturer.Models
         public decimal Length { get; set; }
 
         public decimal Width { get; set; }
+
+        public override string ToString()
+        {
+            return base.ToString() + string.Format(", Length: {0}, Width: {1}, Area: {2}",
+                this.Length, this.Width, this.Area);
+        }
     }
 }

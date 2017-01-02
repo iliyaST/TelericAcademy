@@ -46,7 +46,7 @@
 
         public IConvertibleChair CreateConvertibleChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new ConvertableChair(
+            return new ConvertibleChair(
                 model, 
                 GetMaterialType(materialType),
                 price, 

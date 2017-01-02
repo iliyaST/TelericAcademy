@@ -19,5 +19,6 @@ namespace FurnitureManufacturer.Models
         {
             this.Height = height;
         }
+      
     }
 }
