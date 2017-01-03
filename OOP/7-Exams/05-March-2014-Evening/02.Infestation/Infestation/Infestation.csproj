@@ -49,16 +49,23 @@
     <Compile Include="HoldingPenWithSupplements.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="InfestationRequirements.cs" />
+    <Compile Include="InfestationSpore.cs" />
+    <Compile Include="InfestUnit.cs" />
     <Compile Include="Interaction.cs" />
     <Compile Include="InteractionType.cs" />
     <Compile Include="ISupplement.cs" />
+    <Compile Include="Marine.cs" />
+    <Compile Include="Parasite.cs" />
     <Compile Include="PowerCatalyst.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queen.cs" />
     <Compile Include="Supplement.cs" />
+    <Compile Include="Tank.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitClassification.cs" />
     <Compile Include="UnitInfo.cs" />
+    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
