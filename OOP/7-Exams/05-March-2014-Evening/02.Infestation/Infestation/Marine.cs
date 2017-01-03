@@ -6,6 +6,7 @@ namespace Infestation
         public Marine(string id)
         : base(id)
         {
+            this.AddSupplement(new WeaponarySkill());
         }
     }
 }

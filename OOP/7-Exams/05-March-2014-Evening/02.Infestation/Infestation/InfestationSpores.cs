@@ -1,9 +1,9 @@
 ﻿
 namespace Infestation
 {
-    public class InfestationSpore : Supplement
+    public class InfestationSpores : Supplement
     {
-        public InfestationSpore()
+        public InfestationSpores()
             : base(-1, 0, 20)
         {
         }

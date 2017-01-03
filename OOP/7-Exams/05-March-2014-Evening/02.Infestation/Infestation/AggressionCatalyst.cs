@@ -1,9 +1,9 @@
 ﻿
 namespace Infestation
 {
-    public class AgressionCatalyst : Catalyst
+    public class AggressionCatalyst : Catalyst
     {
-        public AgressionCatalyst()
+        public AggressionCatalyst()
             : base(0, 0, 3)
         {
         }
