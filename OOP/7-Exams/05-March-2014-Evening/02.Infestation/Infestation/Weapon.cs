@@ -12,7 +12,10 @@ namespace Infestation
 
         public override void ReactTo(ISupplement otherSupplement)
         {
-            base.ReactTo(otherSupplement);
+            if (otherSupplement is WeaponarySkill)
+            {
+                this.hasEffect = true;
+            }
         }
     }
 }
