@@ -4,9 +4,9 @@ Username contains invalid symbols!
 ####################
 Password must be between 5 and 30 characters long!
 ####################
-Username must be between 2 and 20 characters long!
+Lastname must be between 2 and 20 characters long!
 ####################
-Username must be between 2 and 20 characters long!
+Firstname must be between 2 and 20 characters long!
 ####################
 User pesho registered successfully!
 ####################
@@ -60,7 +60,7 @@ User gosho successfully logged in!
 ####################
 gosho added comment successfully!
 ####################
-gosho removed comment successfully!
+You are not the author!
 ####################
 Cannot remove comment! The comment does not exist!
 ####################
@@ -94,64 +94,62 @@ You are an admin and therefore cannot add vehicles!
 3. Username: ivancho, FullName: Ivan Ivanov, Role: Admin
 ####################
 --USER gosho--
-1.Motorcycle:
-Make: Suzuki
-Model: GSXR1000
-Wheels: 2
-Price: $8,000.00
-Category: Racing
-    --COMMENTS--
-2.Car:
-Make: Skoda
-Model: Fabia
-Wheels: 4
-Price: $2,000.00
-Seats: 5
-    --COMMENTS--
-3.Car:
-Make: BMW
-Model: 535i
-Wheels: 4
-Price: $7,200.00
-Seats: 5
-    --COMMENTS--
-4.Motorcycle:
-Make: Honda
-Model: Hornet600
-Wheels: 2
-Price: $4,150.00
-Category: Naked
-    --COMMENTS--
-5.Car:
-Make: Mercedes
-Model: S500L
-Wheels: 4
-Price: $15,000.00
-Seats: 5
-    --COMMENTS--
-6.Car:
-Make: Opel
-Model: Zafira
-Wheels: 4
-Price: $8,000.00
-Seats: 5
-    --COMMENTS--
-7.Car:
-Make: Opel
-Model: Zafira
-Wheels: 4
-Price: $7,450.00
-Seats: 5
-    --COMMENTS--
-8.Truck:
-Make: Volvo
-Model: FH4
-
-Wheels: 8
-Price: $11,800.00
-WeightCapacity: 40
-    --COMMENTS--
-
+1. Motorcycle:
+  Make: Suzuki
+  Model: GSXR1000
+  Wheels: 2
+  Price: $8000
+  Category: Racing
+    --NO COMMENTS--
+2. Car:
+  Make: Skoda
+  Model: Fabia
+  Wheels: 4
+  Price: $2000
+  Seats: 5
+    --NO COMMENTS--
+3. Car:
+  Make: BMW
+  Model: 535i
+  Wheels: 4
+  Price: $7200
+  Seats: 5
+    --NO COMMENTS--
+4. Motorcycle:
+  Make: Honda
+  Model: Hornet600
+  Wheels: 2
+  Price: $4150
+  Category: Naked
+    --NO COMMENTS--
+5. Car:
+  Make: Mercedes
+  Model: S500L
+  Wheels: 4
+  Price: $15000
+  Seats: 5
+    --NO COMMENTS--
+6. Car:
+  Make: Opel
+  Model: Zafira
+  Wheels: 4
+  Price: $8000
+  Seats: 5
+    --NO COMMENTS--
+7. Car:
+  Make: Opel
+  Model: Zafira
+  Wheels: 4
+  Price: $7450
+  Seats: 5
+    --NO COMMENTS--
+8. Truck:
+  Make: Volvo
+  Model: FH4
+  Wheels: 8
+  Price: $11800
+  Weight Capacity: 40t
+    --NO COMMENTS--
 ####################
 There is no user with username ivanch0!
 ####################
@@ -159,45 +157,53 @@ There is no user with username pencho!
 ####################
 The vehicle does not exist!
 ####################
-ivancho removed comment successfully!
+You are not the author!
 ####################
 --USER pesho--
-1.Motorcycle:
-Make: Kawasaki
-Model: Z
-Wheels: 2
-Price: $9,999.00
-Category: Naked
+1. Motorcycle:
+  Make: Kawasaki
+  Model: Z
+  Wheels: 2
+  Price: $9999
+  Category: Naked
     --COMMENTS--
-2.Car:
-Make: Opel
-Model: Vectra
-Wheels: 4
-Price: $5,000.00
-Seats: 5
+    ----------
+    Unikalen motor pichove
+      User: pesho
+    ----------
+    ----------
+    E toa go znam, brato. Padal e mai :)
+      User: gosho
+    ----------
     --COMMENTS--
-3.Car:
-Make: Mazda
-Model: 6
-Wheels: 4
-Price: $10,000.00
-Seats: 5
-    --COMMENTS--
-4.Motorcycle:
-Make: Suzuki
-Model: V-Strom
-Wheels: 2
-Price: $7,500.00
-Category: CityEnduro
-    --COMMENTS--
-5.Car:
-Make: BMW
-Model: Z3
-Wheels: 4
-Price: $11,200.00
-Seats: 2
-    --COMMENTS--
-
+2. Car:
+  Make: Opel
+  Model: Vectra
+  Wheels: 4
+  Price: $5000
+  Seats: 5
+    --NO COMMENTS--
+3. Car:
+  Make: Mazda
+  Model: 6
+  Wheels: 4
+  Price: $10000
+  Seats: 5
+    --NO COMMENTS--
+4. Motorcycle:
+  Make: Suzuki
+  Model: V-Strom
+  Wheels: 2
+  Price: $7500
+  Category: CityEnduro
+    --NO COMMENTS--
+5. Car:
+  Make: BMW
+  Model: Z3
+  Wheels: 4
+  Price: $11200
+  Seats: 2
+    --NO COMMENTS--
 ####################
 You logged out!
 ####################
@@ -218,149 +224,185 @@ User pesho successfully logged in!
 pesho added comment successfully!
 ####################
 --USER pesho--
-1.Motorcycle:
-Make: Kawasaki
-Model: Z
-Wheels: 2
-Price: $9,999.00
-Category: Naked
+1. Motorcycle:
+  Make: Kawasaki
+  Model: Z
+  Wheels: 2
+  Price: $9999
+  Category: Naked
     --COMMENTS--
-2.Car:
-Make: Opel
-Model: Vectra
-Wheels: 4
-Price: $5,000.00
-Seats: 5
+    ----------
+    Unikalen motor pichove
+      User: pesho
+    ----------
+    ----------
+    E toa go znam, brato. Padal e mai :)
+      User: gosho
+    ----------
+    ----------
+    E koi motor ne e padal be
+      User: pesho
+    ----------
     --COMMENTS--
-3.Car:
-Make: Mazda
-Model: 6
-Wheels: 4
-Price: $10,000.00
-Seats: 5
+2. Car:
+  Make: Opel
+  Model: Vectra
+  Wheels: 4
+  Price: $5000
+  Seats: 5
+    --NO COMMENTS--
+3. Car:
+  Make: Mazda
+  Model: 6
+  Wheels: 4
+  Price: $10000
+  Seats: 5
     --COMMENTS--
-4.Motorcycle:
-Make: Suzuki
-Model: V-Strom
-Wheels: 2
-Price: $7,500.00
-Category: CityEnduro
+    ----------
+    Komentar po cenata shte ima li
+      User: ivancho
+    ----------
+    ----------
+    Samona mqsto
+      User: pesho
+    ----------
     --COMMENTS--
-5.Car:
-Make: BMW
-Model: Z3
-Wheels: 4
-Price: $11,200.00
-Seats: 2
-    --COMMENTS--
-
+4. Motorcycle:
+  Make: Suzuki
+  Model: V-Strom
+  Wheels: 2
+  Price: $7500
+  Category: CityEnduro
+    --NO COMMENTS--
+5. Car:
+  Make: BMW
+  Model: Z3
+  Wheels: 4
+  Price: $11200
+  Seats: 2
+    --NO COMMENTS--
 ####################
 --USER gosho--
-1.Motorcycle:
-Make: Suzuki
-Model: GSXR1000
-Wheels: 2
-Price: $8,000.00
-Category: Racing
-    --COMMENTS--
-2.Car:
-Make: Skoda
-Model: Fabia
-Wheels: 4
-Price: $2,000.00
-Seats: 5
-    --COMMENTS--
-3.Car:
-Make: BMW
-Model: 535i
-Wheels: 4
-Price: $7,200.00
-Seats: 5
-    --COMMENTS--
-4.Motorcycle:
-Make: Honda
-Model: Hornet600
-Wheels: 2
-Price: $4,150.00
-Category: Naked
-    --COMMENTS--
-5.Car:
-Make: Mercedes
-Model: S500L
-Wheels: 4
-Price: $15,000.00
-Seats: 5
-    --COMMENTS--
-6.Car:
-Make: Opel
-Model: Zafira
-Wheels: 4
-Price: $8,000.00
-Seats: 5
-    --COMMENTS--
-7.Car:
-Make: Opel
-Model: Zafira
-Wheels: 4
-Price: $7,450.00
-Seats: 5
-    --COMMENTS--
-8.Truck:
-Make: Volvo
-Model: FH4
-
-Wheels: 8
-Price: $11,800.00
-WeightCapacity: 40
-    --COMMENTS--
-
+1. Motorcycle:
+  Make: Suzuki
+  Model: GSXR1000
+  Wheels: 2
+  Price: $8000
+  Category: Racing
+    --NO COMMENTS--
+2. Car:
+  Make: Skoda
+  Model: Fabia
+  Wheels: 4
+  Price: $2000
+  Seats: 5
+    --NO COMMENTS--
+3. Car:
+  Make: BMW
+  Model: 535i
+  Wheels: 4
+  Price: $7200
+  Seats: 5
+    --NO COMMENTS--
+4. Motorcycle:
+  Make: Honda
+  Model: Hornet600
+  Wheels: 2
+  Price: $4150
+  Category: Naked
+    --NO COMMENTS--
+5. Car:
+  Make: Mercedes
+  Model: S500L
+  Wheels: 4
+  Price: $15000
+  Seats: 5
+    --NO COMMENTS--
+6. Car:
+  Make: Opel
+  Model: Zafira
+  Wheels: 4
+  Price: $8000
+  Seats: 5
+    --NO COMMENTS--
+7. Car:
+  Make: Opel
+  Model: Zafira
+  Wheels: 4
+  Price: $7450
+  Seats: 5
+    --NO COMMENTS--
+8. Truck:
+  Make: Volvo
+  Model: FH4
+  Wheels: 8
+  Price: $11800
+  Weight Capacity: 40t
+    --NO COMMENTS--
 ####################
 --USER ivancho--
-
+--NO VEHICLES--
 ####################
 You logged out!
 ####################
 User gosho successfully logged in!
 ####################
-Cannot remove comment! The comment does not exist!
+gosho removed comment successfully!
 ####################
 --USER pesho--
-1.Motorcycle:
-Make: Kawasaki
-Model: Z
-Wheels: 2
-Price: $9,999.00
-Category: Naked
+1. Motorcycle:
+  Make: Kawasaki
+  Model: Z
+  Wheels: 2
+  Price: $9999
+  Category: Naked
     --COMMENTS--
-2.Car:
-Make: Opel
-Model: Vectra
-Wheels: 4
-Price: $5,000.00
-Seats: 5
+    ----------
+    Unikalen motor pichove
+      User: pesho
+    ----------
+    ----------
+    E koi motor ne e padal be
+      User: pesho
+    ----------
     --COMMENTS--
-3.Car:
-Make: Mazda
-Model: 6
-Wheels: 4
-Price: $10,000.00
-Seats: 5
+2. Car:
+  Make: Opel
+  Model: Vectra
+  Wheels: 4
+  Price: $5000
+  Seats: 5
+    --NO COMMENTS--
+3. Car:
+  Make: Mazda
+  Model: 6
+  Wheels: 4
+  Price: $10000
+  Seats: 5
     --COMMENTS--
-4.Motorcycle:
-Make: Suzuki
-Model: V-Strom
-Wheels: 2
-Price: $7,500.00
-Category: CityEnduro
+    ----------
+    Komentar po cenata shte ima li
+      User: ivancho
+    ----------
+    ----------
+    Samona mqsto
+      User: pesho
+    ----------
     --COMMENTS--
-5.Car:
-Make: BMW
-Model: Z3
-Wheels: 4
-Price: $11,200.00
-Seats: 2
-    --COMMENTS--
-
+4. Motorcycle:
+  Make: Suzuki
+  Model: V-Strom
+  Wheels: 2
+  Price: $7500
+  Category: CityEnduro
+    --NO COMMENTS--
+5. Car:
+  Make: BMW
+  Model: Z3
+  Wheels: 4
+  Price: $11200
+  Seats: 2
+    --NO COMMENTS--
 ####################
 You logged out!
 ####################
@@ -369,33 +411,41 @@ User pesho successfully logged in!
 pesho removed vehicle successfully!
 ####################
 --USER pesho--
-1.Car:
-Make: Opel
-Model: Vectra
-Wheels: 4
-Price: $5,000.00
-Seats: 5
+1. Car:
+  Make: Opel
+  Model: Vectra
+  Wheels: 4
+  Price: $5000
+  Seats: 5
+    --NO COMMENTS--
+2. Car:
+  Make: Mazda
+  Model: 6
+  Wheels: 4
+  Price: $10000
+  Seats: 5
     --COMMENTS--
-2.Car:
-Make: Mazda
-Model: 6
-Wheels: 4
-Price: $10,000.00
-Seats: 5
+    ----------
+    Komentar po cenata shte ima li
+      User: ivancho
+    ----------
+    ----------
+    Samona mqsto
+      User: pesho
+    ----------
     --COMMENTS--
-3.Motorcycle:
-Make: Suzuki
-Model: V-Strom
-Wheels: 2
-Price: $7,500.00
-Category: CityEnduro
-    --COMMENTS--
-4.Car:
-Make: BMW
-Model: Z3
-Wheels: 4
-Price: $11,200.00
-Seats: 2
-    --COMMENTS--
-
+3. Motorcycle:
+  Make: Suzuki
+  Model: V-Strom
+  Wheels: 2
+  Price: $7500
+  Category: CityEnduro
+    --NO COMMENTS--
+4. Car:
+  Make: BMW
+  Model: Z3
+  Wheels: 4
+  Price: $11200
+  Seats: 2
+    --NO COMMENTS--
 ####################
