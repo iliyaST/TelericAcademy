@@ -50,6 +50,11 @@ namespace WarMachines.Machines
             }
             else
             {
+                if (this.machines.Count == 1)
+                {
+                    sb.AppendLine(String.Format("{0} - {1} machine", this.Name, this.machines.Count));
+                }
+
                 sb.AppendLine(String.Format("{0} - {1} machines", this.Name, this.machines.Count));
 
                 foreach (var machine in machines)

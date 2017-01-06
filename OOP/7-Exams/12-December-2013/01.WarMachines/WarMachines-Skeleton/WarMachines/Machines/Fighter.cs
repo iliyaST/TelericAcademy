@@ -41,11 +41,11 @@ namespace WarMachines.Machines
 
             if (StealthMode)
             {
-                sb.Append(" *Stealth:  ON");
+                sb.AppendLine(" *Stealth: ON");
             }
             else
             {
-                sb.Append(" *Stealth: OFF");
+                sb.AppendLine(" *Stealth: OFF");
             }
 
             return sb.ToString();

@@ -47,11 +47,11 @@ namespace WarMachines.Machines
 
             if (DefenseMode)
             {
-                sb.Append(" *Defense:  ON");
+                sb.AppendLine(" *Defense: ON");
             }
             else
             {
-                sb.Append(" *Defense:  OFF");
+                sb.AppendLine(" *Defense: OFF");
             }
 
             return sb.ToString();
