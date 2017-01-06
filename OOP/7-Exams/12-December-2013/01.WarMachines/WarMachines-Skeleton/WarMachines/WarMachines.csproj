@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Enum\MachineType.cs" />
     <Compile Include="Common\Validator.cs" />
     <Compile Include="Engine\WarMachineEngine.cs" />
     <Compile Include="Engine\Command.cs" />

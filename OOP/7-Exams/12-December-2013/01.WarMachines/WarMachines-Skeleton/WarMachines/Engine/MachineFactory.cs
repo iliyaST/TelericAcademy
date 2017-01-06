@@ -1,5 +1,7 @@
 ﻿namespace WarMachines.Engine
 {
+    using System;
+    using Common;
     using WarMachines.Interfaces;
     using WarMachines.Machines;
 
@@ -7,18 +9,29 @@
     {
         public IPilot HirePilot(string name)
         {
-            return new Pilot(name);
+            IPilot pilot = new Pilot(name);
+
+            Validator.ValidateNull(pilot);
+
+            return pilot;
         }
 
         public ITank ManufactureTank(string name, double attackPoints, double defensePoints)
         {
-            return new Tank(name, attackPoints, defensePoints);
+            ITank tank = new Tank(name, attackPoints, defensePoints);
+
+            Validator.ValidateNull(tank);
+
+            return tank;
         }
 
         public IFighter ManufactureFighter(string name, double attackPoints, double defensePoints, bool stealthMode)
         {
-            // TODO: Implement this method
-            return new Fighter(name, attackPoints, defensePoints, stealthMode);
+            IFighter fighter = new Fighter(name, attackPoints, defensePoints, stealthMode);
+
+            Validator.ValidateNull(fighter);
+
+            return fighter;
         }
     }
 }

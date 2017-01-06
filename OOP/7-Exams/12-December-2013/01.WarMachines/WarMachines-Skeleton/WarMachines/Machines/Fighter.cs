@@ -2,40 +2,53 @@
 namespace WarMachines.Machines
 {
     using System;
-    using System.Text;
     using WarMachines.Interfaces;
+    using WarMachines.Common.Enum;
+    using Common;
+    using System.Text;
 
-    public class Fighter : Machine, IFighter, IMachine
+    public class Fighter : Machine, IFighter
     {
-        private const int InitialHealthPoints = 200;
-
-
         public Fighter(string name, double attackPoints, double defensePoints, bool stealthMode)
-            : base(name, attackPoints, defensePoints, InitialHealthPoints)
+            : base(name, attackPoints, defensePoints)
         {
+            base.HealthPoints = Constants.FighterInitialPoints;
+            base.MachineType = MachineType.Fighter;
             this.StealthMode = stealthMode;
         }
 
         public bool StealthMode { get; private set; }
 
-
         public void ToggleStealthMode()
         {
-            this.StealthMode = !this.StealthMode;
-
+            if (this.StealthMode == true)
+            {
+                this.StealthMode = false;
+            }
+            else
+            {
+                this.StealthMode = true;
+            }
         }
 
         public override string ToString()
         {
-            var baseString = base.ToString();
+            var sb = new StringBuilder();
 
-            var result = new StringBuilder();
+            sb.AppendLine(String.Format("- {0}", this.Name));
+            sb.AppendLine(String.Format(" *Type: {0}", this.MachineType));
+            sb.Append(base.ToString());
 
-            result.Append(baseString);
+            if (StealthMode)
+            {
+                sb.Append(" *Stealth:  ON");
+            }
+            else
+            {
+                sb.Append(" *Stealth: OFF");
+            }
 
-            result.Append(String.Format(" *Stealth: {0}", this.StealthMode ? "ON" : "OFF"));
-
-            return result.ToString();
+            return sb.ToString();
         }
     }
 }

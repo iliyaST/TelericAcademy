@@ -3,21 +3,21 @@ namespace WarMachines.Common
 {
     using System;
 
-    public static class Validator
+    public class Validator
     {
-        public static void CheckIfNull(object obj, string message = null)
+        public static void ValidateString(string text, string property)
         {
-            if(obj == null)
+            if (string.IsNullOrEmpty(text))
             {
-                throw new NullReferenceException(message);
+                throw new ArgumentException(String.Format(Constants.StringCannotBeNullOrEmpty), property);
             }
         }
 
-        public static void CheckIfStringIsNullOrEmpty(string text, string message = null)
+        public static void ValidateNull(object value)
         {
-            if (String.IsNullOrEmpty(text))
+            if (value == null)
             {
-                throw new NullReferenceException(message);
+                throw new ArgumentNullException(Constants.MachineCannotBeNull);
             }
         }
     }

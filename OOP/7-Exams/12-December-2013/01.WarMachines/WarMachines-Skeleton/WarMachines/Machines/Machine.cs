@@ -2,42 +2,30 @@
 namespace WarMachines.Machines
 {
     using Common;
+    using Common.Enum;
     using System;
     using System.Collections.Generic;
     using System.Text;
     using WarMachines.Interfaces;
 
-    public abstract class Machine : IMachine
+    public class Machine : IMachine
     {
-        /// <summary>
-        /// Fields
-        /// </summary>
         private string name;
-        private IPilot pilot;
-        private IList<string> targets;
 
-        /// <summary>
-        ///  Create machine
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="attackPoints"></param>
-        /// <param name="defensePoints"></param>
-        protected Machine(string name, double attackPoints, double defensePoints, double healthPoints)
+        public Machine(string name, double attackPoints, double defensePoints)
         {
             this.Name = name;
             this.AttackPoints = attackPoints;
             this.DefensePoints = defensePoints;
-            this.HealthPoints = healthPoints;
-            this.targets = new List<string>();
+            this.Targets = new List<string>();
         }
 
+        public MachineType MachineType { get; set; }
 
-
-        /// <summary>
-        /// Properties no need to check DefensePoints or HeathPoints
-        /// </summary>
         public double AttackPoints { get; protected set; }
+
         public double DefensePoints { get; protected set; }
+
         public double HealthPoints { get; set; }
 
         public string Name
@@ -46,74 +34,41 @@ namespace WarMachines.Machines
             {
                 return this.name;
             }
-
             set
             {
-                Validator.CheckIfStringIsNullOrEmpty(value, "Machine name cannot be null!");
+                Validator.ValidateString(value, nameof(Name));
 
                 this.name = value;
-
             }
         }
 
-        public IPilot Pilot
-        {
-            get
-            {
-                return this.pilot;
-            }
+        public IPilot Pilot { get; set; }
 
-            set
-            {
-                Validator.CheckIfNull(value, "Pilot cannot be null!");
-                this.pilot = value;
-            }
-        }
-
-        public IList<string> Targets
-        {
-            get
-            {
-                return new List<string>(this.targets);
-            }
-        }
+        public IList<string> Targets { get; }
 
         public void Attack(string target)
         {
-            Validator.CheckIfStringIsNullOrEmpty(target, "target cannot be null or empty");
-            this.targets.Add(target);
+            throw new NotImplementedException();
         }
 
         public override string ToString()
         {
-            //           -(machine name)
-            //*Type: (“Tank”/”Fighter”)
-            //*Health: (machine health points)
-            //*Attack: (machine attack points)
-            //*Defense: (machine defense points)
-            //*Targets: (machine target names/”None” – comma separated)
-            //*Defense: (“ON”/”OFF” – when applicable)
-            //*Stealth: (“ON”/”OFF” – when applicable)
-            var result = new StringBuilder();
-            var targets = string.Empty;
+            var sb = new StringBuilder();
 
-            if (this.targets.Count > 0)
+            sb.AppendLine(String.Format(" *Health: {0}", this.HealthPoints));
+            sb.AppendLine(String.Format(" *Attack: {0}", this.AttackPoints));
+            sb.AppendLine(String.Format(" *Defense: {0}", this.DefensePoints));
+
+            if (this.Targets.Count == 0)
             {
-                targets = String.Join(", ", this.targets);
+                sb.AppendLine(" *Targets: None");
             }
             else
             {
-                targets = "None";
+                sb.AppendLine(String.Format(" *Targets: {0}", String.Join(", ", this.Targets)));
             }
 
-            result.AppendLine(String.Format("- {0}", this.Name));
-            result.AppendLine(String.Format(" *Type: {0}", this.GetType().Name));
-            result.AppendLine(String.Format(" *Health: {0}", this.HealthPoints));
-            result.AppendLine(String.Format(" *Attack: {0}", this.AttackPoints));
-            result.AppendLine(String.Format(" *Defense: {0}", this.DefensePoints));
-            result.AppendLine(String.Format(" *Targets: {0}", targets));
-
-            return result.ToString().Trim();
+            return sb.ToString();
         }
     }
 }

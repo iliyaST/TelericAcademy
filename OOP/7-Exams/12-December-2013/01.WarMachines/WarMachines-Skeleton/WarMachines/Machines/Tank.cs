@@ -1,22 +1,21 @@
 ﻿
-using System;
-using System.Text;
-using WarMachines.Interfaces;
-
 namespace WarMachines.Machines
 {
-    public class Tank : Machine, ITank, IMachine
-    {
-        /// <summary>
-        /// Field
-        /// </summary>
-        private const int InitialHealthPoints = 100;
-        private const int AtackPointsChange = 40;
-        private const int DefensePointsChange = 30;
+    using System;
+    using WarMachines.Interfaces;
+    using WarMachines.Common.Enum;
+    using Common;
+    using System.Text;
 
-        public Tank(string name, double attackPoints, double defensePoints) :
-            base(name, attackPoints, defensePoints, InitialHealthPoints)
+    public class Tank : Machine, ITank
+    {
+
+        public Tank(string name, double attackPoints, double defensePoints)
+            : base(name, attackPoints - Constants.InitalAttackPointsChange
+                  , defensePoints + Constants.InitialDefensePointsChange)
         {
+            base.HealthPoints = Constants.TankInitialPoints;
+            base.MachineType = MachineType.Tank;
             this.DefenseMode = true;
         }
 
@@ -25,29 +24,37 @@ namespace WarMachines.Machines
         public void ToggleDefenseMode()
         {
             this.DefenseMode = !DefenseMode;
+
             if (DefenseMode)
             {
-                this.AttackPoints -= AtackPointsChange;
-                this.DefensePoints += DefensePointsChange;
+                this.AttackPoints -= Constants.InitalAttackPointsChange;
+                this.DefensePoints += Constants.InitialDefensePointsChange;
             }
             else
             {
-                this.AttackPoints += AtackPointsChange;
-                this.DefensePoints -= DefensePointsChange;
+                this.AttackPoints += Constants.InitalAttackPointsChange;
+                this.DefensePoints -= Constants.InitialDefensePointsChange;
             }
         }
 
         public override string ToString()
         {
-            var baseString = base.ToString();
+            var sb = new StringBuilder();
 
-            var result = new StringBuilder();
+            sb.AppendLine(String.Format("- {0}", this.Name));
+            sb.AppendLine(String.Format(" *Type: {0}", this.MachineType));
+            sb.Append(base.ToString());
 
-            result.Append(baseString);
+            if (DefenseMode)
+            {
+                sb.Append(" *Defense:  ON");
+            }
+            else
+            {
+                sb.Append(" *Defense:  OFF");
+            }
 
-            result.Append(String.Format(" *Defense: {0}", this.DefenseMode ? "ON" : "OFF"));
-
-            return result.ToString();
+            return sb.ToString();
         }
     }
 }

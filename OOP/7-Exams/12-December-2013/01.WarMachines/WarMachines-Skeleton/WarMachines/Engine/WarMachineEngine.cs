@@ -176,7 +176,7 @@
             }
 
             var tank = this.factory.ManufactureTank(name, attackPoints, defensePoints);
-            this.machines.Add(name,tank);
+            this.machines.Add(name, tank);
 
             return string.Format(TankManufactured, name, attackPoints, defensePoints);
         }

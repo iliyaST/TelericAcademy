@@ -5,29 +5,20 @@ namespace WarMachines.Machines
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
     using WarMachines.Interfaces;
 
     public class Pilot : IPilot
     {
-        /// <summary>
-        /// Fields
-        /// </summary>
         private string name;
         private ICollection<IMachine> machines;
 
         public Pilot(string name)
         {
             this.Name = name;
-            this.machines = new List<IMachine>();
+            machines = new List<IMachine>();
         }
 
-
-        // TODO: Implement all machine classes in this namespace - WarMachines.Machines
-        /// <summary>
-        /// Properties
-        /// </summary>
         public string Name
         {
             get
@@ -36,59 +27,38 @@ namespace WarMachines.Machines
             }
             set
             {
-                Validator.CheckIfStringIsNullOrEmpty(value,"Pilot name cannot be null!");
+                Validator.ValidateString(value, nameof(Name));
 
                 this.name = value;
-
             }
         }
 
         public void AddMachine(IMachine machine)
         {
-            Validator.CheckIfNull(machine,"Null machine cannot be addet to pilot!");
+            Validator.ValidateNull(machine);
 
-            this.machines.Add(machine);
+            machines.Add(machine);
         }
 
         public string Report()
         {
-            var sortedMachines = machines
-                .OrderBy(mc => mc.HealthPoints)
-                .ThenBy(mc => mc.Name);
+            var sb = new StringBuilder();
 
-
-            string machinesCount = "";
-
-            if (this.machines.Count > 0)
+            if (this.machines.Count == 0)
             {
-                machinesCount = this.machines.Count().ToString();
+                sb.Append(this.Name + " - " + "no machines");
             }
             else
             {
-                machinesCount = "no";
+                sb.AppendLine(String.Format("{0} - {1} machines", this.Name, this.machines.Count));
+
+                foreach (var machine in machines)
+                {
+                    sb.Append(machine.ToString());
+                }
             }
 
-            string plural = "";
-
-            if (this.machines.Count == 1)
-            {
-                plural = "machine";
-            }
-            else
-            {
-                plural = "machines";
-            }
-
-            var result = new StringBuilder();
-
-            result.AppendLine(string.Format("{0} - {1} {2}", this.Name, machinesCount, plural));
-
-            foreach (var machine in sortedMachines)
-            {
-                result.AppendLine(machine.ToString());
-            }
-
-            return result.ToString();
+            return sb.ToString();
         }
     }
 }
