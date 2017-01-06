@@ -1,7 +1,6 @@
 Pilot Ivan hired
 Tank Tank manufactured - attack: 100; defense: 100
 Fighter Fighter manufactured - attack: 150; defense: 200; stealth: ON
-Ivan - no machines
 Pilot Ivan engaged machine Tank
 Pilot Ivan engaged machine Fighter
 Ivan - 2 machines
@@ -19,8 +18,3 @@ Ivan - 2 machines
  *Defense: 200
  *Targets: None
  *Stealth: ON
-Pilot Gosho hired
-Gosho - no machines
-Machine Tank is already occupied
-Machine Fighter is already occupied
-Gosho - no machines
