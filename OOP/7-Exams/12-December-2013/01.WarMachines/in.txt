@@ -1,28 +1,28 @@
-HirePilot John
-HirePilot Nelson
-Report Bender
-ManufactureTank T-72 100 100
-ManufactureFighter Kingcobra 150 90 StealthON
-Report John
-Engage John T-72
-Engage John Kingcobra
-Report John
-Report Nelson
-Engage Nelson T-72
-Engage Nelson Kingcobra
-ManufactureFighter Boeing 180 90 StealthOFF
-Engage Nelson Boeing
-Attack T-72 Kingcobra
-Attack T-72 Boeing
-DefenseMode T-72
-DefenseMode Kingcobra
-DefenseMode Boeing
-Attack T-72 Kingcobra
-Attack T-72 Boeing
-StealthMode Kingcobra
-StealthMode Boeing
-StealthMode T-72
-Attack Kingcobra T-72
-Attack Boeing T-72
-Report Nelson
-Report John
+HirePilot Ivan
+ManufactureTank Tank 100 100
+ManufactureFighter Fighter 150 90 StealthON
+ManufactureFighter SecondFighter 180 90 StealthOFF
+Report Ivan
+Engage Ivan Tank
+Engage Ivan Fighter
+Report Ivan
+HirePilot Gosho
+Report Gosho
+Engage Gosho Tank
+Engage Gosho Fighter
+Engage Gosho SecondFighter
+Attack Tank Fighter
+Attack Tank SecondFighter
+DefenseMode Tank
+DefenseMode Fighter
+Report Toshko
+DefenseMode SecondFighter
+Attack Tank Fighter
+Attack Tank SecondFighter
+StealthMode Fighter
+StealthMode SecondFighter
+StealthMode Tank
+Attack Fighter Tank
+Attack SecondFighter Tank
+Report Gosho
+Report Ivan
