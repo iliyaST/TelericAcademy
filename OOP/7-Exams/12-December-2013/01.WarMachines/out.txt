@@ -1,11 +1,1 @@
-Pilot Ivan hired
-Tank Tank manufactured - attack: 100; defense: 100
-Pilot Ivan engaged machine Tank
-Ivan - 1 machine
-- Tank
- *Type: Tank
- *Health: 100
- *Attack: 60
- *Defense: 130
- *Targets: None
- *Defense: ON
+Fighter Fighter manufactured - attack: 200; defense: 180; stealth: OFF
