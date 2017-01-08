@@ -17,7 +17,7 @@ namespace TradeAndTravel
 
         public override void UpdateWithInteraction(string interaction)
         {
-            if (interaction == "drop")
+            if (this.Value > 0)
             {
                 this.Value--;
             }
