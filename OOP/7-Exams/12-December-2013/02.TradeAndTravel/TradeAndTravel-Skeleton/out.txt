@@ -1,4 +1,6 @@
-mArmor
-mWeapon
-cidnaIron
-blackmarshWood
+maiden
+bigStick
+99
+maiden
+bigStick
+98
