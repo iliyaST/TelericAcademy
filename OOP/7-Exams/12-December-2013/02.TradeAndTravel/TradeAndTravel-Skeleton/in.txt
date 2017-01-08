@@ -1,26 +1,41 @@
-create location mine honeybrew
-create location forest ydonwannaknow
-create location town winterhold
-create item armor neededArmor winterhold
-create item weapon neededWeapon winterhold
-create traveller hork honeybrew
-create merchant dra winterhold
-dra pickup
-hork gather unsuccessful
-hork inventory
-dra travel honeybrew
-hork buy neededArmor dra
-hork money
-hork gather honeybrewIron
-hork inventory
-hork travel ydonwannaknow
-hork gather unsuccessfulAgain
-hork inventory
-dra travel ydonwannaknow
-hork buy neededWeapon dra
-hork money
-dra money
-hork gather ydonwannaknowWood
-hork craft weapon someWeirdWeapon
-hork sell someWeirdWeapon dra
+create location town whiterun
+create location town riften
+create location mine cidna
+create location forest blackmarsh
+create item armor theArmor whiterun
+create item weapon Axe blackmarsh
+create item armor MineClothes blackmarsh
+create traveller pesho whiterun
+create merchant kiro whiterun
+pesho inventory
+pesho money
+pesho pickup
+pesho inventory
+pesho travel riften
+pesho drop
+create shopkeeper joro riften
+joro pickup
+joro inventory
+pesho buy theArmor joro
+pesho money
+pesho sell theArmor joro
+pesho inventory
+kiro travel riften
+kiro buy theArmor joro
+pesho buy theArmor kiro
+kiro money
+kiro travel blackmarsh
+kiro gather x
+kiro inventory
+kiro pickup
+kiro gather gatheredAtBlackmarsh 
+kiro travel cidna
+kiro gather gatheredAtCidna
+kiro inventory
+kiro craft weapon craftedWeapon
+kiro craft armor craftedArmor
+kiro inventory
+kiro sell craftedWeapon joro
+kiro money
+kiro inventory
 end
