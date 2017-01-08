@@ -14,12 +14,6 @@ namespace TradeAndTravel
         protected Dictionary<Location, List<Item>> strayItemsByLocation = new Dictionary<Location, List<Item>>();
 
         protected HashSet<Location> locations = new HashSet<Location>();
-
-        internal Item CreateItem()
-        {
-            throw new NotImplementedException();
-        }
-
         protected HashSet<Person> people = new HashSet<Person>();
 
         protected Dictionary<string, Person> personByName = new Dictionary<string, Person>();
@@ -220,7 +214,7 @@ namespace TradeAndTravel
 
         protected virtual void HandleLocationCreation(string locationTypeString, string locationName)
         {
-            Location location = CreateLocation(locationTypeString, locationName);
+            Location location = this.CreateLocation(locationTypeString, locationName);
 
             locations.Add(location);
             strayItemsByLocation[location] = new List<Item>();

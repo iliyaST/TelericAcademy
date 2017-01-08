@@ -34,6 +34,7 @@ namespace TradeAndTravel
 
         public virtual void UpdateWithInteraction(string interaction)
         {
+
         }
     }
 }
