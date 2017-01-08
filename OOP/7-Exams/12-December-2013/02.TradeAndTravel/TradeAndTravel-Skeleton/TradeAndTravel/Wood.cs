@@ -14,5 +14,13 @@ namespace TradeAndTravel
             : base(name, Wood.GeneralWoodValue, ItemType.Wood, location)
         {
         }
+
+        public override void UpdateWithInteraction(string interaction)
+        {
+            if (interaction == "drop")
+            {
+                this.Value--;
+            }
+        }
     }
 }
