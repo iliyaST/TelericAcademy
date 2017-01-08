@@ -1,7 +1,9 @@
 mArmor
 mWeapon
 cidnaIron
+blackmarshWood
 mArmor
 mWeapon
 cidnaIron
-dragonscale
+blackmarshWood
+mace

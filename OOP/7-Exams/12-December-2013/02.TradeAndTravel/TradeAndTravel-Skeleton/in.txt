@@ -8,8 +8,8 @@ hex pickup
 hex travel cidna
 hex gather cidnaIron
 hex travel blackmarsh
+hex gather blackmarshWood
 hex inventory
-hex craft armor dragonscale
 hex craft weapon mace
 hex inventory
 end
