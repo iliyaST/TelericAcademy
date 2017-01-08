@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TradeAndTravel
 {
+
     public class InteractionManagerExtended : InteractionManager
     {
 
@@ -26,9 +27,66 @@ namespace TradeAndTravel
                 case "gather":
                     this.HandleGatherInteraction(actor, commandWords[2]);
                     break;
+                case "craft":
+                    this.HandleCraftInteraction(actor, commandWords[2], commandWords[3]);
+                    break;
                 default:
                     base.HandlePersonCommand(commandWords, actor);
                     break;
+            }
+        }
+
+        private void HandleCraftInteraction(Person actor, string itemToBeCrafted, string itemName)
+        {
+
+            var itemToCraft = ItemType.Armor;
+
+            if (itemToBeCrafted.ToLower() == "weapon")
+            {
+                itemToCraft = ItemType.Weapon;
+            }
+
+            var requiredConditions = false;
+
+            if (itemToCraft == ItemType.Armor)
+            {
+                foreach (var item in actor.ListInventory())
+                {
+                    if (item.ItemType == ItemType.Iron)
+                    {
+                        requiredConditions = true;
+                        break;
+                    }
+                }
+
+                if (requiredConditions == true)
+                {
+                    var item = new Armor(itemName);
+                    this.AddToPerson(actor, item);
+                }
+            }
+            else if (itemToCraft == ItemType.Weapon)
+            {
+                var requiredIron = false;
+                var requiredWood = false;
+
+                foreach (var item in actor.ListInventory())
+                {
+                    if (item.ItemType == ItemType.Iron)
+                    {
+                        requiredIron = true;
+                    }
+                    if (item.ItemType == ItemType.Wood)
+                    {
+                        requiredWood = true;                      
+                    }
+                }
+
+                if (requiredIron == true && requiredWood == true)
+                {
+                    var item = new Armor(itemName);
+                    this.AddToPerson(actor, item);
+                }
             }
         }
 
