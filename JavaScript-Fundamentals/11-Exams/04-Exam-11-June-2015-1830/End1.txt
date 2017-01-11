@@ -50,7 +50,7 @@
   minerals: mod;
   compared: 1;
 }
-.col97 .bgsound74 #legend-30 {
+.col97 #hr-22 #legend-30 {
   defined: the;
   proximity: except;
   frenzied: t;
