@@ -15,43 +15,22 @@
 
         public ITable CreateTable(string model, string materialType, decimal price, decimal height, decimal length, decimal width)
         {
-            return new Table(
-                model,
-                GetMaterialType(materialType),
-                price,
-                height,
-                length,
-                width);
+            // TODO: Implement this method
         }
 
         public IChair CreateChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new Chair(
-                model, 
-                GetMaterialType(materialType), 
-                price,
-                height,
-                numberOfLegs);
+            // TODO: Implement this method
         }
 
         public IAdjustableChair CreateAdjustableChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new AdjustableChair(
-                model, 
-                GetMaterialType(materialType), 
-                price, 
-                height, 
-                numberOfLegs);
+            // TODO: Implement this method
         }
 
         public IConvertibleChair CreateConvertibleChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new ConvertibleChair(
-                model, 
-                GetMaterialType(materialType),
-                price, 
-                height, 
-                numberOfLegs);
+            // TODO: Implement this method
         }
 
         private MaterialType GetMaterialType(string material)
