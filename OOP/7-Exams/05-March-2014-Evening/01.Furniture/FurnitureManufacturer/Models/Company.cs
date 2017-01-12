@@ -83,11 +83,14 @@ namespace FurnitureManufacturer.Models
             this.Furnitures.Count != 1 ? "furnitures" : "furniture"
             ));
 
-            foreach (var furniture in Furnitures)
+            var sortedFurnitures = Furnitures
+                .OrderBy(x => x.Price)
+                .ThenBy(x => x.Model);
+
+            foreach (var furniture in sortedFurnitures)
             {
                 sb.AppendLine(furniture.ToString());
             }
-
 
             return sb.ToString().TrimEnd();
         }

@@ -30,7 +30,7 @@ namespace FurnitureManufacturer.Models
         {
             var sb = new StringBuilder();
 
-            sb.AppendLine(String.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Length: {5}, Width: {6}, Area: {7}",
+            sb.Append(String.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}, Length: {5}, Width: {6}, Area: {7}",
                 this.GetType().Name, this.Model, this.Material, this.Price, this.Height, this.Length, this.Width, this.Area));
 
             return sb.ToString();
