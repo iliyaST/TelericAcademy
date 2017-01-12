@@ -5,7 +5,7 @@ CreateChair DrugGosho leather 0.50 2.00 6 Normal
 AddFurnitureToCompany Pesho Gosho
 AddFurnitureToCompany Pesho TretiGosho
 AddFurnitureToCompany Pesho DrugGosho
-FindFurnitureFromCompany Pesho dRugGOsho
-FindFurnitureFromCompany Pesho GOsho
-FindFurnitureFromCompany Pesho TretiGosho
-FindFurnitureFromCompany Pesho NqmaTakyv
+ShowCompanyCatalog Pesho
+RemoveFurnitureFromCompany Pesho Gosho
+RemoveFurnitureFromCompany Pesho Gosho
+ShowCompanyCatalog Pesho

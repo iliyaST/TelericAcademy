@@ -99,7 +99,7 @@ namespace FurnitureManufacturer.Models
         {
             foreach (var furniture in Furnitures)
             {
-                if (furniture.Model == model)
+                if (String.Compare(furniture.Model, model, true) == 0)
                 {
                     return furniture;
                 }
