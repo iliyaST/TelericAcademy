@@ -1,6 +1,11 @@
 CreateCompany Pesho 1234567890
-CreateChair Gosho leather 1.00 2.00 6 Adjustable
+CreateChair Gosho leather 1.00 2.00 6 Normal
+CreateChair TretiGosho leather 0.50 2.00 6 Normal
+CreateChair DrugGosho leather 0.50 2.00 6 Normal
 AddFurnitureToCompany Pesho Gosho
-ShowCompanyCatalog Pesho
-SetChairHeight Gosho 50.00
-ShowCompanyCatalog Pesho
+AddFurnitureToCompany Pesho TretiGosho
+AddFurnitureToCompany Pesho DrugGosho
+FindFurnitureFromCompany Pesho dRugGOsho
+FindFurnitureFromCompany Pesho GOsho
+FindFurnitureFromCompany Pesho TretiGosho
+FindFurnitureFromCompany Pesho NqmaTakyv
