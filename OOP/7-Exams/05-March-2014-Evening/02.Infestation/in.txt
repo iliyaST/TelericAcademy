@@ -1,10 +1,11 @@
-insert Marine Raynor
-supplement AggressionCatalyst Raynor
-supplement AggressionCatalyst Raynor
-supplement AggressionCatalyst Raynor
-insert Dog Spike
-insert Dog Sharo
-supplement HealthCatalyst Spike 
+insert Marine marine
+insert Dog dog
+insert Queen queen
+insert Parasite parasite
+insert Tank tank
+status
+proceed
+status
 proceed
 status
 proceed

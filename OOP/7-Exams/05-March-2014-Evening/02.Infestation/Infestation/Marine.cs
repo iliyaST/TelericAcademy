@@ -20,7 +20,7 @@ namespace Infestation
 
             foreach (var unit in attackableUnits)
             {
-                if (unit.Health < optimalAttackableUnit.Health)
+                if (unit.Health > optimalAttackableUnit.Health)
                 {
                     optimalAttackableUnit = unit;
                 }
