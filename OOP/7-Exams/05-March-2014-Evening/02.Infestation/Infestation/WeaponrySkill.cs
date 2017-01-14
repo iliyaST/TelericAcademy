@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Infestation
 {
-    public class WeaponarySkill : Supplement
+    public class WeaponrySkill : Supplement
     {
-        public WeaponarySkill()
+        public WeaponrySkill()
             : base(0, 0, 0)
         {
         }

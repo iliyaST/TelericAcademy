@@ -47,7 +47,7 @@ namespace Infestation
 
         public override void ReactTo(ISupplement otherSupplement)
         {
-            if (otherSupplement is WeaponarySkill)
+            if (otherSupplement is WeaponrySkill)
             {
                 this.hasEffect = true;
             }

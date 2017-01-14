@@ -10,7 +10,7 @@ namespace Infestation
         public Marine(string id) 
             : base(id)
         {
-            this.AddSupplement(new WeaponarySkill());
+            this.AddSupplement(new WeaponrySkill());
         }
 
         protected override UnitInfo GetOptimalAttackableUnit(IEnumerable<UnitInfo> attackableUnits)
