@@ -8,7 +8,7 @@ namespace Infestation
         const int TankHealth = 20;
 
         public Tank(string id)
-            : base(id, UnitClassification.Mechanical,TankHealth,TankPower,TankAggression)
+            : base(id, UnitClassification.Mechanical, TankHealth, TankPower, TankAggression)
         {
         }
     }
