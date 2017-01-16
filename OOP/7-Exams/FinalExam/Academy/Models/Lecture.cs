@@ -12,7 +12,6 @@ namespace Academy.Models
     public class Lecture : ILecture
     {
         private string name;
-        private string date;
 
         public Lecture(string name, string date, ITrainer trainer)
         {
@@ -64,7 +63,10 @@ namespace Academy.Models
             }
             else
             {
-
+                foreach (var resourse in this.Resouces)
+                {
+                    sb.AppendLine(resourse.ToString());
+                }
             }
 
             return sb.ToString().TrimEnd();

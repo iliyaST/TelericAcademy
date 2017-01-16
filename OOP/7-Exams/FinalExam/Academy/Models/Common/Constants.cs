@@ -17,6 +17,10 @@ namespace Academy.Models.Common
         public const int MaxStudentNameLength = 16;
         public const int MinLectureNameLength = 5;
         public const int MaxLectureNameLength = 30;
+        public const int MinDemoResourseNamelength = 3;
+        public const int MaxDemoResourseNameLength = 15;
+        public const int MinDemoUrlNamelength = 3;
+        public const int MaxDemoUrlNameLength = 15;
 
         // Numbers validation
         public const int MinNumberOfCourses = 1;
@@ -35,5 +39,7 @@ namespace Academy.Models.Common
         public const string ResultExamPointsMustBeBetweenMinAndMax = "Course result's exam points should be between 0 and 1000!";
         public const string CourseResultExamPointsMustBeBetweenMinAndMax = "Course result's exam points should be between 0 and 1000!";
         public const string LectureNameMustBeBetweenMinAndMax = "Lecture's name should be between 5 and 30 symbols long!";
+        public const string ResourseMustBeBetweenMinAndMax = "Resource {0} should be between {1} and {2} symbols long!";
+
     }
 }
