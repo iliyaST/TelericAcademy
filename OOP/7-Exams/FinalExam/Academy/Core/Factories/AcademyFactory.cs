@@ -83,16 +83,16 @@ namespace Academy.Core.Factories
             switch (type)
             {
                 case "video":
-                    resourse = new VideoResource(ResourseType.Video, name, url);
+                    resourse = new VideoResource(ResourseType.Video, name, url, currentDate);
                     break;
                 case "presentation":
-                    resourse = new PresentationResource(ResourseType.Presentation, name, url);
+                    resourse = new PresentationResource(ResourseType.Presentation, name, url, currentDate);
                     break;
                 case "demo":
-                    resourse = new DemoResource(ResourseType.Demo, name, url);
+                    resourse = new DemoResource(ResourseType.Demo, name, url, currentDate);
                     break;
                 case "homework":
-                    resourse = new HomeworkResource(ResourseType.Homework, name, url);
+                    resourse = new HomeworkResource(ResourseType.Homework, name, url, currentDate);
                     break;
                 default: throw new ArgumentException("Invalid lecture resource type");
             }
@@ -104,7 +104,7 @@ namespace Academy.Core.Factories
 
         public ICourseResult CreateCourseResult(ICourse course, string examPoints, string coursePoints)
         {
-            ICourseResult courseResult = new CourseResult(course,examPoints,coursePoints);
+            ICourseResult courseResult = new CourseResult(course, examPoints, coursePoints);
 
             Validator.ValidateNull(courseResult, String.Format(Constants.CannotBeNull
                 , nameof(CourseResult)));

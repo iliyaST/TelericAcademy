@@ -10,11 +10,11 @@ namespace Academy.Models
 {
     public class HomeworkResource : Resourse
     {
-        public HomeworkResource(ResourseType type, string name, string url) 
-            : base(type, name, url)
+        public HomeworkResource(ResourseType type, string name, string url, DateTime currentDate)
+            : base(type, name, url, currentDate)
         {
-            this.DueDate = new DateTime();
-            DueDate.AddDays(7);
+            this.DueDate = currentDate;
+            DueDate = DueDate.AddDays(7);
         }
 
         public DateTime DueDate { get; set; }

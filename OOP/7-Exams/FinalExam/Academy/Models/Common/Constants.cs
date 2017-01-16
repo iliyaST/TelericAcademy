@@ -19,8 +19,8 @@ namespace Academy.Models.Common
         public const int MaxLectureNameLength = 30;
         public const int MinDemoResourseNamelength = 3;
         public const int MaxDemoResourseNameLength = 15;
-        public const int MinDemoUrlNamelength = 3;
-        public const int MaxDemoUrlNameLength = 15;
+        public const int MinDemoUrlNamelength = 5;
+        public const int MaxDemoUrlNameLength = 150;
 
         // Numbers validation
         public const int MinNumberOfCourses = 1;

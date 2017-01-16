@@ -1,0 +1,6 @@
+CreateStudent Pesho Frontend
+CreateStudent Gosho Dev
+CreateTrainer Mirto ASP.NET,Angular2
+CreateTrainer Duncu ASP.NET,nodeJS
+ListUsers
+Exit

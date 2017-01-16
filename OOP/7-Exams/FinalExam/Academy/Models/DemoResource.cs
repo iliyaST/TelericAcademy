@@ -11,8 +11,8 @@ namespace Academy.Models
 {
     public class DemoResource : Resourse
     {
-        public DemoResource(ResourseType type, string name, string url) 
-            : base(type, name, url)
+        public DemoResource(ResourseType type, string name, string url,DateTime currentDate) 
+            : base(type, name, url,currentDate)
         {
         }
     }

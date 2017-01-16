@@ -1,0 +1,20 @@
+Student with ID 0 was created.
+Student with ID 1 was created.
+Trainer with ID 0 was created.
+Trainer with ID 1 was created.
+* Trainer:
+ - Username: Mirto
+ - Technologies: ASP.NET; Angular2
+* Trainer:
+ - Username: Duncu
+ - Technologies: ASP.NET; nodeJS
+* Student:
+ - Username: Pesho
+ - Track: Frontend
+ - Course results:
+  * User has no course results!
+* Student:
+ - Username: Gosho
+ - Track: Dev
+ - Course results:
+  * User has no course results!

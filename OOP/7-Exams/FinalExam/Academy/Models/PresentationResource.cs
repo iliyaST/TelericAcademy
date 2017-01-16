@@ -12,8 +12,8 @@ namespace Academy.Models
     {
         
 
-        public PresentationResource(ResourseType type, string name, string url)
-            : base(type, name, url)
+        public PresentationResource(ResourseType type, string name, string url,DateTime currentDate)
+            : base(type, name, url,currentDate)
         {                      
         }
              

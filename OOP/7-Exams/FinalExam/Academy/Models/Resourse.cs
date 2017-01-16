@@ -14,7 +14,7 @@ namespace Academy.Models
         private string name;
         private string url;
 
-        public Resourse(ResourseType type ,string name,string url)
+        public Resourse(ResourseType type ,string name,string url,DateTime currentDate)
         {
             this.Type = type;
             this.Name = name;
