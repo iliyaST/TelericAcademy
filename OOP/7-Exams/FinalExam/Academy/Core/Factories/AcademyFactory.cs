@@ -1,6 +1,7 @@
 ﻿using Academy.Core.Contracts;
 using Academy.Core.Providers;
 using Academy.Models;
+using Academy.Models.Common;
 using Academy.Models.Contracts;
 using Academy.Models.Enums;
 using Academy.Models.Utils.Contracts;
@@ -38,20 +39,29 @@ namespace Academy.Core.Factories
 
         public IStudent CreateStudent(string username, string track)
         {
-            // TODO: Implement this
-            throw new NotImplementedException("Student class not attached to factory.");
+            IStudent student = new Student(username, track);
+
+            Validator.ValidateNull(student, String.Format(Constants.CannotBeNull, nameof(Student)));
+
+            return student;
         }
 
         public ITrainer CreateTrainer(string username, string technologies)
         {
-            // TODO: Implement this
-            throw new NotImplementedException("Trainer class not attached to factory.");
+            ITrainer trainer = new Trainer(username, technologies);
+
+            Validator.ValidateNull(trainer, String.Format(Constants.CannotBeNull, nameof(Trainer)));
+
+            return trainer;
         }
 
         public ICourse CreateCourse(string name, string lecturesPerWeek, string startingDate)
         {
-            // TODO: Implement this
-            throw new NotImplementedException("Course class not attached to factory.");
+            ICourse course = new Course(name,lecturesPerWeek,startingDate);
+
+            Validator.ValidateNull(course, String.Format(Constants.CannotBeNull, nameof(Trainer)));
+
+            return course;
         }
 
         public ILecture CreateLecture(string name, string date, ITrainer trainer)
