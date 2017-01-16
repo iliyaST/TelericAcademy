@@ -29,12 +29,19 @@ namespace Academy.Models
 
             sb.AppendLine("* Student:");
             sb.Append(base.ToString());
-            sb.AppendLine(String.Format(" - Track: {0}",this.Track));
+            sb.AppendLine(String.Format(" - Track: {0}", this.Track));
             sb.AppendLine(" - Course results:");
 
             if (this.CourseResults.Count == 0)
             {
                 sb.AppendLine("  * User has no course results!");
+            }
+            else
+            {
+                foreach (var result in CourseResults)
+                {
+                    sb.AppendLine(result.ToString());
+                }
             }
 
             return sb.ToString().TrimEnd();

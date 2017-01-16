@@ -24,6 +24,14 @@ namespace Academy.Models.Common
             }
         }
 
+        public static void NumberBetweenNumbers(float number, float min, float max, string messege)
+        {
+            if (number < min || number > max)
+            {
+                throw new ArgumentException(messege);
+            }
+        }
+
         public static void NullOrEmpty(string text,string messege)
         {
             if (string.IsNullOrEmpty(text))
@@ -32,7 +40,7 @@ namespace Academy.Models.Common
             }
         }
 
-        public static void ValidateNull(object value, string message)
+         public static void ValidateNull(object value, string message)
         {
             if (value == null)
             {

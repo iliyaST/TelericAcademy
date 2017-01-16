@@ -1,0 +1,38 @@
+Season with ID 0 was created.
+Student with ID 0 was created.
+Trainer with ID 0 was created.
+Student Pesho was added to Season 0.
+Trainer Cyku was assigned to Season 0.
+Course with ID 0 was created in Season 0.
+Lecture with ID 0 was created in course 0.JavaScriptOOP.
+Lecture with ID 1 was created in course 0.JavaScriptOOP.
+Student Pesho was added to Course 0.JavaScriptOOP.
+Course result with ID 0 was created for Student Pesho.
+* Trainer:
+ - Username: Cyku
+ - Technologies: JS;
+* Student:
+ - Username: Pesho
+ - Track: Frontend
+ - Course results:
+  * JavaScriptOOP: Points - 92, Grade - Excellent
+* Course:
+ - Name: JavaScriptOOP
+ - Lectures per week: 2
+ - Starting date: 2017-01-24 12:00:00 AM
+ - Ending date: 2017-02-23 12:00:00 AM
+ - Onsite students: 1
+ - Online students: 0
+ - Lectures:
+  * Lecture:
+   - Name: Introduction
+   - Date: 2017-01-25 12:00:00 AM
+   - Trainer username: Cyku
+   - Resources:
+    * There are no resources in this lecture.
+  * Lecture:
+   - Name: Functions
+   - Date: 2017-01-25 12:00:00 AM
+   - Trainer username: Cyku
+   - Resources:
+    * There are no resources in this lecture.

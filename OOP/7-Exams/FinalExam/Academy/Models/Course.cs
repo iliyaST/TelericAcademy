@@ -92,7 +92,13 @@ namespace Academy.Models
             if (this.Lectures.Count == 0)
             {
                 sb.AppendLine("  * There are no lectures in this course!");
-
+            }
+            else
+            {
+                foreach (var lecture in Lectures)
+                {
+                    sb.AppendLine(lecture.ToString());
+                }
             }
 
             return sb.ToString().TrimEnd();

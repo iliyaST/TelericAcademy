@@ -15,10 +15,16 @@ namespace Academy.Models.Common
         public const int MaxTrainerNameLength = 16;
         public const int MinStudentNameLength = 3;
         public const int MaxStudentNameLength = 16;
+        public const int MinLectureNameLength = 5;
+        public const int MaxLectureNameLength = 30;
 
         // Numbers validation
         public const int MinNumberOfCourses = 1;
         public const int MaxNumberOfCourses = 7;
+        public const int MinExamPoints = 0;
+        public const int MaxExamPoints = 1000;
+        public const int MinCoursePoints = 0;
+        public const int MaxCoursePoints = 125;
 
         // Strings for validation
         public const string StringMustBeBetweenMinAndMax = "The name of the course must be between 3 and 45 symbols!";
@@ -26,6 +32,8 @@ namespace Academy.Models.Common
         public const string StringCannotBeNullOrEmpty = "{0} cannot be null or empty!";
         public const string UserNameLenghtMustBeBetweenMinAndMax = "User's username should be between 3 and 16 symbols long!";
         public const string CannotBeNull = "{0} cannot be null!";
-
+        public const string ResultExamPointsMustBeBetweenMinAndMax = "Course result's exam points should be between 0 and 1000!";
+        public const string CourseResultExamPointsMustBeBetweenMinAndMax = "Course result's exam points should be between 0 and 1000!";
+        public const string LectureNameMustBeBetweenMinAndMax = "Lecture's name should be between 5 and 30 symbols long!";
     }
 }

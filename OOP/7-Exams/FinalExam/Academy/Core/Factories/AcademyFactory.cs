@@ -57,7 +57,7 @@ namespace Academy.Core.Factories
 
         public ICourse CreateCourse(string name, string lecturesPerWeek, string startingDate)
         {
-            ICourse course = new Course(name,lecturesPerWeek,startingDate);
+            ICourse course = new Course(name, lecturesPerWeek, startingDate);
 
             Validator.ValidateNull(course, String.Format(Constants.CannotBeNull, nameof(Trainer)));
 
@@ -66,8 +66,11 @@ namespace Academy.Core.Factories
 
         public ILecture CreateLecture(string name, string date, ITrainer trainer)
         {
-            // TODO: Implement this
-            throw new NotImplementedException("Lecture class not attached to factory.");
+            ILecture lecture = new Lecture(name, date, trainer);
+
+            Validator.ValidateNull(lecture, String.Format(Constants.CannotBeNull, nameof(Lecture)));
+
+            return lecture;
         }
 
         public ILectureResouce CreateLectureResouce(string type, string name, string url)
@@ -90,8 +93,12 @@ namespace Academy.Core.Factories
 
         public ICourseResult CreateCourseResult(ICourse course, string examPoints, string coursePoints)
         {
-            // TODO: Implement this
-            throw new NotImplementedException("CourseResult class not attached to factory.");
+            ICourseResult courseResult = new CourseResult(course,examPoints,coursePoints);
+
+            Validator.ValidateNull(courseResult, String.Format(Constants.CannotBeNull
+                , nameof(CourseResult)));
+
+            return courseResult;
         }
     }
 }
