@@ -27,7 +27,7 @@
 
         public decimal Damage { get; private set; }
 
-        public IEnumerable<Specialty> Specialties
+        public virtual IEnumerable<Specialty> Specialties
         {
             get
             {

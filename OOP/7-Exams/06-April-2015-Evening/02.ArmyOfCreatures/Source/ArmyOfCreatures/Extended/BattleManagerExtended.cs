@@ -5,10 +5,8 @@ namespace ArmyOfCreatures.Extended
     using System.Linq;
     using ArmyOfCreatures.Logic.Battles;
     using System.Collections.Generic;
-    using ArmyOfCreatures.Logic.Battles;
     using ArmyOfCreatures.Logic;
     using System.Globalization;
-    using ArmyOfCreatures.Logic.Battles;
     public class BattleManagerExtended : BattleManager
     {
         private readonly ICollection<ICreaturesInBattle> thirdArmyCreatures;

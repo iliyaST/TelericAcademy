@@ -9,9 +9,9 @@
     {
         private const string LogFormat = "--- {0} - {1}";
 
-        private readonly ICollection<ICreaturesInBattle> firstArmyCreatures;
+        protected readonly ICollection<ICreaturesInBattle> firstArmyCreatures;
 
-        private readonly ICollection<ICreaturesInBattle> secondArmyCreatures;
+        protected readonly ICollection<ICreaturesInBattle> secondArmyCreatures;
 
         private readonly ICreaturesFactory creaturesFactory;
 
@@ -41,7 +41,7 @@
                     CultureInfo.InvariantCulture,
                     LogFormat,
                     string.Format(CultureInfo.InvariantCulture, "Creature added to army {0}", creatureIdentifier.ArmyNumber),
-                    creature));
+                    creature));        
         }
 
         public void Attack(CreatureIdentifier attackerIdentifier, CreatureIdentifier defenderIdentifier)
