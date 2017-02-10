@@ -202,12 +202,4 @@ function solve() {
 
     return Course;
 }
-
-// let course = solve();
-// course.init('CSharp', ['Presentation1', 'Presentation2']);
-// course.addStudent('Pesho Peshov');
-// course.addStudent('Evg Nest');
-// course.addStudent('Ili St');
-// console.log(course.getAllStudents());
-// course.submitHomework(1, 1);
 module.exports = solve;
