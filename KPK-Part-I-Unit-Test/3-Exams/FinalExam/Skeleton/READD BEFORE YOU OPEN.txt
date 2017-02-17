@@ -1,0 +1,3 @@
+THERE ARE MISTAKES, Update method should be mocked using fake class
+to extend and ovverie the update method with maybe some custom exeption inside
+:))) u can check the author solution 2:))
