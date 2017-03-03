@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-1-3", "02.NamingIdentifiersHomework\Task-1-3.csproj", "{A3017E4D-D1E9-4915-98F2-14B220E906DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-4", "Task-4\Task-4.csproj", "{3B9D8143-DAD4-4EA0-810F-09308D149CAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3017E4D-D1E9-4915-98F2-14B220E906DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3017E4D-D1E9-4915-98F2-14B220E906DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3017E4D-D1E9-4915-98F2-14B220E906DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3017E4D-D1E9-4915-98F2-14B220E906DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9D8143-DAD4-4EA0-810F-09308D149CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9D8143-DAD4-4EA0-810F-09308D149CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9D8143-DAD4-4EA0-810F-09308D149CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9D8143-DAD4-4EA0-810F-09308D149CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
