@@ -190,9 +190,18 @@ function solve() {
 
             let result = this.apps.slice();
 
-            result.reverse();
+            result = result.map((x, i) => ({ x, i }));
 
-            result.sort((a, b) => b.rating - a.rating);
+            result.sort((a, b) => {
+
+                if (a.x.rating == b.x.rating) {
+                    return b.i - b.i;
+                }
+
+                return b.x.rating - a.x.rating;
+            });
+
+            result = result.map(a => a.x);
 
             return result.slice(0, count);
         }
@@ -368,3 +377,27 @@ function solve() {
 
 // Submit the code above this line in bgcoder.com
 module.exports = solve;
+
+const result = solve();
+
+const store = result.createStore('Store1', 'description', 1, 4);
+const someApp = result.createApp('app0', 'description', 2, 1);
+const someApp1 = result.createApp('app1', 'uahamuaha', 3, 9);
+const someApp2 = result.createApp('app2', 'HAHAHA', 4, 3);
+const someApp3 = result.createApp('app3', 'description', 5, 1);
+const someApp4 = result.createApp('app4', 'uahamuaha', 6, 9);
+const someApp5 = result.createApp('app5', 'HAHAHA', 7, 9);
+const someApp6 = result.createApp('app6', 'description', 8, 6);
+const someApp7 = result.createApp('app7', 'uahamuaha', 1, 5);
+const someApp8 = result.createApp('app8', 'HAHAHA', 1, 4);
+const someApp9 = result.createApp('app9', 'description', 1, 1);
+const someApp10 = result.createApp('app10', 'uahamuaha', 2, 2);
+const someApp11 = result.createApp('app11', 'HAHAHA', 3, 3);
+
+store.uploadApp(someApp).uploadApp(someApp1).uploadApp(someApp2)
+    .uploadApp(someApp3).uploadApp(someApp4).uploadApp(someApp5)
+    .uploadApp(someApp6).uploadApp(someApp7).uploadApp(someApp8)
+    .uploadApp(someApp9).uploadApp(someApp10).uploadApp(someApp11);
+
+const actual = store.listMostPopularApps(3);
+const a = 0;

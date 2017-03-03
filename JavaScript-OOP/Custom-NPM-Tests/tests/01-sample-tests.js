@@ -571,9 +571,9 @@ describe('Sample tests', function() {
 					const actual = 	store.listMostPopularApps(3)			
 					expect(actual.length).to.equal(3);	
 					
-					expect(actual[2].name).to.equal('app5');									
-					expect(actual[0].name).to.equal('app4');					
-					expect(actual[1].name).to.equal('app1');													
+					expect(actual[0].name).to.equal('app4');									
+					expect(actual[1].name).to.equal('app5');					
+					expect(actual[2].name).to.equal('app1');													
 				});				
 			
 			describe('Device tests', function() {
