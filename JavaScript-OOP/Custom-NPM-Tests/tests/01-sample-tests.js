@@ -574,7 +574,7 @@ describe('Sample tests', function() {
 					expect(actual[0].name).to.equal('app4');									
 					expect(actual[1].name).to.equal('app5');					
 					expect(actual[2].name).to.equal('app1');													
-				});				
+				});												
 			
 			describe('Device tests', function() {
 				it('search() should work correctly', function() {
