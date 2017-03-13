@@ -75,8 +75,9 @@ function solve() {
 
         buttons.forEach(button => {
             button.textContent = 'hide';
-            button.addEventListener('click', changeVisibility);
         });
+
+        $(selector).on('click', '.button', changeVisibility);
     };
 
     function changeVisibility(event) {
@@ -114,4 +115,4 @@ function solve() {
     }
 }
 
-//module.exports = solve;
+module.exports = solve;
