@@ -108,10 +108,11 @@ function solve() {
             currentSibling.className == 'button') {
             return null;
         } else if (currentSibling.className == 'content') {
+
             return currentSibling;
         }
 
-        findContentSiblingIfExist(currentSibling);
+        return findContentSiblingIfExist(currentSibling);
     }
 }
 
