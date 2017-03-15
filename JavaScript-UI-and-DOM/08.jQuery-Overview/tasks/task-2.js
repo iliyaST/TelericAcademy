@@ -18,31 +18,36 @@ Create a function that takes a selector and:
 
 */
 function solve() {
-    return function($selector) {
-        if ($selector != null && $selector != undefined && typeof $selector === 'string') {
-            $selector = $($selector);
+    return function(selector) {
+        var $selector;
+        if (selector != null && selector != undefined && typeof selector === 'string') {
+            $selector = $(selector);
             if ($selector.length == 0) {
                 throw Error('invalid element not found');
             }
-        } else if (!(selector instanceof jQuery)) {
-            throw Error('invalid element not instance of jQuery');
         }
 
         $selector.on('click', '.button', changeVisibility);
 
-        let buttonsAndContents = [].slice.apply($selector.find('.button, .content'));
+        var buttonsAndContents = $selector.find('.button, .content');
 
-        buttonsAndContents.forEach(element => {
-            if (element.className == 'button') {
-                element.textContent = 'hide';
+        // buttonsAndContents.forEach(x => {
+        //     if (x.className == 'button') {
+        //         x.textContent = 'hide';
+        //     }
+        // });
+
+        for (var q = 0; q < buttonsAndContents.length; q += 1) {
+            if (buttonsAndContents[q].className == 'button') {
+                buttonsAndContents[q].textContent = 'hide';
             }
-        });
+        }
 
         function changeVisibility() {
 
             //this is the clicked Button 
-            let $clickedButton = $(this);
-            let $currentContentElement = findContentSiblingIfExist($clickedButton);
+            var $clickedButton = $(this);
+            var $currentContentElement = findContentSiblingIfExist($clickedButton);
 
             //if we didnt find content element before another button we should do nothing
             if ($currentContentElement != null) {
@@ -59,7 +64,7 @@ function solve() {
         //currentButton is jQuery element
         function findContentSiblingIfExist(currentButton) {
 
-            let $currentSibling = $(currentButton).next();
+            var $currentSibling = $(currentButton).next();
 
             while ($currentSibling) {
 
@@ -73,6 +78,4 @@ function solve() {
             }
         }
     };
-}
-
-module.exports = solve;
+};
