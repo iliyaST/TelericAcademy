@@ -65,7 +65,11 @@ $.fn.colorpicker = function() {
         .css('left', '65px')
         .appendTo($colorPickerPanel);
 
+
+
+
     let canvas = document.createElement('canvas');
+
     canvas.width = $colorPalete.css('width');
     canvas.height = $colorPalete.css('height');
     let $canvas = $(canvas);

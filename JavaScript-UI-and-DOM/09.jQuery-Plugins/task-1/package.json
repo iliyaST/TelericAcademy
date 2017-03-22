@@ -1,7 +1,7 @@
 {
   "name": "dom-and-jquery-tests-with-mocha",
   "version": "1.0.0",
-  "description": "",
+  "description": "_For instructions on how to run the tests, check the following link: \r https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/README.md#user-content-preparing-the-local-machine-for-unit-testing-with-mocha-and-chai_",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Minkov/DOM-and-jQuery-tests-with-Mocha.git"
+    "url": "git+https://github.com/Minkov/DOM-and-jQuery-tests-with-Mocha.git"
   },
   "author": "",
   "license": "ISC",
