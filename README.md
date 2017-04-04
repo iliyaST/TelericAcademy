@@ -1,1 +1,1 @@
-# TelericAcademy
+# Teleric Academy
