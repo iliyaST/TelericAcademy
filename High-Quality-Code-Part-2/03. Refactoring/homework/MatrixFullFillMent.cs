@@ -2,7 +2,7 @@
 {
     public class MatrixFullFillment
     {
-        public static void ChangeDirection(ref int dx, ref int dy)
+        public static void ChangeDirection(ref int directionPositionX, ref int directionPositionY)
         {
             int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
             int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
@@ -10,7 +10,7 @@
 
             for (int count = 0; count < 8; count++)
             {
-                if (dirX[count] == dx && dirY[count] == dy)
+                if (dirX[count] == directionPositionX && dirY[count] == directionPositionY)
                 {
                     cd = count;
                     break;
@@ -19,16 +19,16 @@
 
             if (cd == 7)
             {
-                dx = dirX[0];
-                dy = dirY[0];
+                directionPositionX = dirX[0];
+                directionPositionY = dirY[0];
                 return;
             }
 
-            dx = dirX[cd + 1];
-            dy = dirY[cd + 1];
+            directionPositionX = dirX[cd + 1];
+            directionPositionY = dirY[cd + 1];
         }
 
-        public static bool CheckIfOutOfMatrix(int[,] arr, int x, int y)
+        public static bool CheckIfMatrixIsFull(int[,] arr, int x, int y)
         {
             int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
             int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
@@ -50,11 +50,11 @@
             {
                 if (arr[x + dirX[i], y + dirY[i]] == 0)
                 {
-                    return true;
+                    return false;
                 }
             }
 
-            return false;
+            return true;
         }
 
         public static void FindZeroCell(int[,] matrix, out int foundRow, out int foundCol)
