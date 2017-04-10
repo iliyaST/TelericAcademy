@@ -1,31 +1,34 @@
-﻿namespace FillTheMatrix
+﻿namespace MatrixActions
 {
-    public class MatrixFullFillment
+    using System;
+
+    public class MatrixActions
     {
         public static void ChangeDirection(ref int directionPositionX, ref int directionPositionY)
         {
-            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
-            int cd = 0;
+            int[] currentDirectionX = { 1, 1, 1, 0, -1, -1, -1, 0 };
+            int[] currentDirectionY = { 1, 0, -1, -1, -1, 0, 1, 1 };
+            int currentDirection = 0;
 
-            for (int count = 0; count < 8; count++)
+            for (int directionIndex = 0; directionIndex < 8; directionIndex++)
             {
-                if (dirX[count] == directionPositionX && dirY[count] == directionPositionY)
+                if (currentDirectionX[directionIndex] == directionPositionX &&
+                    currentDirectionY[directionIndex] == directionPositionY)
                 {
-                    cd = count;
+                    currentDirection = directionIndex;
                     break;
                 }
             }
 
-            if (cd == 7)
+            if (currentDirection == 7)
             {
-                directionPositionX = dirX[0];
-                directionPositionY = dirY[0];
+                directionPositionX = currentDirectionX[0];
+                directionPositionY = currentDirectionY[0];
                 return;
             }
 
-            directionPositionX = dirX[cd + 1];
-            directionPositionY = dirY[cd + 1];
+            directionPositionX = currentDirectionX[currentDirection + 1];
+            directionPositionY = currentDirectionY[currentDirection + 1];
         }
 
         public static bool CheckIfMatrixIsFull(int[,] arr, int x, int y)
@@ -57,7 +60,7 @@
             return true;
         }
 
-        public static void FindZeroCell(int[,] matrix, out int foundRow, out int foundCol)
+        public static void FindClosestEmptyCell(int[,] matrix, out int foundRow, out int foundCol)
         {
             var matrixLength = matrix.GetLength(0);
             foundRow = 0;
@@ -75,6 +78,23 @@
                     }
                 }
             }
-        }     
+        }
+
+        public static void PrintMatrix(int[,] matrix)
+        {
+            var matrixLength = matrix.GetLength(0);
+
+            for (int row = 0; row < matrixLength; row++)
+            {
+                for (int col = 0; col < matrixLength; col++)
+                {
+                    Console.Write("{0,3}", matrix[row, col]);
+                }
+
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("------------------------------------------------------------>");
+        }
     }
 }
