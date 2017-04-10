@@ -25,8 +25,9 @@
                 // We start filling the matrix from the top left corner so there the value is 1
                 this.Body[currentRow, currentCol] = initialValue;
 
-                if (MatrixActions.CheckIfMatrixIsFull(this.Body, currentRow, currentCol))
+                if (!MatrixActions.CheckIfThereIsAPossibleCellToMove(this.Body, currentRow, currentCol))
                 {
+                    MatrixActions.FindTheFirstPossibleEmptyCell(this.Body, out currentRow, out currentCol);
                     break;
                 }
 
@@ -43,9 +44,7 @@
                 currentRow += directionPositionX;
                 currentCol += directionPositionY;
                 initialValue++;
-            }
-
-            MatrixActions.FindClosestEmptyCell(this.Body, out currentRow, out currentCol);
+            }       
 
             if (currentRow != 0 && currentCol != 0)
             {
@@ -56,7 +55,7 @@
                 {
                     this.Body[currentRow, currentCol] = initialValue;
 
-                    if (MatrixActions.CheckIfMatrixIsFull(this.Body, currentRow, currentCol))
+                    if (!MatrixActions.CheckIfThereIsAPossibleCellToMove(this.Body, currentRow, currentCol))
                     {
                         break;
                     }
