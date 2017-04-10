@@ -19,7 +19,7 @@
                     break;
                 }
             }
-
+           
             directionRow = currentDirectionX[(currentDirection + 1) % 8];
             directionCol = currentDirectionY[(currentDirection + 1) % 8];
         }
