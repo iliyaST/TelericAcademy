@@ -28,7 +28,15 @@
                 if (!MatrixActions.CheckIfThereIsAPossibleCellToMove(this.Body, currentRow, currentCol))
                 {
                     MatrixActions.FindTheFirstPossibleEmptyCell(this.Body, out currentRow, out currentCol);
-                    break;
+
+                    if (currentRow != 0 && currentCol != 0)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
 
                 if (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
@@ -44,36 +52,6 @@
                 currentRow += directionPositionX;
                 currentCol += directionPositionY;
                 initialValue++;
-            }       
-
-            if (currentRow != 0 && currentCol != 0)
-            {
-                directionPositionX = 1;
-                directionPositionY = 1;
-
-                while (true)
-                {
-                    this.Body[currentRow, currentCol] = initialValue;
-
-                    if (!MatrixActions.CheckIfThereIsAPossibleCellToMove(this.Body, currentRow, currentCol))
-                    {
-                        break;
-                    }
-
-                    if (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
-                        this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
-                    {
-                        while (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
-                            this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
-                        {
-                            MatrixActions.ChangeDirection(ref directionPositionX, ref directionPositionY);
-                        }
-                    }
-
-                    currentRow += directionPositionX;
-                    currentCol += directionPositionY;
-                    initialValue++;
-                }
             }
         }
 
