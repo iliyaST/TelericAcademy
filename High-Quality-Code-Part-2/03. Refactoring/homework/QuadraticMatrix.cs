@@ -12,31 +12,28 @@
         }
 
         public override void FillMatrixRotatingWalkStyle()
-        {         
+        {
             int matrixLength = this.Body.GetLength(0),
                    initialValue = 1,
                    currentRow = 0,
                    currentCol = 0,
                    directionPositionX = 1,
                    directionPositionY = 1;
-         
-            while (true)
-            { // malko e kofti tova uslovie, no break-a raboti 100% : )   
 
+            while (true)
+            {
                 // We start filling the matrix from the top left corner so there the value is 1
                 this.Body[currentRow, currentCol] = initialValue;
 
                 if (MatrixActions.CheckIfMatrixIsFull(this.Body, currentRow, currentCol))
                 {
                     break;
-                } // prekusvame ako sme se zadunili
+                }
 
-                if (currentRow + directionPositionX >= matrixLength || currentRow + directionPositionX < 0 ||
-                    currentCol + directionPositionY >= matrixLength || currentCol + directionPositionY < 0 ||
+                if (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
                     this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
                 {
-                    while (currentRow + directionPositionX >= matrixLength || currentRow + directionPositionX < 0 ||
-                        currentCol + directionPositionY >= matrixLength || currentCol + directionPositionY < 0 ||
+                    while (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
                         this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
                     {
                         MatrixActions.ChangeDirection(ref directionPositionX, ref directionPositionY);
@@ -51,13 +48,12 @@
             MatrixActions.FindClosestEmptyCell(this.Body, out currentRow, out currentCol);
 
             if (currentRow != 0 && currentCol != 0)
-            { // taka go napravih, zashtoto funkciqta ne mi davashe da ne si definiram out parametrite
+            {
                 directionPositionX = 1;
                 directionPositionY = 1;
 
                 while (true)
                 {
-                    // malko e kofti tova uslovie, no break-a raboti 100% : )
                     this.Body[currentRow, currentCol] = initialValue;
 
                     if (MatrixActions.CheckIfMatrixIsFull(this.Body, currentRow, currentCol))
@@ -65,13 +61,10 @@
                         break;
                     }
 
-                    // prekusvame ako sme se zadunili
-                    if (currentRow + directionPositionX >= matrixLength || currentRow + directionPositionX < 0 ||
-                        currentCol + directionPositionY >= matrixLength || currentCol + directionPositionY < 0 ||
+                    if (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
                         this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
                     {
-                        while (currentRow + directionPositionX >= matrixLength || currentRow + directionPositionX < 0 ||
-                            currentCol + directionPositionY >= matrixLength || currentCol + directionPositionY < 0 ||
+                        while (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
                             this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
                         {
                             MatrixActions.ChangeDirection(ref directionPositionX, ref directionPositionY);
@@ -83,6 +76,31 @@
                     initialValue++;
                 }
             }
+        }
+
+        public bool CheckIfCellIsInsideOfMatrix(int currentRow, int currentCol, int directionPositionX, int directionPositionY)
+        {
+            if (currentRow + directionPositionX >= this.Body.GetLength(0))
+            {
+                return true;
+            }
+
+            if (currentRow + directionPositionX < 0)
+            {
+                return true;
+            }
+
+            if (currentCol + directionPositionY >= this.Body.GetLength(0))
+            {
+                return true;
+            }
+
+            if (currentCol + directionPositionY < 0)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
