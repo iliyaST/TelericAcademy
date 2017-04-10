@@ -11,7 +11,7 @@
             this.Body = new int[dimensions, dimensions];
         }
 
-        public override void FillMatrix()
+        public override void FillMatrixRotatingWalkStyle()
         {         
             int matrixLength = this.Body.GetLength(0),
                    initialValue = 1,
@@ -19,9 +19,11 @@
                    currentCol = 0,
                    directionPositionX = 1,
                    directionPositionY = 1;
-
+         
             while (true)
-            { // malko e kofti tova uslovie, no break-a raboti 100% : )
+            { // malko e kofti tova uslovie, no break-a raboti 100% : )   
+
+                // We start filling the matrix from the top left corner so there the value is 1
                 this.Body[currentRow, currentCol] = initialValue;
 
                 if (MatrixActions.CheckIfMatrixIsFull(this.Body, currentRow, currentCol))

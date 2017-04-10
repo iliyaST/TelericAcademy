@@ -24,7 +24,7 @@
 
             var matrix = new QadraticMatrix(dimensions);
 
-            matrix.FillMatrix();
+            matrix.FillMatrixRotatingWalkStyle();
 
             MatrixActions.PrintMatrix(matrix.Body);
         }

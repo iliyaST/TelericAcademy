@@ -31,27 +31,27 @@
             directionPositionY = currentDirectionY[currentDirection + 1];
         }
 
-        public static bool CheckIfMatrixIsFull(int[,] arr, int x, int y)
+        public static bool CheckIfMatrixIsFull(int[,] matrix, int currentRow, int currentCol)
         {
-            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
+            int[] directionRow = { 1, 1, 1, 0, -1, -1, -1, 0 };
+            int[] directionCol = { 1, 0, -1, -1, -1, 0, 1, 1 };
 
             for (int i = 0; i < 8; i++)
             {
-                if (x + dirX[i] >= arr.GetLength(0) || x + dirX[i] < 0)
+                if (currentRow + directionRow[i] >= matrix.GetLength(0) || currentRow + directionRow[i] < 0)
                 {
-                    dirX[i] = 0;
+                    directionRow[i] = 0;
                 }
 
-                if (y + dirY[i] >= arr.GetLength(0) || y + dirY[i] < 0)
+                if (currentCol + directionCol[i] >= matrix.GetLength(0) || currentCol + directionCol[i] < 0)
                 {
-                    dirY[i] = 0;
+                    directionCol[i] = 0;
                 }
             }
 
             for (int i = 0; i < 8; i++)
             {
-                if (arr[x + dirX[i], y + dirY[i]] == 0)
+                if (matrix[currentRow + directionRow[i], currentCol + directionCol[i]] == 0)
                 {
                     return false;
                 }

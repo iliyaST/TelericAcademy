@@ -51,7 +51,7 @@
 
         public int[,] Body { get; set; }
 
-        public virtual void FillMatrix()
+        public virtual void FillMatrixRotatingWalkStyle()
         {
             throw new NotImplementedException();
         }
