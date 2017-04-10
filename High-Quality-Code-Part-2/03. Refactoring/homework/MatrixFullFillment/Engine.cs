@@ -1,23 +1,31 @@
-﻿namespace FillMatrixTest
+﻿namespace MatrixFullFillment
 {
+    using MatrixFullFIllment.Contracts;
     using System;
-    using QuadraticMatrixCreation;
-    using MatrixActions;  
 
     public class Engine
     {
-        public static void Main(string[] args)
+        private ILogger logger;
+
+        public Engine(string matrixDimensions, ILogger logger)
         {
-            Console.WriteLine("Enter a positive number ");
+            this.MatrixDimensions = matrixDimensions;
+            this.logger = logger;
+        }
 
-            string input = Console.ReadLine();
+        public string MatrixDimensions { get; set; }
 
-            int matrixDimensions = 0;
+        public int[,] Execute()
+        {
+            int matrixDimensions;
 
-            while (!int.TryParse(input, out matrixDimensions) || matrixDimensions < 0 || matrixDimensions > 100)
+            while (!int.TryParse(this.MatrixDimensions, out matrixDimensions) || matrixDimensions <= 0 || matrixDimensions > 100)
             {
-                Console.WriteLine("You haven't entered a correct positive number");
-                input = Console.ReadLine();
+                this.logger.Log("You haven't entered a correct positive number!");
+                this.logger.Log("Default value will be used...");
+
+                matrixDimensions = 3;
+                break;
             }
 
             var matrix = new QadraticMatrix(matrixDimensions);
@@ -25,6 +33,8 @@
             matrix.FillMatrixRotatingWalkStyle();
 
             MatrixActions.PrintMatrix(matrix.Body);
+
+            return matrix.Body;
         }
     }
 }

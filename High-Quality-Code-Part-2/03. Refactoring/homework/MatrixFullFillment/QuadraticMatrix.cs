@@ -1,8 +1,5 @@
-﻿namespace QuadraticMatrixCreation
+﻿namespace MatrixFullFillment
 {
-    using MatrixActions;
-    using MatrixCreation;
-
     public class QadraticMatrix : Matrix
     {
         public QadraticMatrix(int dimensions)
