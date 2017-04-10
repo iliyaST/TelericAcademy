@@ -20,9 +20,7 @@
                 input = Console.ReadLine();
             }
 
-            int dimensions = matrixDimensions;
-
-            var matrix = new QadraticMatrix(dimensions);
+            var matrix = new QadraticMatrix(matrixDimensions);
 
             matrix.FillMatrixRotatingWalkStyle();
 

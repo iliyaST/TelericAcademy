@@ -17,8 +17,8 @@
                    initialValue = 1,
                    currentRow = 0,
                    currentCol = 0,
-                   directionPositionX = 1,
-                   directionPositionY = 1;
+                   directionRow = 1,
+                   directionCol = 1;
 
             while (true)
             {
@@ -39,40 +39,24 @@
                     }
                 }
 
-                if (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
-                    this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
+                // Change direction untill empty cell that is inside matrix is found
+                while (CheckIfNextCellIsOutsideOfMatrix(currentRow, currentCol, directionRow, directionCol) ||
+                    this.Body[currentRow + directionRow, currentCol + directionCol] != 0)
                 {
-                    while (CheckIfCellIsInsideOfMatrix(currentRow, currentCol, directionPositionX, directionPositionY) ||
-                        this.Body[currentRow + directionPositionX, currentCol + directionPositionY] != 0)
-                    {
-                        MatrixActions.ChangeDirection(ref directionPositionX, ref directionPositionY);
-                    }
+                    MatrixActions.ChangeDirection(ref directionRow, ref directionCol);
                 }
 
-                currentRow += directionPositionX;
-                currentCol += directionPositionY;
+                // Change direction when possible cell is found
+                currentRow += directionRow;
+                currentCol += directionCol;
                 initialValue++;
             }
         }
 
-        public bool CheckIfCellIsInsideOfMatrix(int currentRow, int currentCol, int directionPositionX, int directionPositionY)
+        public bool CheckIfNextCellIsOutsideOfMatrix(int currentRow, int currentCol, int directionRow, int directionCol)
         {
-            if (currentRow + directionPositionX >= this.Body.GetLength(0))
-            {
-                return true;
-            }
-
-            if (currentRow + directionPositionX < 0)
-            {
-                return true;
-            }
-
-            if (currentCol + directionPositionY >= this.Body.GetLength(0))
-            {
-                return true;
-            }
-
-            if (currentCol + directionPositionY < 0)
+            if (currentRow + directionRow >= this.Body.GetLength(0) || currentRow + directionRow < 0 ||
+                currentCol + directionCol >= this.Body.GetLength(0) || currentCol + directionCol < 0)
             {
                 return true;
             }
