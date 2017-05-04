@@ -1,10 +1,13 @@
-﻿using ProjectManager.Common.Exceptions;
-using ProjectManager.Data;
-using ProjectManager.Models;
+﻿using Bytes2you.Validation;
+using Pesho.Core.Contracts;
+using ProjectManager.CLI.Common;
+using ProjectManager.CLI.Core.Commands.Contracts;
+using ProjectManager.CLI.Data;
+using ProjectManager.CLI.Data.Contracts;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProjectManager.Commands
+namespace ProjectManager.CLI.Core.Commands
 {
     public sealed class CreateTaskCommand : ICommand
     {
@@ -14,12 +17,22 @@ namespace ProjectManager.Commands
 
         private const int MaxCountParameters = 4;
 
+        private IDatabase database;
+        private IModelsFactory factory;
+
+        public CreateTaskCommand(IDatabase database, IModelsFactory factory)
+        {
+            Guard.WhenArgument(database, "CreateProjectCommand Database").IsNull().Throw();
+            Guard.WhenArgument(factory, "CreateProjectCommand ModelsFactory")
+                .IsNull()
+                .Throw();
+
+            this.database = database;
+            this.factory = factory;
+        }
+
         public string Execute(List<string> commandParameters)
         {
-            var database = new Database();
-
-            var factory = new ModelsFactory();
-
             if (commandParameters.Count != MaxCountParameters)
             {
                 throw new UserValidationException(InvalidParameters);
@@ -35,11 +48,11 @@ namespace ProjectManager.Commands
             var projectName = commandParameters[2];
             var projectState = commandParameters[3];
 
-            var project = database.Projects[projectId];
+            var project = this.database.Projects[projectId];
 
             var owner = project.Users[userId];
 
-            var task = factory.CreateTask(owner, projectName, projectState);
+            var task = this.factory.CreateTask(owner, projectName, projectState);
             project.Tasks.Add(task);
 
             return SuccesfullyCreated;

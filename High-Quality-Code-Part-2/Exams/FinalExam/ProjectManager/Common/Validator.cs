@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
-using ProjectManager.Common.Exceptions;
 
-namespace ProjectManager.Common.Providers
-{   
+namespace ProjectManager.CLI.Common
+{
     public class Validator
     {
         public void Validate<T>(T obj) where T : class

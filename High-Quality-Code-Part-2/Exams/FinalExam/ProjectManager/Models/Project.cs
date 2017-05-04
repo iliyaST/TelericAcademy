@@ -1,9 +1,10 @@
-﻿using System;
+﻿using ProjectManager.CLI.Models.Contracts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ProjectManager.Models
+namespace ProjectManager.CLI.Models
 {
     public class Project : IProject
     {
@@ -55,7 +56,7 @@ namespace ProjectManager.Models
                 builder.Append("  - This project has no tasks!");
             }
 
-            return builder.ToString();
+            return builder.ToString().TrimEnd();
         }
     }
 }

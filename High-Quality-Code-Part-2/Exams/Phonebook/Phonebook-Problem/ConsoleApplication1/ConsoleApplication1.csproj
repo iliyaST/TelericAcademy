@@ -44,10 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
-    <Compile Include="Class3.cs" />
-    <Compile Include="Interface1.cs" />
+    <Compile Include="Entry.cs" />
+    <Compile Include="EngineOperationManager.cs" />
+    <Compile Include="PhonebookRepository.cs" />
+    <Compile Include="IPhonebookRepository.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>

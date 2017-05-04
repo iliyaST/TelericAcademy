@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ProjectManager.Models
+namespace ProjectManager.CLI.Models
 {
     public class User
     {

@@ -1,10 +1,11 @@
-﻿using System;
-using ProjectManager.Common.Exceptions;
-using ProjectManager.Common.Providers;
+﻿using Pesho.Core.Contracts;
+using ProjectManager.CLI.Common;
+using ProjectManager.CLI.Models;
+using System;
 
-namespace ProjectManager.Models
+namespace ProjectManager.CLI.Core
 {
-    public class ModelsFactory
+    public class ModelsFactory : IModelsFactory
     {
         private readonly Validator validator = new Validator();
 

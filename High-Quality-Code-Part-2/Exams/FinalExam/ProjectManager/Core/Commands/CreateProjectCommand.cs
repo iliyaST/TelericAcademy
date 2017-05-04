@@ -1,28 +1,26 @@
 ﻿using Bytes2you.Validation;
-using ProjectManager.Commands;
-using ProjectManager.Common.Exceptions;
-using ProjectManager.Data;
-using ProjectManager.Models;
+using Pesho.Core.Contracts;
+using ProjectManager.CLI.Common;
+using ProjectManager.CLI.Core.Commands.Contracts;
+using ProjectManager.CLI.Data.Contracts;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pesho.Core.Commands
+namespace ProjectManager.CLI.Core.Commands
 {
     public class CreateProjectCommand : ICommand
     {
-        // string constants
         private const string InvalidParamsMessage = "Invalid command parameters count!";
         private const string EmptyParamMessage = "Some of the passed parameters are empty!";
         private const string ProjectExistMessage = "A project with that name already exists!";
         private const string SuccesfullyCreatedMessage = "Successfully created a new project!";
 
-        // int constants
         private const int MaxParameterCount = 4;
 
-        private Database database;
-        private ModelsFactory factory;
+        private IDatabase database;
+        private IModelsFactory factory;
 
-        public CreateProjectCommand(Database database, ModelsFactory factory)
+        public CreateProjectCommand(IDatabase database, IModelsFactory factory)
         {
             Guard.WhenArgument(database, "CreateProjectCommand Database").IsNull().Throw();
             Guard.WhenArgument(factory, "CreateProjectCommand ModelsFactory")

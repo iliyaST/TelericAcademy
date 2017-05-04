@@ -6,21 +6,23 @@
     using System.Text;
     using ConsoleApplication1;
 
-    public class Class2
-    {
-        private const string Code = "+359";
-
-        private static IPhonebookRepository data = new REPNew(); // this works!
-        private static StringBuilder input = new StringBuilder();
-
+    public class Program
+    {    
         public static void Main()
         {
+            var operationManager = new EngineOperationManager();
+
             while (true)
             {
                 string data = Console.ReadLine();
-                if (data == "End" || data == null)
+
+                if(data == null)
                 {
-                    // Error reading from console 
+                    throw new ArgumentException("Invalid command!");
+                }
+
+                if (data == "End")
+                {
                     break;
                 }
 
@@ -47,110 +49,21 @@
 
                 if (command.StartsWith("AddPhone") && (strings.Length >= 2))
                 {
-                    Cmd("Cmd1", strings);
+                    operationManager.ParseCommand("AddPhone", strings);
                 }
                 else if ((command == "ChangePhone") && (strings.Length == 2))
                 {
-                    Cmd("Cmd2", strings);
+                    operationManager.ParseCommand("ChangePhone", strings);
                 }
                 else if ((command == "List") && (strings.Length == 2))
                 {
-                    Cmd("Cmd3", strings);
+                    operationManager.ParseCommand("List", strings);
                 }
                 else
                 {
                     throw new StackOverflowException();
-                }
-
-                Console.Write(input);
-                input.Clear();
-            }          
-        }
-
-        private static void Cmd(string cmd, string[] strings)
-        {
-            // first command
-            if (cmd == "Cmd1")
-            {
-                string str0 = strings[0];
-                var str1 = strings.Skip(1).ToList();
-
-                for (int i = 0; i < str1.Count; i++)
-                {
-                    str1[i] = Conv(str1[i]);
-                }
-
-                bool flag = data.AddPhone(str0, str1);
-
-                if (flag)
-                {
-                    Print("Phone entry created.");
-                }
-                else
-                {
-                    Print("Phone entry merged");
-                }
+                }             
             }
-            else if (cmd == "Cmd2")
-            {
-                // second command
-                Print(string.Empty + data.ChangePhone(Conv(strings[0]), Conv(strings[1])) + " numbers changed");
-            }
-            else
-            {
-                try
-                {
-                    IEnumerable<Class1> entries = data.ListEntries(int.Parse(strings[0]), int.Parse(strings[1]));
-
-                    foreach (var entry in entries)
-                    {
-                        Print(entry.ToString());
-                    }
-                }
-                catch (ArgumentOutOfRangeException)
-                {
-                    Print("Invalid range");
-                }
-            }
-        }
-
-        private static string Conv(string num)
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i <= input.Length; i++)
-            {
-                sb.Clear();
-                foreach (char ch in num)
-                {
-                    if (char.IsDigit(ch) || (ch == '+'))
-                    {
-                        sb.Append(ch);
-                    }
-                }
-
-                if (sb.Length >= 2 && sb[0] == '0' && sb[1] == '0')
-                {
-                    sb.Remove(0, 1);
-                    sb[0] = '+';
-                }
-
-                while (sb.Length > 0 && sb[0] == '0')
-                {
-                    sb.Remove(0, 1);
-                }
-
-                if (sb.Length > 0 && sb[0] != '+')
-                {
-                    sb.Insert(0, Code);
-                }               
-            }
-
-            return sb.ToString();
-        }
-
-        private static void Print(string text)
-        {
-            input.AppendLine(text);
-        }
+        }       
     }
 }

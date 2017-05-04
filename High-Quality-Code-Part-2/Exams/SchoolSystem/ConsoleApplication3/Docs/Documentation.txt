@@ -1,0 +1,12 @@
+﻿Bottleneck description: --------------------
+#1: In class Engine removed method WriteLine
+
+
+Bug reports: --------------------
+Format: #Bug number - Class name - Bug description
+Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows when you try to add more than 2.1 billion dollars.
+--------
+#1 - Enum was missing some grades (Grade enum)....?
+#2 - CreateteacherCommand didnt implement interface ICommand
+#3 - The student has this marks was missing...?
+#4 - Removed WriteLine method in class Engine

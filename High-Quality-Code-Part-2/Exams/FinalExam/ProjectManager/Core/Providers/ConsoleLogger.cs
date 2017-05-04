@@ -1,7 +1,7 @@
-﻿using System;
-using Pesho.Core.Contracts;
+﻿using ProjectManager.CLI.Core.Contracts;
+using System;
 
-namespace Pesho.Core.Providers
+namespace ProjectManager.CLI.Core.Providers
 {
     public class ConsoleLogger : ILogger
     {

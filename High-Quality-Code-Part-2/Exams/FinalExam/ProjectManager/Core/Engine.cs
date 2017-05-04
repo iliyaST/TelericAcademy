@@ -1,10 +1,10 @@
 ﻿using Bytes2you.Validation;
-using Pesho.Core.Contracts;
-using ProjectManager.Common;
-using ProjectManager.Common.Exceptions;
+using ProjectManager.CLI.Common;
+using ProjectManager.CLI.Core.Conctracts;
+using ProjectManager.CLI.Core.Contracts;
 using System;
 
-namespace ProjectManager
+namespace ProjectManager.CLI.Core
 {
     public class Engine
     {

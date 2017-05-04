@@ -1,10 +1,9 @@
-﻿using Pesho.Core.Providers;
-using ProjectManager.Commands;
-using ProjectManager.Common;
-using ProjectManager.Data;
-using ProjectManager.Models;
+﻿using ProjectManager.CLI.Core;
+using ProjectManager.CLI.Core.Commands;
+using ProjectManager.CLI.Core.Providers;
+using ProjectManager.CLI.Data;
 
-namespace ProjectManager
+namespace ProjectManager.CLI
 {
     public class Startup
     {
@@ -13,7 +12,7 @@ namespace ProjectManager
             var database = new Database();
             var modelsFactory = new ModelsFactory();
 
-            var commandFactory = new CommandFactory(database, modelsFactory);
+            var commandFactory = new CommandsFactory(database, modelsFactory);
 
             var parser = new CommandParser(commandFactory);
             var consoleReader = new ConsoleReader();

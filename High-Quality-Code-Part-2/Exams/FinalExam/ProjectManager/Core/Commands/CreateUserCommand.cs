@@ -1,11 +1,13 @@
-﻿using ProjectManager.Commands;
-using ProjectManager.Common.Exceptions;
-using ProjectManager.Data;
-using ProjectManager.Models;
+﻿using Bytes2you.Validation;
+using Pesho.Core.Contracts;
+using ProjectManager.CLI.Common;
+using ProjectManager.CLI.Core.Commands.Contracts;
+using ProjectManager.CLI.Data;
+using ProjectManager.CLI.Data.Contracts;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pesho.Core.Commands
+namespace ProjectManager.CLI.Core.Commands
 {
     public class CreateUserCommand : ICommand
     {
@@ -15,6 +17,20 @@ namespace Pesho.Core.Commands
         private const string SuccesfullyAddedUser = "Successfully created a new user!";
 
         private const int MaxParametersCount = 3;
+
+        private IDatabase database;
+        private IModelsFactory factory;
+
+        public CreateUserCommand(IDatabase database, IModelsFactory factory)
+        {
+            Guard.WhenArgument(database, "CreateProjectCommand Database").IsNull().Throw();
+            Guard.WhenArgument(factory, "CreateProjectCommand ModelsFactory")
+                .IsNull()
+                .Throw();
+
+            this.database = database;
+            this.factory = factory;
+        }
 
         public string Execute(List<string> commandParameters)
         {

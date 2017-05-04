@@ -1,4 +1,4 @@
-﻿namespace Pesho.Models.Contracts
+﻿namespace ProjectManager.CLI.Models.Contracts
 {
     public interface IUser
     {

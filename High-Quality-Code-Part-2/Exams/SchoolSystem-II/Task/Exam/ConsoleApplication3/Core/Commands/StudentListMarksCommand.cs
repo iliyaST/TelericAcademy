@@ -9,7 +9,7 @@
         {
             var studentId = int.Parse(parameters[0]);
 
-            return Engine.Instance.Students[studentId].ListMarks();
+            return Engine.Students[studentId].ListMarks();
         }
     }
 }

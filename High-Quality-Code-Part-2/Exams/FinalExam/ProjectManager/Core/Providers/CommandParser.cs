@@ -1,15 +1,16 @@
-﻿namespace ProjectManager.Common
+﻿namespace ProjectManager.CLI.Core.Providers
 {
     using System.Linq;
     using Commands;
-    using Pesho.Core.Contracts;
+    using Common;
+    using Contracts;
 
     public class CommandParser : IParser
     {
         private const string NoCommandMessage = "No command has been provided!";
-        private CommandFactory factory;
+        private CommandsFactory factory;
 
-        public CommandParser(CommandFactory factory)
+        public CommandParser(CommandsFactory factory)
         {
             this.factory = factory;
         }
@@ -20,7 +21,7 @@
 
             if (string.IsNullOrWhiteSpace(commandName))
             {
-                throw new Exceptions.UserValidationException(NoCommandMessage);
+                throw new UserValidationException(NoCommandMessage);
             }
 
             var command = this.factory.CreateCommandFromString(commandName);

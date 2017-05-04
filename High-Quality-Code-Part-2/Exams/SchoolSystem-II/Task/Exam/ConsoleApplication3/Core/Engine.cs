@@ -6,37 +6,27 @@
     using Core.Providers;
     using Models;
 
-    public class Engine : IEngine
+    public class Engine
     {
-        private static IEngine instanceHolder = new Engine();
-
-        private Engine()
+        public Engine(IReader reader, IParser parser, IWriter writer)
         {
-            this.Reader = new ConsoleReaderProvider();
-            this.Parser = new CommandParserProvider();
-            this.Writer = new ConsoleWriterProvider();
+            this.Reader = reader;
+            this.Parser = parser;
+            this.Writer = writer;
 
-            this.Teachers = new Dictionary<int, Teacher>();
-            this.Students = new Dictionary<int, Student>();
+            Teachers = new Dictionary<int, Teacher>();
+            Students = new Dictionary<int, Student>();
         }
 
-        public static IEngine Instance
-        {
-            get
-            {
-                return instanceHolder;
-            }
-        }
+        public static Dictionary<int, Teacher> Teachers { get; set; }
+
+        public static Dictionary<int, Student> Students { get; set; }
 
         public IReader Reader { get; set; }
 
         public IParser Parser { get; set; }
 
         public IWriter Writer { get; set; }
-
-        public Dictionary<int, Teacher> Teachers { get; set; }
-
-        public Dictionary<int, Student> Students { get; set; }
 
         public void Start()
         {

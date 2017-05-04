@@ -37,8 +37,9 @@
         {
             if (this.Marks.Count != 0)
             {
+                var studentHasMarks = "The student has these marks:\n";
                 var listedMarksFormated = this.Marks.Select(mark => $"{mark.Subject} => {mark.Value}").ToList();
-                return string.Join("\n", listedMarksFormated);
+                return studentHasMarks + string.Join("\n", listedMarksFormated) + "\n";
             }
             else
             {

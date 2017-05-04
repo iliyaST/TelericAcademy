@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProjectManager.Common.Exceptions
+namespace ProjectManager.CLI.Common
 {
     public class UserValidationException : Exception
     {

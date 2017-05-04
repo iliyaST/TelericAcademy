@@ -9,4 +9,4 @@ Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows 
 #1 - Student and teacher ids are slapped
 #2 - When student hasnt any marks no message is return
 #3 - Grades from one to six were missed
-#4 - 
+#4 - Missing the student has these marks.

@@ -12,6 +12,6 @@
         /// <summary>
         /// Add mark in the specific subject to a current student with current value
         /// </summary>
-        void AddMark(IStudent student, float value);
+        void AddMark(IStudent student, IMark mark);
     }
 }

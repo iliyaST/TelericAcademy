@@ -1,7 +1,7 @@
 ﻿using log4net;
-using Pesho.Core.Contracts;
+using ProjectManager.CLI.Core.Contracts;
 
-namespace ProjectManager.Common
+namespace ProjectManager.CLI.Core.Providers
 {
     public class FileLogger : IFileLogger
     {

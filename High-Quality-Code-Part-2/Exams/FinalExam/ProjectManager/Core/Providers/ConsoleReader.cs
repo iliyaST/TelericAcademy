@@ -1,7 +1,7 @@
 ﻿using System;
-using Pesho.Core.Contracts;
+using ProjectManager.CLI.Core.Conctracts;
 
-namespace Pesho.Core.Providers
+namespace ProjectManager.CLI.Core.Providers
 {
     public class ConsoleReader : IReader
     {

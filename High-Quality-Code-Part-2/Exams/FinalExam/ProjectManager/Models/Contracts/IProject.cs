@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProjectManager.Models
+namespace ProjectManager.CLI.Models.Contracts
 {
     public interface IProject
     {

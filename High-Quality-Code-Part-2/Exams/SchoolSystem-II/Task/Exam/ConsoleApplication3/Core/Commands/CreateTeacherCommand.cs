@@ -16,7 +16,7 @@
             var subject = (Subject)int.Parse(parameters[2]);
 
             var teacher = new Teacher(firstName, lastName, subject);
-            Engine.Instance.Teachers.Add(teacherId, teacher);
+            Engine.Teachers.Add(teacherId, teacher);
 
             return $"A new teacher with name {firstName} {lastName}, subject {teacher.Subject} and ID {teacherId++} was created.";
         }

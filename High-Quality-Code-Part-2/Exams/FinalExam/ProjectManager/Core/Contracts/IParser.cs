@@ -1,4 +1,4 @@
-﻿namespace Pesho.Core.Contracts
+﻿namespace ProjectManager.CLI.Core.Contracts
 {
     public interface IParser
     {

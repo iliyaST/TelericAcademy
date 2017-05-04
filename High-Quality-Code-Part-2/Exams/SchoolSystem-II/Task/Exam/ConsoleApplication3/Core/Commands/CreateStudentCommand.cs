@@ -16,7 +16,7 @@
             var studentGrade = (Grade)int.Parse(parameters[2]);
 
             var student = new Student(firstName, lastName, studentGrade);
-            Engine.Instance.Students.Add(studentId, student);
+            Engine.Students.Add(studentId, student);
 
             return $"A new student with name {firstName} {lastName}, grade {studentGrade} and ID {studentId++} was created.";
         }

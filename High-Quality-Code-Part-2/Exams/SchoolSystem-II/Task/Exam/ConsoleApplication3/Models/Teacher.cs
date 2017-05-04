@@ -1,5 +1,6 @@
 ﻿namespace SchoolSystem.CLI.Models
 {
+    using System;
     using Abstractions;
     using Enums;
     using Models.Contracts;
@@ -14,9 +15,8 @@
 
         public Subject Subject { get; set; }
 
-        public void AddMark(IStudent student, float value)
+        public void AddMark(IStudent student, IMark mark)
         {
-            var mark = new Mark(this.Subject, value);
             student.Marks.Add(mark);
         }
     }
