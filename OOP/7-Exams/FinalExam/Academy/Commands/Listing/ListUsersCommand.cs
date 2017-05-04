@@ -1,13 +1,12 @@
 ﻿namespace Academy.Commands.Listing
 {
     using Contracts;
-    using System;
     using System.Collections.Generic;
     using Core.Contracts;
     using System.Text;
     using System.Linq;
 
-    class ListUsersCommand : ICommand
+    public class ListUsersCommand : ICommand
     {
         private readonly IAcademyFactory factory;
         private readonly IEngine engine;
