@@ -14,17 +14,17 @@ namespace ProjectManager.Common
 
         public void Info(string message)
         {
-            log.Info(message);
+            this.log.Info(message);
         }
 
         public void Error(string message)
         {
-            log.Error(message);
+            this.log.Error(message);
         }
 
         public void Fatal(string message)
         {
-            log.Fatal(message);
+            this.log.Fatal(message);
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Pesho.Core.Commands
                 throw new UserValidationException(EmptyParamMessage);
             }
 
-            if (database.Projects.Any(projct => projct.Name == parameters[0]))
+            if (this.database.Projects.Any(projct => projct.Name == parameters[0]))
             {
                 throw new UserValidationException(ProjectExistMessage);
             }
@@ -55,9 +55,9 @@ namespace Pesho.Core.Commands
             var endingDate = parameters[2];
             var projectState = parameters[3];
 
-            var project = factory.CreateProject(projectName, startingDate, endingDate, projectState);
+            var project = this.factory.CreateProject(projectName, startingDate, endingDate, projectState);
 
-            database.Projects.Add(project);
+            this.database.Projects.Add(project);
 
             return SuccesfullyCreatedMessage;
         }       

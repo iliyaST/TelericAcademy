@@ -7,9 +7,9 @@ using ProjectManager.Data;
 
 namespace ProjectManager.Commands
 {
-    sealed class ListProjectsCommand : ICommand
+    public class ListProjectsCommand : ICommand
     {
-        Database database;
+        private Database database;
 
         public ListProjectsCommand(Database database)
         {
@@ -30,7 +30,7 @@ namespace ProjectManager.Commands
                 throw new UserValidationException("Some of the passed parameters are empty!");
             }
 
-            return string.Join(Environment.NewLine, database.Projects);
+            return string.Join(Environment.NewLine, this.database.Projects);
         }
     }
 }

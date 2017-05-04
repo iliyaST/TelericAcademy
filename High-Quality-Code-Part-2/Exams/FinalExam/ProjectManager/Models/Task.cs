@@ -24,6 +24,7 @@ namespace ProjectManager.Models
             var builder = new StringBuilder();
 
             builder.AppendLine("    Name: " + this.Name);
+            builder.AppendLine("    Owner: " + this.Owner.UserName);
             builder.Append("    State: " + this.State);
 
             return builder.ToString();

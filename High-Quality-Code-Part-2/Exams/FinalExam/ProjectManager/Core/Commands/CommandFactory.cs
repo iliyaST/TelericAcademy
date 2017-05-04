@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Pesho.Core.Commands;
+using Pesho.Core.Contracts;
 using ProjectManager.Common.Exceptions;
 using ProjectManager.Data;
 using ProjectManager.Models;
-using Pesho.Core.Commands;
-using Pesho.Core.Contracts;
 
 namespace ProjectManager.Commands
 {
@@ -24,29 +23,12 @@ namespace ProjectManager.Commands
 
             switch (commandName)
             {
-                case "createproject": return new CreateProjectCommand(database, factory);
+                case "createproject": return new CreateProjectCommand(this.database, this.factory);
                 case "createuser": return new CreateUserCommand();
                 case "createtask": return new CreateTaskCommand();
-                case "listprojects": return new ListProjectsCommand(database);
+                case "listprojects": return new ListProjectsCommand(this.database);
                 default: throw new UserValidationException("The passed command is not valid!");
             }
-        }      
-
-        private string FindCommandName(string parameters)
-        {
-            var command = string.Empty;
-            var end = DateTime.Now + TimeSpan.FromSeconds(1);
-
-            // TODO: Bottleneck?
-            while (DateTime.Now < end);
-
-            for (int i = 0; i < parameters.Length; i++)
-            {
-                command += parameters[i].ToString().ToLower();
-            }           
-
-            return command;
-        }               
+        }              
     }
 }
-

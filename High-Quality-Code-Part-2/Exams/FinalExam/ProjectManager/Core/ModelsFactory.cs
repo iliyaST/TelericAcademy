@@ -27,7 +27,7 @@ namespace ProjectManager.Models
 
             var project = new Project(name, starting, end, state);
 
-            validator.Validate(project);
+            this.validator.Validate(project);
 
             return project;
         }
@@ -36,7 +36,7 @@ namespace ProjectManager.Models
         {
             var task = new Task(name, owner, state);
 
-            validator.Validate(task);
+            this.validator.Validate(task);
 
             return task;
         }       
@@ -45,7 +45,7 @@ namespace ProjectManager.Models
         {
             var user = new User(username, email);
 
-            validator.Validate(user);
+            this.validator.Validate(user);
 
             return user;
         }       

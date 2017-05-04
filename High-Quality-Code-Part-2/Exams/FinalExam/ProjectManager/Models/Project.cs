@@ -24,6 +24,7 @@ namespace ProjectManager.Models
         public DateTime StartingDate { get; set; }
         [Range(typeof(DateTime), "2018-1-1", "2144-1-1", ErrorMessage = "Project EndingDate must be between 2018-1-1 and 2144-1-1!")]
         public DateTime EndingDate { get; set; }
+
         public string State { get; set; }
 
         public virtual List<Task> Tasks { get; set; }
@@ -58,5 +59,3 @@ namespace ProjectManager.Models
         }
     }
 }
-
-

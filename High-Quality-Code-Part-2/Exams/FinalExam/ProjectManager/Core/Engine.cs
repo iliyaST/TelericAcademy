@@ -14,7 +14,6 @@ namespace ProjectManager
         private IReader consoleReader;
         private IParser parser;
 
-
         public Engine(IReader reader, IFileLogger filelogger, ILogger consoleLogger, IParser parser)
         {
             // validate clauses
@@ -32,7 +31,7 @@ namespace ProjectManager
         {
             while (true)
             {
-                var command = consoleReader.ReadLine();
+                var command = this.consoleReader.ReadLine();
 
                 if (command.ToLower() == "exit")
                 {

@@ -2,9 +2,9 @@
 
 #1 Createuser command was missing in CommandFactory as a switch case.
 #2 Username and email were swapped in ModelsFactory
-#3	
+#3 Missed owner in task to strings....
 #4
 
 Bottleneck:
 
-#1
+#1 In CommandFactory FindCOmmandName was doing to much useless stuff so i figured i could spear this to the programm....

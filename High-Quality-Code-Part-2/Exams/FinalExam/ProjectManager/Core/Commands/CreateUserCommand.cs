@@ -32,7 +32,6 @@ namespace Pesho.Core.Commands
                 throw new UserValidationException(EmptyParameterMessage);
             }
 
-
             var projectId = int.Parse(commandParameters[0]);
             var username = commandParameters[1];
             var userEmail = commandParameters[2];

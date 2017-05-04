@@ -1,6 +1,6 @@
-﻿using ProjectManager.Commands;
+﻿using Pesho.Core.Providers;
+using ProjectManager.Commands;
 using ProjectManager.Common;
-using Pesho.Core.Providers;
 using ProjectManager.Data;
 using ProjectManager.Models;
 
