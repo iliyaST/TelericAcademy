@@ -3,10 +3,11 @@ using ProjectManager.Common.Exceptions;
 using ProjectManager.Data;
 using ProjectManager.Models;
 using Pesho.Core.Commands;
+using Pesho.Core.Contracts;
 
 namespace ProjectManager.Commands
 {
-    public class CommandFactory
+    public class CommandFactory : IFactory
     {
         private Database database;
         private ModelsFactory factory;

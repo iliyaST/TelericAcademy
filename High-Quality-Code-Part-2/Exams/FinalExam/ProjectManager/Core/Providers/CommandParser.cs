@@ -2,13 +2,14 @@
 {
     using System.Linq;
     using Commands;
+    using Pesho.Core.Contracts;
 
-    public class CommandProcessor
+    public class CommandParser : IParser
     {
         private const string NoCommandMessage = "No command has been provided!";
         private CommandFactory factory;
 
-        public CommandProcessor(CommandFactory factory)
+        public CommandParser(CommandFactory factory)
         {
             this.factory = factory;
         }

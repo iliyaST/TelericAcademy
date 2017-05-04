@@ -5,25 +5,28 @@ namespace ProjectManager.Models
 {
     public class Task
     {
+        public Task(string name, User owner, string state)
+        {
+            this.Name = name;
+            this.Owner = owner;
+            this.State = state;
+        }
+
         [Required(ErrorMessage = "Task Name is required!")]
-        public string nm { get; set; }
+        public string Name { get; set; }
         [Required(ErrorMessage = "Task Owner is required")]
-        public User own { get; set; }
+        public User Owner { get; set; }
+
+        public string State { get; set; }
+
         public override string ToString()
         {
             var builder = new StringBuilder();
 
-            builder.AppendLine("    Name: " + this.nm);
-            builder.Append("    State: " + this.st);
+            builder.AppendLine("    Name: " + this.Name);
+            builder.Append("    State: " + this.State);
 
             return builder.ToString();
-        }
-        public string st { get; set; }
-        public Task(string name, User owner, string state)
-        {
-            this.nm = name;
-            this.own = owner;
-            this.st = state;
         }
     }
 }

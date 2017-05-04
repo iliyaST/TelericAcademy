@@ -1,32 +1,36 @@
-﻿using Bytes2you.Validation;
-using ProjectManager.Common.Exceptions;
-
-
-using ProjectManager.Data;
-using System;
-
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Bytes2you.Validation;
+using ProjectManager.Common.Exceptions;
+using ProjectManager.Data;
 
 namespace ProjectManager.Commands
 {
-
     sealed class ListProjectsCommand : ICommand
     {
-        Database db;
-        public ListProjectsCommand(Database db)
+        Database database;
+
+        public ListProjectsCommand(Database database)
         {
             // guard clause
-            Guard.WhenArgument(db, "ListProjectsCommand Database").IsNull().Throw();
-            this.db = db;
+            Guard.WhenArgument(database, "ListProjectsCommand Database").IsNull().Throw();
+            this.database = database;
         }
+
         public string Execute(List<string> parameters)
         {
             if (parameters.Count != 0)
+            {
                 throw new UserValidationException("Invalid command parameters count!");
-            if (parameters.Any(x => x == string.Empty))
+            }
+
+            if (parameters.Any(parameter => parameter == string.Empty))
+            {
                 throw new UserValidationException("Some of the passed parameters are empty!");
-            return string.Join(Environment.NewLine, db.Projects);
+            }
+
+            return string.Join(Environment.NewLine, database.Projects);
         }
     }
 }

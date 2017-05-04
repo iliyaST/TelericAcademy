@@ -15,12 +15,12 @@ namespace ProjectManager
 
             var commandFactory = new CommandFactory(database, modelsFactory);
 
-            var cmdCpu = new CommandProcessor(commandFactory);
+            var parser = new CommandParser(commandFactory);
             var consoleReader = new ConsoleReader();
             var consoleLogger = new ConsoleLogger();
             var filelogger = new FileLogger();
 
-            var engine = new Engine(consoleReader, filelogger, consoleLogger, cmdCpu);
+            var engine = new Engine(consoleReader, filelogger, consoleLogger, parser);
 
             engine.Start();
         }

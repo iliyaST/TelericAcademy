@@ -1,8 +1,8 @@
 ﻿Bugs:
 
 #1 Createuser command was missing in CommandFactory as a switch case.
-#2
-#3
+#2 Username and email were swapped in ModelsFactory
+#3	
 #4
 
 Bottleneck:

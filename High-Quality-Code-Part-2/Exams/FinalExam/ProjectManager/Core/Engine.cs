@@ -12,20 +12,20 @@ namespace ProjectManager
         private IFileLogger filelogger;
         private ILogger consoleLogger;
         private IReader consoleReader;
-        private CommandProcessor processor;
+        private IParser parser;
 
 
-        public Engine(IReader reader, IFileLogger filelogger, ILogger consoleLogger, CommandProcessor processor)
+        public Engine(IReader reader, IFileLogger filelogger, ILogger consoleLogger, IParser parser)
         {
             // validate clauses
             Guard.WhenArgument(filelogger, "Engine Logger provider").IsNull().Throw();
 
-            Guard.WhenArgument(processor, "Engine Processor provider").IsNull().Throw();
+            Guard.WhenArgument(parser, "Engine Processor provider").IsNull().Throw();
 
             this.consoleReader = reader;
             this.filelogger = filelogger;
             this.consoleLogger = consoleLogger;
-            this.processor = processor;
+            this.parser = parser;
         }
 
         public void Start()
@@ -42,7 +42,7 @@ namespace ProjectManager
 
                 try
                 {
-                    var executionResult = this.processor.ProcessCommand(command);
+                    var executionResult = this.parser.ProcessCommand(command);
                     this.consoleLogger.Log(executionResult);
                 }
                 catch (UserValidationException ex)

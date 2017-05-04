@@ -37,7 +37,7 @@ namespace Pesho.Core.Commands
             var username = commandParameters[1];
             var userEmail = commandParameters[2];
 
-            if (database.Projects[projectId].Users.Any() && database.Projects[projectId].Users.Any(user => user.UN == username))
+            if (database.Projects[projectId].Users.Any() && database.Projects[projectId].Users.Any(user => user.UserName == username))
             {
                 throw new UserValidationException(UserAlreadyExist);
             }
