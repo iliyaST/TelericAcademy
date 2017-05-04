@@ -9,21 +9,21 @@ namespace ProjectManager.Commands
 
     public sealed class CreateTaskCommand : ICommand
     {
-        public string Execute(List<string> prms)
+        public string Execute(List<string> commandParameters)
         {
-            var db = new Database();
+            var database = new Database();
 
-            var zavoda = new ModelsFactory();
+            var factory = new ModelsFactory();
 
-            if (prms.Count != 4) throw new UserValidationException("Invalid command parameters count!");
+            if (commandParameters.Count != 4) throw new UserValidationException("Invalid command parameters count!");
 
-            if (prms.Any(x => x == string.Empty)) throw new UserValidationException("Some of the passed parameters are empty!");
+            if (commandParameters.Any(x => x == string.Empty)) throw new UserValidationException("Some of the passed parameters are empty!");
             
-            var pj = db.Projects[int.Parse(prms[0])];
+            var pj = database.Projects[int.Parse(commandParameters[0])];
 
-            var owner = pj.Users[int.Parse(prms[1])];
+            var owner = pj.Users[int.Parse(commandParameters[1])];
 
-            var task = zavoda.CreateTask(owner, prms[2], prms[3]);
+            var task = factory.CreateTask(owner, commandParameters[2], commandParameters[3]);
             pj.Tasks.Add(task);
 
             return "Successfully created a new task!";

@@ -1,12 +1,11 @@
-﻿using ProjectManager.Common.Exceptions;
+﻿using System;
+using ProjectManager.Common.Exceptions;
 using ProjectManager.Common.Providers;
-using System;
 
 namespace ProjectManager.Models
 {
     public class ModelsFactory
-    {
-        
+    {       
         public Project CreateProject(string name, string startingDate, string endingDate, string state)
         {
             DateTime starting;

@@ -1,19 +1,21 @@
 ﻿namespace ProjectManager.Common.Providers
 {
-    using System.ComponentModel.DataAnnotations;
-    using System.Linq;
-    using ProjectManager.Common.Exceptions;
     using System;
     using System.Collections.Generic;
-    using System.Reflection;
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
+    using System.Reflection;   
+    using ProjectManager.Common.Exceptions;
 
     public class Validator
     {
         public void Validate<T>(T obj) where T : class
         {
-            var err = this.GetValidationErrors(obj); if (!(err.Count() == 0))
+            var errors = this.GetValidationErrors(obj);
+
+            if (errors.Count() != 0)
             {
-                throw new UserValidationException(err.First());
+                throw new UserValidationException(errors.First());
             }
         }
 

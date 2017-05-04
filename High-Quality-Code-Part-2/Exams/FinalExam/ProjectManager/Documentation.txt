@@ -1,6 +1,6 @@
 ﻿Bugs:
 
-#1
+#1 Createuser command was missing in CommandFactory as a switch case.
 #2
 #3
 #4

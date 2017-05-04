@@ -10,30 +10,56 @@ namespace Pesho.Core.Commands
 {
     public class CreateProjectCommand : ICommand
     {
-        public Database database;
-        public ModelsFactory factory;
+        // string constants
+        private const string InvalidParamsMessage = "Invalid command parameters count!";
+        private const string EmptyParamMessage = "Some of the passed parameters are empty!";
+        private const string ProjectExistMessage = "A project with that name already exists!";
+        private const string SuccesfullyCreatedMessage = "Successfully created a new project!";
 
-        public string Execute(List<string> prms)
-        {
-            if (prms.Count != 4) throw new UserValidationException("Invalid command parameters count!");
-            if (prms.Any(x => x == string.Empty)) throw new UserValidationException("Some of the passed parameters are empty!");
-            if (database.Projects.Any(x => x.Name == prms[0])) throw new UserValidationException("A project with that name already exists!");
+        // int constants
+        private const int MaxParameterCount = 4;
 
-            var project = factory.CreateProject(prms[0], prms[1], prms[2], prms[3]);
-            database.Projects.Add(project);
-
-            return "Successfully created a new project!";
-        }
+        private Database database;
+        private ModelsFactory factory;
 
         public CreateProjectCommand(Database database, ModelsFactory factory)
         {
             Guard.WhenArgument(database, "CreateProjectCommand Database").IsNull().Throw();
-            Guard.WhenArgument(
-                factory, "CreateProjectCommand ModelsFactory")
-                .IsNull().Throw();
+            Guard.WhenArgument(factory, "CreateProjectCommand ModelsFactory")
+                .IsNull()
+                .Throw();
 
             this.database = database;
             this.factory = factory;
         }
+
+        public string Execute(List<string> parameters)
+        {
+            if (parameters.Count != MaxParameterCount)
+            {
+                throw new UserValidationException(InvalidParamsMessage);
+            }
+
+            if (parameters.Any(parameter => parameter == string.Empty))
+            {
+                throw new UserValidationException(EmptyParamMessage);
+            }
+
+            if (database.Projects.Any(projct => projct.Name == parameters[0]))
+            {
+                throw new UserValidationException(ProjectExistMessage);
+            }
+
+            var projectName = parameters[0];
+            var startingDate = parameters[1];
+            var endingDate = parameters[2];
+            var projectState = parameters[3];
+
+            var project = factory.CreateProject(projectName, startingDate, endingDate, projectState);
+
+            database.Projects.Add(project);
+
+            return SuccesfullyCreatedMessage;
+        }       
     }
 }

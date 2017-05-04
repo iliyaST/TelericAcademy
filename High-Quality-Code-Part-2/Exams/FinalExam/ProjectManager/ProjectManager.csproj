@@ -78,7 +78,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Core\Commands\CommandProcessor.cs" />
+    <Compile Include="Core\Providers\CommandProcessor.cs" />
     <Compile Include="Core\Providers\FileLogger.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

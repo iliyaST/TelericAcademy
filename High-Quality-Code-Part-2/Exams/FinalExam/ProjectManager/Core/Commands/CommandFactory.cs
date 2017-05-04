@@ -8,8 +8,8 @@ namespace ProjectManager.Commands
 {
     public class CommandFactory
     {
-        public Database database;
-        public ModelsFactory factory;
+        private Database database;
+        private ModelsFactory factory;
 
         public CommandFactory(Database database, ModelsFactory factory)
         {
@@ -24,6 +24,7 @@ namespace ProjectManager.Commands
             switch (commandName)
             {
                 case "createproject": return new CreateProjectCommand(database, factory);
+                case "createuser": return new CreateUserCommand();
                 case "createtask": return new CreateTaskCommand();
                 case "listprojects": return new ListProjectsCommand(database);
                 default: throw new UserValidationException("The passed command is not valid!");
