@@ -8,16 +8,16 @@
     function parsePosition(pos) {
         return {
             lat: pos.coords.latitude,
-            long: pos.coords.longtitude
+            lon: pos.coords.longitude
         }
     }
 
     function displayMap(pos) {
         let img = document.getElementById('theImg');
-        img.src = `https://www.google.bg/maps/@${pos.lat},${pos.long},17z?hl=bg`;
+        img.src =  "http://maps.googleapis.com/maps/api/staticmap?center=" + pos.lat + "," + pos.lon + "&zoom=13&size=500x500&sensor=false";
     }
 
     myPromise
         .then(parsePosition)
-        .then(displayMap)
+        .then(console.log)
 }());
