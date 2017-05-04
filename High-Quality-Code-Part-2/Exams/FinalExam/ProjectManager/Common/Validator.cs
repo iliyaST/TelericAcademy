@@ -1,15 +1,14 @@
-﻿using ProjectManager.Common.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
-
-namespace ProjectManager.Common.Providers
+﻿namespace ProjectManager.Common.Providers
 {
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
-    class Validator
-    {
+    using ProjectManager.Common.Exceptions;
+    using System;
+    using System.Collections.Generic;
+    using System.Reflection;
 
+    public class Validator
+    {
         public void Validate<T>(T obj) where T : class
         {
             var err = this.GetValidationErrors(obj); if (!(err.Count() == 0))
@@ -37,10 +36,8 @@ namespace ProjectManager.Common.Providers
                         yield return validationAttribute.ErrorMessage;
                     }
                 }
-
             }
         }
-
     }
 }
 

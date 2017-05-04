@@ -1,5 +1,4 @@
-﻿using Bytes2you.Validation;
-using ProjectManager.Common.Exceptions;
+﻿using ProjectManager.Common.Exceptions;
 using ProjectManager.Common.Providers;
 using System;
 
