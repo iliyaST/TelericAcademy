@@ -1,0 +1,46 @@
+[
+   {
+      "Year":3020,
+      "TransmissionType":0,
+      "ManufacturerName":"Mazda",
+      "Model":"2 Enterprise",
+      "Price":62000.0,
+      "Dealer":{
+         "Name":"Mazda",
+         "City":"Plovdiv"
+      }
+   },
+   {
+      "Year":2016,
+      "TransmissionType":1,
+      "ManufacturerName":"BMW",
+      "Model":"420i Cabrio",
+      "Price":55000.0,
+      "Dealer":{
+         "Name":"MM Auto",
+         "City":"Burgas"
+      }
+   },
+   {
+      "Year":1997,
+      "TransmissionType":0,
+      "ManufacturerName":"Renaut",
+      "Model":"Clio 1.4",
+      "Price":100.0,
+      "Dealer":{
+         "Name":"Renault",
+         "City":"Varna"
+      }
+   },
+   {
+      "Year":1099,
+      "TransmissionType":0,
+      "ManufacturerName":"Opel",
+      "Model":"Corsa",
+      "Price":5000.0,
+      "Dealer":{
+         "Name":"Police",
+         "City":"Burgas"
+      }
+   }
+]

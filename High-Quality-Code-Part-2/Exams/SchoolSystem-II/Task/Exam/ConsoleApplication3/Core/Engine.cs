@@ -10,15 +10,19 @@
     {
         public Engine(IReader reader, IParser parser, IWriter writer)
         {
-            this.Reader = reader;
-            this.Parser = parser;
+            this.Reader = 
+                reader;
+            this.Parser =
+                parser;
             this.Writer = writer;
 
             Teachers = new Dictionary<int, Teacher>();
-            Students = new Dictionary<int, Student>();
+            Students = 
+                new Dictionary<int, Student>();
         }
 
-        public static Dictionary<int, Teacher> Teachers { get; set; }
+        public static 
+            Dictionary<int, Teacher> Teachers { get; set; }
 
         public static Dictionary<int, Student> Students { get; set; }
 
