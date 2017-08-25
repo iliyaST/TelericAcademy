@@ -33,9 +33,19 @@ public class Businessmen
             {
                 var person = new Person(command[1]);
 
+                var found = people.FindAll(x => x.Name == person.Name)
+                    .Select(x => x)
+                    .ToArray();
+
+                if (found.Length >= 1)
+                {
+                    var number = found.Length;
+                    person.Name =  String.Format("{0}{1}", person.Name, number);
+                }
+
                 people.Add(person);
 
-                Console.WriteLine("Ok");
+                Console.WriteLine("OK");
             }
             else if (command[0] == "Serve")
             {
@@ -70,7 +80,7 @@ public class Businessmen
             {
                 var name = command[1];
 
-                var result = people.FindAll(x => x.Name == name)
+                var result = people.FindAll(x => x.Name.Contains(name))
                     .Select(x => x)
                     .ToArray();
 
@@ -88,8 +98,18 @@ public class Businessmen
                 }
                 else
                 {
+                    var found = people.FindAll(x => x.Name == person.Name)
+                    .Select(x => x)
+                    .ToArray();
+
+                    if (found.Length >= 1)
+                    {
+                        var number = found.Length;
+                        person.Name = String.Format("{0}{1}", person.Name, number);
+                    }
+
                     people.Insert(position, person);
-                    Console.WriteLine("Ok");
+                    Console.WriteLine("OK");
                 }
             }
         }

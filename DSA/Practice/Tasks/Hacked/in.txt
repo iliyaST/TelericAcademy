@@ -1,19 +1,14 @@
-Append John
+Insert 0 0Nakov
+Insert 1 1Nakov
+Serve 2
+Insert 1 InvalidPosition
 Serve 1
-Find Ina
-Append Mike
-Insert 0 Peter
-Append Penka
-Insert 3 Doncho
-Serve 5
-Append Asya
-Insert 4 John
-Append John
-Find Asya
-Find John
-Serve 3
-Find Peter
-Serve 4
-Find John
-Insert 1 Ina
+Insert 0 0Nakov
+Insert 0 0NakovAgain
+Insert 1 1Nakov
+Insert 1 1NakovAgain
+Insert 4 4Nakov
+Insert 5 5Nakov
+Insert 5 5NakovAgain
+Serve 7
 End
