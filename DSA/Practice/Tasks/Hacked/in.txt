@@ -1,0 +1,19 @@
+Append John
+Serve 1
+Find Ina
+Append Mike
+Insert 0 Peter
+Append Penka
+Insert 3 Doncho
+Serve 5
+Append Asya
+Insert 4 John
+Append John
+Find Asya
+Find John
+Serve 3
+Find Peter
+Serve 4
+Find John
+Insert 1 Ina
+End
