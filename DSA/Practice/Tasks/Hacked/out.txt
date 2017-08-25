@@ -1,14 +1,15 @@
-OK
-OK
-0Nakov 1Nakov
-Error
-Error
+0
 OK
 OK
 OK
 OK
 OK
+3
+0
+1
+0
 OK
 OK
-0NakovAgain 1NakovAgain 1Nakov 0Nakov 4Nakov 5NakovAgain 5Nakov
-
+4
+0
+0
