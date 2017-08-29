@@ -7,26 +7,37 @@ namespace Frames
     public class Program
     {
         private static int n;
-        private static Tuple<int, int>[] list;
+        private static IList<Frame> list;
         private static SortedSet<string> result;
-        private static int count = 0;
+        private static int id = 0;
 
         public static void Main(string[] args)
         {
             n = int.Parse(Console.ReadLine());
 
-            list = new Tuple<int, int>[n];
+            list = new List<Frame>();
             result = new SortedSet<string>();
 
             for (int i = 0; i < n; i++)
             {
-                var currentSize = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
-                var parsedCurrentSize = new Tuple<int, int>(currentSize[0], currentSize[1]);
+                id++;
+                var currentSize = Console.ReadLine().Split(' ');
+                var size1 = int.Parse(currentSize[0]);
+                var size2 = int.Parse(currentSize[1]);
+                var parsedCurrentSize = new Frame(size1, size2);
 
-                list[i] = parsedCurrentSize;
+                if (parsedCurrentSize.Width == parsedCurrentSize.Height)
+                {
+                    list.Add(parsedCurrentSize);
+                    continue;
+                }
+
+                list.Add(parsedCurrentSize);
+                ReverseSize(ref parsedCurrentSize);
+                list.Add(parsedCurrentSize);
             }
 
-            Perm(list, 0);
+            GenerateVariationsNoRepetitions(0, new bool[list.Count], new List<Frame>());
 
             Console.WriteLine(result.Count);
             foreach (var item in result)
@@ -35,50 +46,88 @@ namespace Frames
             }
         }
 
-        static void Perm(Tuple<int, int>[] arr, int k)
+        static void GenerateVariationsNoRepetitions(int index, bool[] used, List<Frame> currentList)
         {
-            if (k >= arr.Length)
+            if (currentList.Count >= n)
             {
-                count++;
-                result.Add(string.Join<Tuple<int, int>>(" | ", arr));
+                result.Add(string.Join(" | ", currentList));
                 return;
             }
             else
             {
-                Perm(arr, k + 1);
-                SwapElement(ref arr[k]);
-                Perm(arr, k + 1);
-                SwapElement(ref arr[k]);
-
-                for (int i = k + 1; i < arr.Length; i++)
+                for (int i = 0; i < list.Count; i++)
                 {
-                    Swap(ref arr[k], ref arr[i]);
+                    if (currentList.Count == 0)
+                    {
+                        used = new bool[list.Count];
+                        if (i - 1 >= 0 && list[i].ID == list[i - 1].ID)
+                        {
+                            continue;
+                        }
+                    }
 
-                    Perm(arr, k + 1);
-                    SwapElement(ref arr[k]);
-                    Perm(arr, k + 1);
-                    SwapElement(ref arr[k]);
+                    if (!used[i])
+                    {
+                        used[i] = true;
+                        if (i - 1 >= 0 && list[i - 1].ID == list[i].ID)
+                        {
+                            used[i - 1] = true;
+                        }
+                        else if (i + 1 < list.Count && list[i].ID == list[i + 1].ID)
+                        {
+                            used[i + 1] = true;
+                        }
 
-                    Swap(ref arr[k], ref arr[i]);
+                        currentList.Add(list[i]);
+
+                        GenerateVariationsNoRepetitions(index + 1, used, currentList);
+
+                        currentList.Remove(list[i]);
+
+                        if (i - 1 >= 0 && list[i - 1].ID == list[i].ID)
+                        {
+                            used[i - 1] = false;
+                        }
+                        else if (i + 1 < list.Count && list[i + 1].ID == list[i].ID)
+                        {
+                            used[i + 1] = false;
+                        }
+
+                        used[i] = false;
+                    }
                 }
             }
         }
 
-        private static void Swap(ref Tuple<int, int> first, ref Tuple<int, int> second)
+        static void ReverseSize(ref Frame size)
         {
-            Tuple<int, int> oldFirst = first;
-            first = second;
-            second = oldFirst;
+            var item1 = size.Width;
+            var item2 = size.Height;
+
+            var newTuple = new Frame(item2, item1);
+
+            size = newTuple;
         }
 
-        private static void SwapElement(ref Tuple<int, int> element)
+        public class Frame
         {
-            int first = element.Item1;
-            int second = element.Item2;
+            public Frame(int width, int height)
+            {
+                this.Width = width;
+                this.Height = height;
+                this.ID = id;
+            }
 
-            var newElement = new Tuple<int, int>(second, first);
+            public int Width { get; set; }
 
-            element = newElement;
+            public int Height { get; set; }
+
+            public int ID { get; set; }
+
+            public override string ToString()
+            {
+                return string.Format("({0}, {1})", this.Width, this.Height);
+            }
         }
     }
 }
