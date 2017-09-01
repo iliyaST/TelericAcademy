@@ -76,23 +76,17 @@ namespace PlayerRanking
                     case "ranklist":
                         var start = int.Parse(newCommand.Parts[0]) - 1;
                         var end = int.Parse(newCommand.Parts[1]);
-                        var array = new List<Player>();
 
-                        for (int i = start; i < end; i++)
+                        for (int j = start; j < end; j++)
                         {
-                            array.Add(allPlayersByPosition[i]);
-                        }
-
-                        for (int i = 0; i < array.Count; i++)
-                        {
-                            if (i == array.Count - 1)
+                            if (j == end - 1)
                             {
-                                result.Append(i + 1 + ". " + array[i].ToString());
+                                result.Append(j + 1 + ". " + allPlayersByPosition[j].ToString());
                                 result.AppendLine();
                                 continue;
                             }
 
-                            result.Append(i + 1 + ". " + array[i].ToString() + "; ");
+                            result.Append(j + 1 + ". " + allPlayersByPosition[j].ToString() + "; ");
                         }
 
                         break;
