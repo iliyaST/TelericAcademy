@@ -1,0 +1,173 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Problem1._2015
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var command = Console.ReadLine();
+            var result = new StringBuilder();
+            var units = new SortedDictionary<string, Unit>();
+            var unitTypes = new SortedDictionary<string, SortedSet<Unit>>();
+            var unitsByPower = new SortedSet<Unit>();
+
+            while (command != "end")
+            {
+                var parsedCommand = ProcessCommand(command);
+
+                switch (parsedCommand.Name)
+                {
+                    case "add":
+                        var name = parsedCommand.Parts[0];
+                        var type = parsedCommand.Parts[1];
+                        var attack = parsedCommand.Parts[2];
+
+                        if (!units.ContainsKey(name))
+                        {
+                            var unit = new Unit(name, type, attack);
+
+                            if (!unitTypes.ContainsKey(type))
+                            {
+                                unitTypes.Add(type, new SortedSet<Unit>());
+                            }
+
+                            unitTypes[type].Add(unit);
+                            units.Add(name, unit);
+                            unitsByPower.Add(unit);
+
+                            result.AppendLine(string.Format("SUCCESS: {0} added!", unit.Name));
+                        }
+                        else
+                        {
+                            result.AppendLine(string.Format("FAIL: {0} already exists!", name));
+                        }
+                        break;
+
+                    case "find":
+                        var typeOfUnits = parsedCommand.Parts[0];
+
+                        if (unitTypes.ContainsKey(typeOfUnits))
+                        {
+                            var foundUnits = unitTypes[typeOfUnits].Take(10);
+
+                            result.AppendLine("RESULT: " + string.Join(", ", foundUnits));
+                        }
+                        else
+                        {
+                            result.AppendLine("RESULT:");
+                        }
+
+                        break;
+
+                    case "remove":
+
+                        var nameOfUnitToRemove = parsedCommand.Parts[0];
+
+                        if (units.ContainsKey(nameOfUnitToRemove))
+                        {
+                            var unit = units[nameOfUnitToRemove];
+
+                            units.Remove(nameOfUnitToRemove);
+
+                            unitTypes[unit.Type].Remove(unit);
+
+                            unitsByPower.Remove(unit);
+
+                            result.AppendLine(string.Format("SUCCESS: {0} removed!", nameOfUnitToRemove));
+                        }
+                        else
+                        {
+                            result.AppendLine(string.Format("FAIL: {0} could not be found!", nameOfUnitToRemove));
+                        }
+
+                        break;
+
+                    case "power":
+
+                        var numberOfUnits = int.Parse(parsedCommand.Parts[0]);
+
+                        var resultPowerUnits = unitsByPower
+                            .Take(numberOfUnits);
+
+                        result.AppendLine("RESULT: " + string.Join(", ", resultPowerUnits));
+
+                        break;
+
+                    default:
+                        throw new InvalidOperationException();
+                }
+
+                command = Console.ReadLine();
+            }
+
+            Console.WriteLine(result);
+        }
+
+        public static Command ProcessCommand(string command)
+        {
+            var newCommand = new Command();
+            var parsingCommand = command.Split(' ');
+
+            newCommand.Name = parsingCommand[0];
+
+            if (parsingCommand.Length > 1)
+            {
+                for (int i = 1; i < parsingCommand.Length; i++)
+                {
+                    newCommand.Parts.Add(parsingCommand[i]);
+                }
+            }
+
+            return newCommand;
+        }
+
+        public class Unit : IComparable<Unit>
+        {
+            public Unit(string name, string type, string attack)
+            {
+                this.Name = name;
+                this.Type = type;
+                this.Attack = int.Parse(attack);
+            }
+
+            public string Name { get; set; }
+
+            public string Type { get; set; }
+
+            public int Attack { get; set; }
+
+            public int CompareTo(Unit other)
+            {
+                var result = this.Attack.CompareTo(other.Attack) * -1;
+
+                if (result == 0)
+                {
+                    return this.Name.CompareTo(other.Name);
+                }
+
+                return result;
+            }
+
+            public override string ToString()
+            {
+                return string.Format("{0}[{1}]({2})", this.Name, this.Type, this.Attack);
+            }
+        }
+
+        public class Command
+        {
+            public Command()
+            {
+                this.Parts = new List<string>();
+            }
+
+            public string Name { get; set; }
+
+            public List<string> Parts { get; set; }
+        }
+    }
+}
