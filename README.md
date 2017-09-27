@@ -1,3 +1,3 @@
 # Teleric Academy
-usefull urls:
+usefull urls:<br>
 1: http://svn.academy.telerik.com/svn/
