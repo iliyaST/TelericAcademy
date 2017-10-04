@@ -7,6 +7,7 @@ using MVCTemplate.Services.Data;
 using Microsoft.AspNet.SignalR.Hubs;
 using SignalRChat.Hubs;
 using Microsoft.AspNet.SignalR.Infrastructure;
+using MVCTemplate.Data.Common;
 
 [assembly: OwinStartupAttribute(typeof(BirthdaySite.Startup))]
 namespace BirthdaySite
@@ -15,20 +16,6 @@ namespace BirthdaySite
     {
         public void Configuration(IAppBuilder app)
         {
-            var kernel = new StandardKernel();
-            var resolver = new NinjectSignalRDependencyResolver(kernel);
-            var config = new HubConfiguration();
-
-            kernel.Bind<IGroupService>()
-           .To<GroupService>()
-           .InSingletonScope();
-
-            kernel.Bind(typeof(IHubConnectionContext<dynamic>)).ToMethod(context =>
-                    resolver.Resolve<IConnectionManager>().GetHubContext<Chat>().Clients
-                     ).WhenInjectedInto<IGroupService>();
-
-            config.Resolver = resolver;
-
             this.ConfigureAuth(app);
             app.MapSignalR();
         }

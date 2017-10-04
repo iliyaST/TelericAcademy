@@ -16,21 +16,26 @@ namespace BirthdaySite.App_Start
     using MVCTemplate.Data.Common;
     using MVCTemplate.Data.Common.SaveContext;
     using MVCTemplate.Services.Data;
+    using Microsoft.AspNet.SignalR;
+    using BirthdaySite.App_Start.Helpers;
+    using SignalRChat.Hubs;
+    using Microsoft.AspNet.SignalR.Infrastructure;
+    using Microsoft.AspNet.SignalR.Hubs;
 
-    public static class NinjectConfig 
+    public static class NinjectConfig
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
         /// <summary>
         /// Starts the application
         /// </summary>
-        public static void Start() 
+        public static void Start()
         {
             DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
             bootstrapper.Initialize(CreateKernel);
         }
-        
+
         /// <summary>
         /// Stops the application.
         /// </summary>
@@ -38,7 +43,7 @@ namespace BirthdaySite.App_Start
         {
             bootstrapper.ShutDown();
         }
-        
+
         /// <summary>
         /// Creates the kernel that will manage your application.
         /// </summary>
@@ -50,6 +55,7 @@ namespace BirthdaySite.App_Start
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+                GlobalHost.DependencyResolver = new NinjectSignalRDependencyResolver(kernel);
 
                 RegisterServices(kernel);
                 return kernel;
@@ -70,7 +76,7 @@ namespace BirthdaySite.App_Start
             kernel.Bind(typeof(DbContext)).To<ApplicationDbContext>().InRequestScope();
             kernel.Bind(typeof(IDbRepository<>)).To(typeof(DbRepository<>)).InRequestScope();
             kernel.Bind<ISaveContext>().To<SaveContext>().InRequestScope();
-            kernel.Bind<IGroupService>().To<GroupService>().InRequestScope();           
-        }        
+            kernel.Bind<IGroupService>().To<GroupService>().InRequestScope();
+        }
     }
 }

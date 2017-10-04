@@ -23,6 +23,8 @@ namespace SignalRChat.Hubs
             var index = user.IndexOf("@");
             var author = user.Substring(0, index);
 
+            this.groups.AddMessageToGroup(rooms, author, message);
+
             Clients.Group(rooms).addMessage(message, author);
         }
     }
