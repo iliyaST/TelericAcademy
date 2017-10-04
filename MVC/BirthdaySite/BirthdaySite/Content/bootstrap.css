@@ -52,7 +52,7 @@ video {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Helvetica';
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -330,7 +330,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica";
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
@@ -1892,7 +1892,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .form-control {
     display: block;
     width: 100%;
-    height: 34px;
+    height: 40px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.428571429;
@@ -2580,7 +2580,7 @@ input[type="button"].btn-block {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Helvetica';
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     font-weight: normal;
@@ -4713,10 +4713,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
     }
 
     .navbar-inverse .navbar-nav > li > a {
-        color: #CEF0D4;
-        font-family: 'Rouge Script', cursive;
-        text-shadow: 1px 1px 2px #082b34;
-        font-size: 120%;
+        color: cadetblue;
+        font-family: 'Helvetica';
+        font-size: 110%;
     }
 
         .navbar-inverse .navbar-nav > li > a:hover,
@@ -6332,7 +6331,7 @@ button.close {
         height: 20px;
         margin-top: -10px;
         margin-left: -10px;
-        font-family: serif;
+        font-family: 'Helvetica';
     }
 
         .carousel-control .icon-prev:before {

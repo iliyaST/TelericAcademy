@@ -17,8 +17,6 @@ namespace MVCTemplate.Data.Common
 
         void HardDelete(T entity);
 
-        void Save();
-
         void Dispose();
     }
 }

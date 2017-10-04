@@ -2,9 +2,8 @@ namespace MVCTemplate.Data.Migrations
 {
     using MVCTemplate.Data.Models;
     using System;
-    using System.Data.Entity;
+    using System.Collections.Generic;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     public sealed class Configuration : DbMigrationsConfiguration<BirthdaySite.Models.ApplicationDbContext>
     {
@@ -17,16 +16,43 @@ namespace MVCTemplate.Data.Migrations
 
         protected override void Seed(BirthdaySite.Models.ApplicationDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
             context.Groups.AddOrUpdate(
               g => g.Name,
               new Group("Birthdays")
+              {
+                  CreatedOn = DateTime.Now,
+                  Messages = new List<Message>()
+                  {
+                      new Message()
+                      {
+                          Author = "RandomUser",
+                          Content = "Testing my forum page..."
+                      },
+                      new Message()
+                      {
+                          Author = "RandomUser1",
+                          Content = "Testing my forum pageia...Using !important in your CSS usually means you're narcissistic & selfish or lazy. Respect the devs to come..."
+                      }
+                  }
+              },
+              new Group("Presents")
+              {
+                  CreatedOn = DateTime.Now,
+                  Messages = new List<Message>()
+                  {
+                      new Message()
+                      {
+                          Author = "RandomUser",
+                          Content = "Testing my forum page..."
+                      },
+                      new Message()
+                      {
+                          Author = "RandomUser1",
+                          Content = "Testing my forum pageia...Using !important in your CSS usually means you're narcissistic & selfish or lazy. Respect the devs to come..."
+                      }
+                  }
+              }
             );
-
         }
     }
 }

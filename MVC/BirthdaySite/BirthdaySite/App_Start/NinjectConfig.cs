@@ -11,6 +11,11 @@ namespace BirthdaySite.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using BirthdaySite.Controllers;
+    using System.Data.Entity;
+    using BirthdaySite.Models;
+    using MVCTemplate.Data.Common;
+    using MVCTemplate.Data.Common.SaveContext;
+    using MVCTemplate.Services.Data;
 
     public static class NinjectConfig 
     {
@@ -62,7 +67,10 @@ namespace BirthdaySite.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-           
+            kernel.Bind(typeof(DbContext)).To<ApplicationDbContext>().InRequestScope();
+            kernel.Bind(typeof(IDbRepository<>)).To(typeof(DbRepository<>)).InRequestScope();
+            kernel.Bind<ISaveContext>().To<SaveContext>().InRequestScope();
+            kernel.Bind<IGroupService>().To<GroupService>().InRequestScope();           
         }        
     }
 }

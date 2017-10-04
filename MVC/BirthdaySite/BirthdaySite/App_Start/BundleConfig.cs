@@ -11,6 +11,12 @@ namespace BirthdaySite
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/common").Include(
+                        "~/Scripts/common.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/configSignalR").Include(
+                       "~/Scripts/jquery.signalR-2.2.2.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 

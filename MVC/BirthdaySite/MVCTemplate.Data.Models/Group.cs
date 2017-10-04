@@ -5,6 +5,11 @@ namespace MVCTemplate.Data.Models
 {
     public class Group : BaseModel<int>
     {
+        public Group()
+        {
+            this.Messages = new List<Message>();
+        }
+
         public Group(string name)
         {
             this.Name = name;
@@ -13,6 +18,6 @@ namespace MVCTemplate.Data.Models
 
         public string Name { get; private set; }
 
-        public List<Message> Messages { get; private set; }
+        public ICollection<Message> Messages { get; set; }
     }
 }

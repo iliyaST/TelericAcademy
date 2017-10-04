@@ -4,6 +4,11 @@ namespace MVCTemplate.Data.Models
 {
     public class Message : BaseModel<int>
     {
+        public Message()
+        {
+
+        }
+
         public Message(string author, string content)
         {
             this.Author = author;

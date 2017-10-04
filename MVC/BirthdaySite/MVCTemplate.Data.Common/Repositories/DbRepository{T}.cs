@@ -6,7 +6,7 @@ using MVCTemplate.Data.Common.Models;
 namespace MVCTemplate.Data.Common
 {
     public class DbRepository<T> : IDbRepository<T>
-       where T : BaseModel<Guid>
+       where T : BaseModel<int>
     {
         public DbRepository(DbContext context)
         {
@@ -58,11 +58,6 @@ namespace MVCTemplate.Data.Common
         public void HardDelete(T entity)
         {
             this.DbSet.Remove(entity);
-        }
-
-        public void Save()
-        {
-            this.Context.SaveChanges();
         }
 
         public void Dispose()
