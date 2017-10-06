@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url('http://www.bluemaize.net/im/arts-crafts-sewing/party-balloons-4.jpg');
+    overflow: hidden;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -26,7 +27,7 @@ textarea {
 
 .welcome-message {
     color: orange;
-    font-family:  'Helvetica';
+    font-family: 'Helvetica';
     font-size: 300%;
     font-weight: normal;
     line-height: 48px;
@@ -251,12 +252,12 @@ div.navbar.navbar-inverse.navbar-fixed-top {
     color: white !important;
 }
 
-#input-message-content{
+#input-message-content {
     width: 400px;
     height: 32px;
 }
 
-#input-submit-button{
+#input-submit-button {
     width: 60px;
     height: 32px;
     color: cornflowerblue;
@@ -289,18 +290,54 @@ div.navbar.navbar-inverse.navbar-fixed-top {
     color: rgba(0,63,71,.2);
 }
 
-    #group-enter:hover {
-        color: aquamarine;
-        border-color: aquamarine;
-    }
+#group-enter:hover {
+    color: aquamarine;
+    border-color: aquamarine;
+}
 
-.list-group-container{
+.list-group-container {
     display: inline-block;
     width: 100%;
     height: 100%;
     margin-top: 1%;
 }
 
-.hidden-elements{
+.hidden-elements {
     visibility: hidden;
 }
+
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }

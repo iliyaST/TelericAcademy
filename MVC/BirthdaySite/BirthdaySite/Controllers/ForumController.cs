@@ -54,18 +54,6 @@ namespace BirthdaySite.Controllers
             return View("_MessagesPartial", group);
         }
 
-        //[Authorize]
-        //public ActionResult Send(string groupName, string message)
-        //{
-        //    var messageAuthor = this.User.Identity.Name;
-        //    var index = messageAuthor.IndexOf('@');
-        //    var author = messageAuthor.Substring(0, index);
-
-        //    this.groups.AddMessageToGroup(groupName, author, message);
-
-
-        //}
-
         //TODO: Add Functionality!
         [Authorize]
         public ActionResult AddGroup()

@@ -11,7 +11,6 @@ namespace MVCTemplate.Data.Migrations
         {
             this.AutomaticMigrationsEnabled = false;
             this.AutomaticMigrationDataLossAllowed = false;
-            ContextKey = "BirthdaySite.Models.ApplicationDbContext";
         }
 
         protected override void Seed(BirthdaySite.Models.ApplicationDbContext context)
@@ -49,6 +48,27 @@ namespace MVCTemplate.Data.Migrations
                       {
                           Author = "RandomUser1",
                           Content = "Testing my forum pageia...Using !important in your CSS usually means you're narcissistic & selfish or lazy. Respect the devs to come..."
+                      }
+                  }
+              }
+            );
+
+            context.FriendsList.AddOrUpdate(
+              f => f.Name,
+              new FriendsList("testEmail")
+              {
+                  CreatedOn = DateTime.Now,
+                  Friends = new List<Friend>()
+                  {
+                     new Friend("User1", false)
+                      {
+                          CreatedOn = DateTime.Now,
+                          Birthday = new DateTime(1995,10,4)
+                      },
+                     new Friend("User2", true)
+                      {
+                          CreatedOn = DateTime.Now,
+                          Birthday = new DateTime(1990,11,12)
                       }
                   }
               }

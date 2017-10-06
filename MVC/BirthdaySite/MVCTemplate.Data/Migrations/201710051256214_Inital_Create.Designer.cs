@@ -7,13 +7,13 @@ namespace MVCTemplate.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class Inital_Create : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Inital_Create));
         
         string IMigrationMetadata.Id
         {
-            get { return "201709211139343_InitialCreate"; }
+            get { return "201710051256214_Inital_Create"; }
         }
         
         string IMigrationMetadata.Source

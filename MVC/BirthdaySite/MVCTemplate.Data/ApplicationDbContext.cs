@@ -20,6 +20,10 @@ namespace BirthdaySite.Models
 
         public IDbSet<Group> Groups { get; set; }
 
+        public IDbSet<Friend> Friends { get; set; }
+
+        public IDbSet<FriendsList> FriendsList { get; set; } 
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

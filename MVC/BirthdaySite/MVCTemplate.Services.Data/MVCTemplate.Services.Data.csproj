@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FriendListService.cs" />
     <Compile Include="GroupService.cs" />
+    <Compile Include="IFriendListService.cs" />
     <Compile Include="IGroupService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

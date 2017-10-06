@@ -54,13 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201709211139343_InitialCreate.cs" />
-    <Compile Include="Migrations\201709211139343_InitialCreate.Designer.cs">
-      <DependentUpon>201709211139343_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201709271014515_MessagesAndGroups.cs" />
-    <Compile Include="Migrations\201709271014515_MessagesAndGroups.Designer.cs">
-      <DependentUpon>201709271014515_MessagesAndGroups.cs</DependentUpon>
+    <Compile Include="Migrations\201710051256214_Inital_Create.cs" />
+    <Compile Include="Migrations\201710051256214_Inital_Create.Designer.cs">
+      <DependentUpon>201710051256214_Inital_Create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,11 +76,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709211139343_InitialCreate.resx">
-      <DependentUpon>201709211139343_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709271014515_MessagesAndGroups.resx">
-      <DependentUpon>201709271014515_MessagesAndGroups.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710051256214_Inital_Create.resx">
+      <DependentUpon>201710051256214_Inital_Create.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

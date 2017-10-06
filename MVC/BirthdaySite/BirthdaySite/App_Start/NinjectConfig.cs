@@ -77,6 +77,7 @@ namespace BirthdaySite.App_Start
             kernel.Bind(typeof(IDbRepository<>)).To(typeof(DbRepository<>)).InRequestScope();
             kernel.Bind<ISaveContext>().To<SaveContext>().InRequestScope();
             kernel.Bind<IGroupService>().To<GroupService>().InRequestScope();
+            kernel.Bind<IFriendListService>().To<FriendListService>().InRequestScope();
         }
     }
 }

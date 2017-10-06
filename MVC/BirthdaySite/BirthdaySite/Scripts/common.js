@@ -1,34 +1,9 @@
-﻿//$(document).ready(function () {  
-//    $.connection.hub.start();
+﻿$(document).ready(function () {
+    $(document).on("click", ".close", function () {
+        $("#myModal").hide();
+    });
 
-//    var chat = $.connection.chat;
-
-//    $(".group-enter").click(function () {
-
-//        var room = $(this).html(); 
-//        chat.server.joinRoom(room)
-        
-//    });
-
-//    $('#input-submit-button').click(function () {
-
-//        var msg = $('#input-message-content').val();
-//        var roomToJoin = $('#hidden-group').html().trim(); 
-
-//        chat.client.addMessage = addMessage;
-        
-//        chat.server.addMessageToRoom(msg, roomToJoin);
-//    });  
-//});
-
-//function addMessage(message) {
-   
-//    $div = $("<div>")
-//        .addClass("row message-bubble");
-//    $p = $("<p>").addClass("text-muted")
-//        .appendTo($div);
-//    $span = $("<span>").html(message)
-//        .appendTo($div);
-
-//    $('.panel-body').children('.container').append($div);  
-//}
+    $(document).on("click", "#upcoming-birthdays", function () {
+        $("#myModal").show();
+    });
+});

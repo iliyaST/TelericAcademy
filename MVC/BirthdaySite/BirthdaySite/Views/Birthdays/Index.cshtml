@@ -1,2 +1,20 @@
-﻿<h2>Birthdays</h2>
+﻿@model ICollection<BirthdaySite.ViewModels.Friends.FriendViewModel>
 
+<div>
+    @foreach (var friend in Model)
+    {
+        <h2>Friends</h2>
+        <ul>
+            <li><a href="#">@friend.Name</a></li>
+            <li><a href="#">@friend.Birthday</a></li>
+            @if (friend.Gender)
+            {
+                <li><a href="#">@@Male</a></li>
+            }
+            else
+            {
+                <li><a href="#">@@Female</a></li>
+            }
+        </ul>
+    }
+</div>

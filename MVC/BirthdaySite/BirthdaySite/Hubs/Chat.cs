@@ -14,7 +14,7 @@ namespace SignalRChat.Hubs
 
         public void JoinRoom(string room)
         {
-            Groups.Add(Context.ConnectionId, room);
+            this.Groups.Add(Context.ConnectionId, room);
         }
 
         public void SendMessageToRoom(string message, string rooms)
@@ -25,7 +25,7 @@ namespace SignalRChat.Hubs
 
             this.groups.AddMessageToGroup(rooms, author, message);
 
-            Clients.Group(rooms).addMessage(message, author);
+            this.Clients.Group(rooms).addMessage(message, author);
         }
     }
 }
