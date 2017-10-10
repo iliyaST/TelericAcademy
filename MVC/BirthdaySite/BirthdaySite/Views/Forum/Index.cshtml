@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<BirthdaySite.ViewModels.Forum.GroupViewModel>
 <h2 class="welcome-message">EventSite`s Forum</h2>
-@*@Html.ActionLink("Add Group!", "AddGroup");*@
+@Html.AntiForgeryToken();
 <h2 class="content-site-message">
     Choose a group that you want to be a part of!
 </h2>

@@ -10,7 +10,6 @@ namespace BirthdaySite.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
-    using BirthdaySite.Controllers;
     using System.Data.Entity;
     using BirthdaySite.Models;
     using MVCTemplate.Data.Common;
@@ -18,9 +17,6 @@ namespace BirthdaySite.App_Start
     using MVCTemplate.Services.Data;
     using Microsoft.AspNet.SignalR;
     using BirthdaySite.App_Start.Helpers;
-    using SignalRChat.Hubs;
-    using Microsoft.AspNet.SignalR.Infrastructure;
-    using Microsoft.AspNet.SignalR.Hubs;
 
     public static class NinjectConfig
     {

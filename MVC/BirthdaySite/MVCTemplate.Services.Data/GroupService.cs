@@ -19,13 +19,13 @@ namespace MVCTemplate.Services.Data
 
         public IQueryable<Group> GetAll()
         {
-            return this.groups.All();
+            return this.groups.All().Where(m => !m.IsDeleted);
         }
 
         public void AddMessageToGroup(string groupName, string messageAuthor, string messageContent)
         {
             var group = this.groups.All()
-                .SingleOrDefault(g => g.Name == groupName);
+                .SingleOrDefault(g => g.Name == groupName && !g.IsDeleted);
 
             var message = new Message(messageAuthor, messageContent);
 

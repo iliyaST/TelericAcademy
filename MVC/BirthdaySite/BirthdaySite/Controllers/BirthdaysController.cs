@@ -14,6 +14,7 @@ namespace BirthdaySite.Controllers
             this.friendList = friendList;
         }
 
+        [Authorize]
         public ActionResult Index()
         {
             var index = this.User.Identity.Name.IndexOf("@");

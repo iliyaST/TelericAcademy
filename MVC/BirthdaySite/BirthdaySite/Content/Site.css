@@ -341,3 +341,211 @@ div.navbar.navbar-inverse.navbar-fixed-top {
         text-decoration: none;
         cursor: pointer;
     }
+
+
+
+.user-profiles-list-basic {
+    line-height: 1;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+    .user-profiles-list-basic li {
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        text-align: left;
+        font: normal 16px sans-serif;
+        padding: 15px 30px 15px 20px;
+        margin: 12px;        
+        border: 1px solid #dbe3e7;
+        box-shadow: 0 2px 3px #dbe3e7;
+    }
+
+    .user-profiles-list-basic .user-avatar {
+        float: left;
+        width: 100px;
+        text-align: left;
+    }
+
+        .user-profiles-list-basic .user-avatar img {
+            border-radius: 50%;
+            border: 0;
+        }
+
+    .user-profiles-list-basic p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+        margin-top: 20px;
+        max-width: 340px;
+    }
+
+        .user-profiles-list-basic p a {
+            color: #5d6569;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .user-profiles-list-basic p span {
+            display: block;
+            font-size: 13px;
+            color: #808d93;
+            padding-top: 4px;
+        }
+
+    .user-profiles-list-basic .delete {
+        background-color: #de4a4a;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 13px;
+        line-height: 22px;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+/* Making the list responsive */
+
+@media (max-width: 400px) {
+
+    .user-profiles-list-basic li {
+        margin: 10px 0;
+    }
+
+
+    .user-profiles-list-basic .delete {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+nav.navbar {
+    border-top: 4px solid #276cda;
+    margin-bottom: 1rem;
+}
+
+.navbar-item.brand-text {
+    font-weight: 300;
+}
+
+.navbar-item, .navbar-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.columns {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-label {
+    color: #8F99A3;
+    letter-spacing: 1.3;
+    font-weight: 700;
+}
+
+.menu-list a {
+    color: #0F1D38;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+    .menu-list a:hover {
+        background-color: transparent;
+        color: #276cda;
+    }
+
+    .menu-list a.is-active {
+        background-color: transparent;
+        color: #276cda;
+        font-weight: 700;
+    }
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 60%;
+    width: 500px;
+}
+
+.card-header-title {
+    color: #8F99A3;
+    font-weight: 400;
+}
+
+.info-tiles {
+    margin: 1rem 0;
+}
+
+    .info-tiles .subtitle {
+        font-weight: 300;
+        color: #8F99A3;
+    }
+
+.hero.welcome.is-info {
+    background: #36D1DC;
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+}
+
+.hero.welcome .title, .hero.welcome .subtitle {
+    color: hsl(192, 17%, 99%);
+}
+
+.card .content {
+    font-size: 14px;
+}
+
+.card-footer-item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8F99A3;
+}
+
+    .card-footer-item:hover {
+    }
+
+.card-table .table {
+    margin-bottom: 0;
+}
+
+.events-card .card-table {
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+#home-nav{
+   color: deepskyblue;
+}
+
+div.column.is-6{
+    width: 100%;
+}
+
+div.card.events-card{
+    width: 100%;
+}
+
+.name-group-admin{
+    color: red;
+    font-size: 25px;
+}
+
+.author{
+    color: purple;
+}
+
+.gender{
+    color: burlywood;
+}

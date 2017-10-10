@@ -1,5 +1,4 @@
 ﻿@model BirthdaySite.ViewModels.Forum.GroupViewModel
-
 <div class="hidden-elements">
     <div id="hidden-group">
         @Model.Name
@@ -31,6 +30,7 @@
 
 <footer>
 
+    @Html.AntiForgeryToken()
     <input id="input-message-content" type="text" name="message" />
     <button id="input-submit-button">Send</button>
 

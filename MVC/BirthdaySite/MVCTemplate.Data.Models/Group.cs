@@ -18,6 +18,6 @@ namespace MVCTemplate.Data.Models
 
         public string Name { get; private set; }
 
-        public ICollection<Message> Messages { get; set; }
+        public virtual ICollection<Message> Messages { get; set; }
     }
 }
