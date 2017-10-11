@@ -1,5 +1,7 @@
 ﻿using BirthdaySite.ViewModels.Friends;
+using Bytes2you.Validation;
 using MVCTemplate.Services.Data;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -11,6 +13,8 @@ namespace BirthdaySite.Controllers
 
         public BirthdaysController(IFriendListService friendList)
         {
+            Guard.WhenArgument(friendList, "bookService").IsNull().Throw();
+
             this.friendList = friendList;
         }
 
